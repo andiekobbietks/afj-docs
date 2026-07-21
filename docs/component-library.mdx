@@ -1,0 +1,137 @@
+---
+title: Component Library
+description: Canonical AFJ Cardiff UI components — buttons, cards, cart drawer, class booking card, and more — with live preview and source.
+---
+
+# Component Library
+
+This page documents the canonical AFJ Cardiff components. Each entry lists the live preview source, the token dependencies it pulls from Design System, and a copyable snippet.
+
+A live, themeable preview of every component below (toggle between Wine/Gold, Scrollytelling, Day mode, and Scrolly Day) lives at [`/component-library.html`](/component-library.html), embedded inline further down this page.
+
+---
+
+## Buttons
+
+| Property | Value | Token |
+| --- | --- | --- |
+| Radius | `8–10px` (Wine/Gold, Day) / `50px` pill (Scrollytelling) | `--btn-radius` |
+| Primary fill | Brand gradient | `--gradient` |
+| Outline | 1px solid current text colour | `--text` |
+
+```css
+.demo-btn.primary { background: var(--gradient); border-radius: var(--btn-radius); }
+.demo-btn.outline { background: transparent; border: 1px solid var(--text); }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Card — shared-border frame
+
+The card is the base unit for products, classes, and gallery tiles. Badge colour always pulls `--accent-2` across all themes.
+
+```css
+.demo-card { background: var(--bg-offset); border: 1px solid var(--border); border-radius: var(--radius); }
+.demo-badge { background: var(--accent-2); color: #fff; }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Cart drawer
+
+Slide-in panel for the commerce flow.
+
+```css
+.cart-drawer { transform: translateX(100%); }
+.cart-drawer.active { transform: translateX(0); }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Class booking card
+
+Level tag always reads on `--accent-1`.
+
+```css
+.demo-level-tag { background: var(--accent-1); color: var(--bg-base); }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Gallery grid
+
+4 columns desktop, collapses to 2 under 500px. Hover scales a tile to `1.03`.
+
+```css
+.afj-gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 500px) { .afj-gallery-grid { grid-template-columns: 1fr 1fr; } }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Carousel
+
+`overflow-x: auto` handles native touch swipe; mouse-drag cursor feedback added via JS, no extra CSS required.
+
+```css
+.afj-testimonial-row { display: flex; overflow-x: auto; cursor: grab; }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Interactive input
+
+Bordered, transparent fill — stays visually quiet next to primary CTAs. Scales to 40px height on mobile.
+
+```css
+.afj-newsletter { background: transparent; border: 1px solid var(--border); }
+@media (max-width: 500px) { .afj-newsletter { height: 40px; } }
+```
+
+**Source:** `component-library.html`
+
+---
+
+## Tonal scale
+
+Seven derived shades of the base accent (`--accent-2`), used consistently for hover/pressed/disabled states across every theme — never a second, unrelated hue.
+
+| Stop | Relation | Usage |
+| --- | --- | --- |
+| Darkest &minus;40% | `color-mix(in srgb, var(--accent-2) 60%, black)` | Pressed button backgrounds |
+| Darker &minus;30% | `70%, black` | Card borders and dividers on dark surfaces |
+| Dark &minus;20% | `80%, black` | Hover state on primary buttons and links |
+| Base | `var(--gradient)` | Primary buttons, links, focus indicators |
+| Light +15% | `85%, white` | Secondary badges, tag fills |
+| Lighter +25% | `75%, white` | Icon fills on dark backgrounds |
+| Lightest +40% | `60%, white` | Text on dark fills |
+
+**Source:** `component-library.html`
+
+---
+
+## Live preview
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html"
+      title="AFJ Cardiff component library live preview"
+      style={{ width: '100%', height: '900px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
+    />
+  )}
+</BrowserOnly>

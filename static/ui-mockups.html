@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFJ Cardiff | UI Mockups</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Space+Grotesk:wght@700;800&family=Yellowtail&family=JetBrains+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box;}
+body{margin:0;background:#0a0a0c;color:#fff;font-family:'Montserrat',sans-serif;padding:24px;}
+.wrap{max-width:900px;margin:0 auto;}
+.doc-title{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+.doc-title span{color:#6b6a72;font-weight:400;}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px;position:sticky;top:0;background:#0a0a0c;padding:8px 0 16px;z-index:5;border-bottom:1px solid #232228;}
+.tab-btn{font-size:10.5px;color:#b5b4bc;background:#141116;border:1px solid #232228;padding:7px 13px;border-radius:20px;cursor:pointer;font-family:inherit;}
+.tab-btn:hover{border-color:#C99552;color:#fff;}
+.tab-btn.active{background:linear-gradient(135deg,#C99552,#A43E53);color:#fff;border-color:transparent;}
+.tab-btn:focus-visible{outline:3px solid #C99552;outline-offset:2px;}
+.mockup-section{display:none;}
+.mockup-section.active{display:block;}
+.mockup-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;}
+.mockup-label h2{font-size:15px;margin:0;}
+.mockup-theme{font-size:10px;color:#8a8990;background:#141116;border:1px solid #232228;padding:4px 10px;border-radius:20px;}
+</style>
+<style>
+.afj-home{--bg:#09080C;--panel:#1E1B22;--border:#3A3441;--a1:#C99552;--a2:#A43E53;--text:#fff;--muted:rgba(255,255,255,.55);font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+
+
+.afj-scr{--bg:#050507;--panel:rgba(255,255,255,.05);--border:rgba(255,255,255,.08);--a1:#f39c12;--a2:#ff3344;--text:#f5f5f7;--muted:#8e8e93;font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:48px 24px;}
+
+
+.afj-list{--bg:#F1EFE8;--panel:#ECE7D8;--border:#e2ddd0;--a1:#C99552;--a2:#A43E53;--text:#1a1712;--muted:#5c574c;font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:24px;color:var(--text);}
+.afj-cls-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.afj-cls-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,#ddd6c4,var(--panel));}
+
+
+.afj-detail{--bg:#09080C;--panel:#1E1B22;--border:#3A3441;--a1:#C99552;--a2:#A43E53;--text:#fff;--muted:rgba(255,255,255,.55);font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:24px;color:var(--text);display:grid;grid-template-columns:1.5fr 1fr;gap:18px;}
+
+
+.afj-shop{--bg:#F5F2EA;--panel:#ECE7D8;--border:#ddd6c4;--a1:#f39c12;--a2:#ff3344;--text:#1a1712;--muted:#5c574c;font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:24px;color:var(--text);display:grid;grid-template-columns:1fr 260px;gap:18px;}
+.afj-prod{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.afj-prod-thumb{aspect-ratio:1;background:linear-gradient(135deg,#e2ddce,var(--panel));position:relative;}
+
+
+.afj-check{--bg:#F1EFE8;--panel:#ECE7D8;--border:#e2ddd0;--a1:#C99552;--a2:#A43E53;--text:#1a1712;--muted:#5c574c;font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:24px;color:var(--text);display:grid;grid-template-columns:1.4fr 1fr;gap:18px;}
+.afj-field{display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:10px;}
+
+
+.afj-acc{--bg:#09080C;--panel:#1E1B22;--border:#3A3441;--a1:#C99552;--a2:#A43E53;--text:#fff;--muted:rgba(255,255,255,.55);font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:20px;color:var(--text);display:grid;grid-template-columns:160px 1fr;gap:18px;}
+.afj-sidelink{display:flex;align-items:center;gap:8px;font-size:11.5px;padding:9px 10px;border-radius:8px;color:var(--muted);}
+.afj-sidelink.active{background:var(--panel);color:var(--text);}
+
+
+.afj-ops{--bg:#09080C;--panel:#1E1B22;--border:#3A3441;--a1:#C99552;--a2:#A43E53;--text:#fff;--muted:rgba(255,255,255,.55);font-family:'Montserrat',sans-serif;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:22px;color:var(--text);}
+.afj-stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
+.afj-col{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px;flex:1;}
+.afj-card2{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:9px 10px;margin-bottom:8px;font-size:10.5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="doc-title">AFJ CARDIFF <span>/ UI mockups</span></div>
+<div class="tabs" role="tablist"><button type="button" class="tab-btn active" data-target="homepage" aria-pressed="true">Homepage hero</button>
+<button type="button" class="tab-btn" data-target="scrollytelling-landing" aria-pressed="false">Scrollytelling landing</button>
+<button type="button" class="tab-btn" data-target="class-listing" aria-pressed="false">Class listing</button>
+<button type="button" class="tab-btn" data-target="class-detail" aria-pressed="false">Class detail + booking</button>
+<button type="button" class="tab-btn" data-target="shop-cart" aria-pressed="false">Shop + cart drawer</button>
+<button type="button" class="tab-btn" data-target="checkout" aria-pressed="false">Checkout</button>
+<button type="button" class="tab-btn" data-target="account" aria-pressed="false">Member account dashboard</button>
+<button type="button" class="tab-btn" data-target="ops-board" aria-pressed="false">Internal ops dashboard</button></div>
+<div class="mockup-section active" id="homepage" role="tabpanel"><div class="mockup-label"><h2>Homepage hero</h2><span class="mockup-theme">Wine / Gold</span></div>
+<div class="afj-home">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--border);">
+    <div style="display:flex;align-items:center;gap:6px;"><span style="font-weight:900;font-size:16px;letter-spacing:-.5px;">AFJ</span><span style="font-family:'Yellowtail',cursive;font-size:20px;color:var(--a1);margin-left:-2px;">Cardiff</span></div>
+    <div style="display:flex;gap:22px;font-size:11.5px;color:var(--muted);"><span>Classes</span><span>Workshops</span><span>Shop</span><span>Our story</span></div>
+    <div style="display:flex;gap:14px;align-items:center;"><i class="ti ti-search" style="font-size:17px;"></i><i class="ti ti-shopping-bag" style="font-size:17px;"></i><i class="ti ti-menu-2" style="font-size:17px;"></i></div>
+  </div>
+  <div style="text-align:center;padding:64px 24px;">
+    <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2));margin:0 auto 22px;"></div>
+    <h1 style="font-size:34px;font-weight:700;letter-spacing:-.5px;margin:0 0 14px;background:linear-gradient(135deg,#fff 30%,var(--a1) 70%,var(--a2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Impact through dance &amp; culture</h1>
+    <p style="font-size:13px;color:var(--muted);max-width:380px;margin:0 auto 28px;line-height:1.7;">Wales' first dedicated African dance launchpad.</p>
+    <div style="display:flex;gap:12px;justify-content:center;">
+      <button style="padding:13px 26px;border-radius:8px;border:none;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;font-size:12px;font-weight:600;">Book a class</button>
+      <button style="padding:13px 26px;border-radius:8px;border:1px solid var(--text);background:transparent;color:var(--text);font-size:12px;font-weight:600;">Shop merch</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="scrollytelling-landing" role="tabpanel"><div class="mockup-label"><h2>Scrollytelling landing</h2><span class="mockup-theme">Scrollytelling</span></div>
+<div class="afj-scr">
+  <div style="text-align:center;margin-bottom:40px;">
+    <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2));margin:0 auto 16px;"></div>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-1px;font-size:24px;margin:0 0 10px;background:linear-gradient(135deg,#fff 30%,var(--a1) 70%,var(--a2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Impact through dance &amp; culture</h1>
+    <p style="font-size:11.5px;color:var(--muted);max-width:280px;margin:0 auto 20px;">Scroll down to command the sequence.</p>
+    <div style="display:inline-block;border:1px solid var(--text);color:var(--text);padding:9px 22px;border-radius:50px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;">Begin scroll</div>
+  </div>
+  <div style="display:flex;justify-content:center;">
+    <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:22px;width:280px;">
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;color:var(--a2);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:6px;">Step 01</span>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:18px;margin:0 0 8px;background:linear-gradient(135deg,#fff,var(--a1));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">The signal</h3>
+      <p style="font-size:11.5px;color:var(--muted);line-height:1.6;margin:0;">Pointing to the heavens.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="class-listing" role="tabpanel"><div class="mockup-label"><h2>Class listing</h2><span class="mockup-theme">Day mode</span></div>
+<div class="afj-list">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+    <div style="display:flex;gap:14px;">
+      <span style="display:flex;align-items:center;gap:5px;font-size:11.5px;background:var(--panel);border:1px solid var(--border);padding:6px 12px;border-radius:8px;"><i class="ti ti-filter" style="font-size:14px;"></i>Filter</span>
+      <span style="display:flex;align-items:center;gap:5px;font-size:11.5px;background:var(--panel);border:1px solid var(--border);padding:6px 12px;border-radius:8px;"><i class="ti ti-sort-ascending" style="font-size:14px;"></i>Sort</span>
+    </div>
+    <div style="display:flex;gap:8px;"><i class="ti ti-layout-grid" style="font-size:16px;color:var(--a1);"></i><i class="ti ti-list" style="font-size:16px;color:var(--muted);"></i></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+    <div class="afj-cls-card"><div class="afj-cls-thumb"></div><div style="padding:12px 14px;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span style="font-size:12.5px;font-weight:600;">Azonto</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;padding:3px 8px;border-radius:10px;background:var(--a1);color:var(--bg);">Level 2</span></div><div style="display:flex;gap:10px;font-size:10px;color:var(--muted);"><span><i class="ti ti-clock" style="font-size:12px;"></i> 6:30pm</span><span><i class="ti ti-users" style="font-size:12px;"></i> 8 spots</span></div></div></div>
+    <div class="afj-cls-card"><div class="afj-cls-thumb"></div><div style="padding:12px 14px;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span style="font-size:12.5px;font-weight:600;">Ndombolo</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;padding:3px 8px;border-radius:10px;background:var(--a1);color:var(--bg);">Beginner</span></div><div style="display:flex;gap:10px;font-size:10px;color:var(--muted);"><span><i class="ti ti-clock" style="font-size:12px;"></i> 7:15pm</span><span><i class="ti ti-map-pin" style="font-size:12px;"></i> Studio A</span></div></div></div>
+    <div class="afj-cls-card"><div class="afj-cls-thumb"></div><div style="padding:12px 14px;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span style="font-size:12.5px;font-weight:600;">Afrobeats</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;padding:3px 8px;border-radius:10px;background:var(--a1);color:var(--bg);">All levels</span></div><div style="display:flex;gap:10px;font-size:10px;color:var(--muted);"><span><i class="ti ti-clock" style="font-size:12px;"></i> 8:00pm</span><span><i class="ti ti-users" style="font-size:12px;"></i> Full</span></div></div></div>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="class-detail" role="tabpanel"><div class="mockup-label"><h2>Class detail + booking</h2><span class="mockup-theme">Wine / Gold</span></div>
+<div class="afj-detail">
+  <div>
+    <div style="aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,var(--panel),var(--bg));margin-bottom:16px;"></div>
+    <h2 style="font-size:20px;font-weight:700;margin:0 0 8px;">Azonto &mdash; Intermediate</h2>
+    <span style="display:inline-block;font-size:8px;font-weight:700;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--a1);color:var(--bg);margin-bottom:14px;">Level 2</span>
+    <div style="display:flex;gap:16px;font-size:11px;color:var(--muted);margin-bottom:14px;">
+      <span><i class="ti ti-calendar" style="font-size:14px;"></i> Tuesdays</span>
+      <span><i class="ti ti-clock" style="font-size:14px;"></i> 6:30&ndash;7:30pm</span>
+      <span><i class="ti ti-map-pin" style="font-size:14px;"></i> Studio A, Cardiff</span>
+    </div>
+    <p style="font-size:12px;color:var(--muted);line-height:1.7;">A high-energy Ghanaian street dance rooted in social rhythm.</p>
+  </div>
+  <div style="background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px;height:fit-content;">
+    <p style="font-size:12px;color:var(--muted);margin:0 0 4px;">From</p>
+    <p style="font-size:22px;font-weight:700;margin:0 0 14px;">&pound;8<span style="font-size:11px;color:var(--muted);font-weight:400;"> / class</span></p>
+    <div style="display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:10px;"><i class="ti ti-calendar" style="font-size:14px;color:var(--muted);"></i><span style="font-size:11px;color:var(--muted);">Tue, 22 July</span></div>
+    <div style="display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:14px;"><i class="ti ti-users" style="font-size:14px;color:var(--muted);"></i><span style="font-size:11px;color:var(--muted);">8 spots left</span></div>
+    <button style="width:100%;padding:12px;border-radius:8px;border:none;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;font-size:12px;font-weight:600;">Book this class</button>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="shop-cart" role="tabpanel"><div class="mockup-label"><h2>Shop + cart drawer</h2><span class="mockup-theme">Scrolly Day</span></div>
+<div class="afj-shop">
+  <div>
+    <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.5px;font-size:15px;margin:0 0 14px;">Shop</h3>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+      <div class="afj-prod"><div class="afj-prod-thumb"><span style="position:absolute;top:8px;left:8px;font-size:8px;font-weight:700;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--a2);color:#fff;">Limited</span><i class="ti ti-heart" style="position:absolute;top:8px;right:8px;font-size:16px;"></i></div><div style="padding:10px 12px;"><p style="font-size:12px;margin:0 0 2px;">Red hoodie</p><p style="font-size:11px;color:var(--a1);margin:0;">&pound;42.00</p></div></div>
+      <div class="afj-prod"><div class="afj-prod-thumb"><i class="ti ti-heart" style="position:absolute;top:8px;right:8px;font-size:16px;color:var(--a2);"></i></div><div style="padding:10px 12px;"><p style="font-size:12px;margin:0 0 2px;">Logo cap</p><p style="font-size:11px;color:var(--a1);margin:0;">&pound;18.00</p></div></div>
+    </div>
+  </div>
+  <div style="background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;height:fit-content;">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;"><i class="ti ti-shopping-bag" style="font-size:16px;"></i><span style="font-size:12.5px;font-weight:600;">Your basket</span></div>
+    <div style="display:flex;gap:8px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--border);"><div style="width:34px;height:34px;border-radius:6px;background:var(--bg);flex-shrink:0;"></div><div><p style="font-size:11px;margin:0 0 2px;">Red hoodie</p><p style="font-size:10px;color:var(--muted);margin:0;">Size M &middot; &pound;42.00</p></div></div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:12px;"><span style="color:var(--muted);">Subtotal</span><span style="font-weight:600;">&pound;42.00</span></div>
+    <button style="width:100%;padding:11px;border-radius:50px;border:none;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;">Checkout</button>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="checkout" role="tabpanel"><div class="mockup-label"><h2>Checkout</h2><span class="mockup-theme">Day mode</span></div>
+<div class="afj-check">
+  <div>
+    <div style="display:flex;gap:6px;margin-bottom:20px;font-size:9.5px;color:var(--muted);"><span style="color:var(--a1);font-weight:700;">Basket</span> &rarr; <span style="color:var(--a1);font-weight:700;">Delivery</span> &rarr; <span>Payment</span> &rarr; <span>Confirm</span></div>
+    <p style="font-size:11px;font-weight:600;margin:0 0 8px;"><i class="ti ti-truck" style="font-size:14px;"></i> Delivery details</p>
+    <div class="afj-field"><span style="font-size:11px;color:var(--muted);">Full name</span></div>
+    <div class="afj-field"><span style="font-size:11px;color:var(--muted);">Delivery address</span></div>
+    <p style="font-size:11px;font-weight:600;margin:16px 0 8px;"><i class="ti ti-credit-card" style="font-size:14px;"></i> Payment</p>
+    <div class="afj-field"><span style="font-size:11px;color:var(--muted);">Card number</span></div>
+  </div>
+  <div style="background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;height:fit-content;">
+    <p style="font-size:12px;font-weight:600;margin:0 0 12px;">Order summary</p>
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:6px;"><span style="color:var(--muted);">Red hoodie</span><span>&pound;42.00</span></div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border);"><span style="color:var(--muted);">Delivery</span><span>&pound;3.50</span></div>
+    <div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700;margin-bottom:14px;"><span>Total</span><span>&pound;45.50</span></div>
+    <button style="width:100%;padding:12px;border-radius:6px;border:none;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;font-size:12px;font-weight:600;">Place order</button>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="account" role="tabpanel"><div class="mockup-label"><h2>Member account dashboard</h2><span class="mockup-theme">Wine / Gold</span></div>
+<div class="afj-acc">
+  <div>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;padding:0 10px;"><div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2));"></div><span style="font-size:11.5px;font-weight:600;">Hi, Amara</span></div>
+    <div class="afj-sidelink active"><i class="ti ti-user" style="font-size:15px;"></i> Profile</div>
+    <div class="afj-sidelink"><i class="ti ti-ticket" style="font-size:15px;"></i> My bookings</div>
+    <div class="afj-sidelink"><i class="ti ti-bell" style="font-size:15px;color:var(--a2);"></i> Notifications</div>
+    <div class="afj-sidelink"><i class="ti ti-settings" style="font-size:15px;"></i> Settings</div>
+  </div>
+  <div>
+    <p style="font-size:12px;font-weight:600;margin:0 0 12px;">Upcoming bookings</p>
+    <div style="display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;"><i class="ti ti-calendar" style="font-size:18px;color:var(--a1);"></i><div><p style="font-size:11.5px;margin:0 0 2px;">Azonto &mdash; Intermediate</p><p style="font-size:10px;color:var(--muted);margin:0;">Tue 22 July, 6:30pm &middot; Studio A</p></div></div>
+  </div>
+</div>
+</div>
+<div class="mockup-section" id="ops-board" role="tabpanel"><div class="mockup-label"><h2>Internal ops dashboard</h2><span class="mockup-theme">Wine / Gold</span></div>
+<div class="afj-ops">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px;">
+    <div class="afj-stat"><i class="ti ti-layout-kanban" style="font-size:16px;color:var(--a1);"></i><p style="font-size:16px;font-weight:700;margin:6px 0 0;">14</p><p style="font-size:9.5px;color:var(--muted);margin:0;">Open actions</p></div>
+    <div class="afj-stat"><i class="ti ti-alert-triangle" style="font-size:16px;color:var(--a2);"></i><p style="font-size:16px;font-weight:700;margin:6px 0 0;">3</p><p style="font-size:9.5px;color:var(--muted);margin:0;">Risks flagged</p></div>
+    <div class="afj-stat"><i class="ti ti-flag" style="font-size:16px;color:var(--a1);"></i><p style="font-size:16px;font-weight:700;margin:6px 0 0;">2 / 5</p><p style="font-size:9.5px;color:var(--muted);margin:0;">Q2 milestones</p></div>
+    <div class="afj-stat"><i class="ti ti-report" style="font-size:16px;color:var(--a1);"></i><p style="font-size:16px;font-weight:700;margin:6px 0 0;">15 Jul</p><p style="font-size:9.5px;color:var(--muted);margin:0;">Last report</p></div>
+  </div>
+  <div style="display:flex;gap:10px;">
+    <div class="afj-col"><p style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:0 0 8px;">To do</p><div class="afj-card2">Draft AFJ Classroom GTM</div></div>
+    <div class="afj-col"><p style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:0 0 8px;">In progress</p><div class="afj-card2">Finalise governance docs</div></div>
+    <div class="afj-col"><p style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:0 0 8px;">Done</p><div class="afj-card2">Create weekly update deck</div></div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      const active = b === btn;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelectorAll('.mockup-section').forEach(s => {
+      s.classList.toggle('active', s.id === target);
+    });
+  });
+});
+</script>
+</body>
+</html>

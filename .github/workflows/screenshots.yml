@@ -1,0 +1,64 @@
+name: Update README screenshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'static/component-library.html'
+      - 'static/icon-library.html'
+      - 'static/ui-mockups.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Capture screenshots
+        run: |
+          mkdir -p static/screenshots
+          node - <<'EOF'
+          const { chromium } = require('playwright');
+          const path = require('path');
+
+          const targets = [
+            { file: 'component-library.html', out: 'component-library.png', width: 1280, height: 1400 },
+            { file: 'icon-library.html', out: 'icon-library.png', width: 1280, height: 1400 },
+            { file: 'ui-mockups.html', out: 'ui-mockups.png', width: 1280, height: 2400 },
+          ];
+
+          (async () => {
+            const browser = await chromium.launch();
+            for (const t of targets) {
+              const page = await browser.newPage({ viewport: { width: t.width, height: 900 } });
+              const filePath = 'file://' + path.resolve('static', t.file);
+              await page.goto(filePath, { waitUntil: 'networkidle' });
+              // Give webfonts a moment to finish swapping in before capture.
+              await page.waitForTimeout(800);
+              await page.screenshot({ path: 'static/screenshots/' + t.out, fullPage: true });
+              await page.close();
+            }
+            await browser.close();
+          })();
+          EOF
+
+      - name: Commit screenshots if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/screenshots
+          git diff --cached --quiet && echo "No screenshot changes" || git commit -m "Auto-update README screenshots [skip ci]"
+          git push

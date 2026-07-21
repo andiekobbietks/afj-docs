@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFJ Cardiff | Icon Library</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    [data-theme="wine"] { --bg:#09080C; --panel:#1E1B22; --border:#3A3441; --a1:#C99552; --a2:#A43E53; --text:#ffffff; --muted:rgba(255,255,255,.48); }
+    [data-theme="scrolly"] { --bg:#050507; --panel:rgba(255,255,255,.05); --border:rgba(255,255,255,.08); --a1:#f39c12; --a2:#ff3344; --text:#f5f5f7; --muted:rgba(245,245,247,.50); }
+    [data-theme="day"] { --bg:#F1EFE8; --panel:#ECE7D8; --border:#e2ddd0; --a1:#C99552; --a2:#A43E53; --text:#1a1712; --muted:#726c5e; }
+    [data-theme="scrollyday"] { --bg:#F5F2EA; --panel:#ECE7D8; --border:#ddd6c4; --a1:#f39c12; --a2:#ff3344; --text:#1a1712; --muted:#726c5e; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Montserrat',sans-serif; background:var(--bg); color:var(--text); transition:background .25s ease, color .25s ease; padding:40px 24px 100px; }
+    .wrap { max-width:1000px; margin:0 auto; }
+    .topbar { position:sticky; top:0; z-index:5; background:var(--bg); padding:16px 0 20px; margin-bottom:20px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; }
+    .doc-title { font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+    .doc-title span { color:var(--muted); font-weight:400; }
+    .theme-toggle { display:flex; background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:3px; gap:2px; }
+    .theme-toggle button { border:none; background:transparent; color:var(--muted); font-size:11px; font-weight:600; padding:7px 14px; border-radius:6px; cursor:pointer; }
+    .theme-toggle button:focus-visible { outline: 3px solid var(--a1); outline-offset: 2px; }
+    .theme-toggle button.active { background:linear-gradient(135deg,var(--a1),var(--a2)); color:#fff; }
+    .cat-title { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--a1); font-weight:600; margin:36px 0 4px; }
+    .cat-sub { font-size:12.5px; color:var(--muted); margin-bottom:16px; max-width:620px; line-height:1.6; }
+    .icon-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+    .icon-card { border:1px solid var(--border); border-radius:12px; background:var(--panel); padding:14px; }
+    .icon-card-top { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+    .icon-circle { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:0.5px solid var(--border); flex-shrink:0; color: var(--text); }
+    .icon-circle.accent { background:var(--panel); color: var(--a1); }
+    .icon-circle.filled { background:linear-gradient(135deg,var(--a1),var(--a2)); border:none; color: var(--bg); }
+    .icon-name { font-size:12.5px; font-weight:600; }
+    .icon-explainer { font-size:11px; color:var(--muted); line-height:1.55; margin-bottom:8px; }
+    .icon-snippet { font-family:'JetBrains Mono',monospace; font-size:10px; background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:6px 9px; color:var(--text); overflow-x:auto; white-space:pre; }
+    .lucide-credit { font-size:11px; color:var(--muted); margin-top:6px; }
+</style>
+</head>
+<body data-theme="wine" id="root">
+<div class="wrap">
+    <div class="topbar">
+        <div class="doc-title">AFJ CARDIFF <span>/ icon library</span></div>
+        <div class="theme-toggle" id="toggle">
+            <button data-theme="wine" class="active">Wine / Gold</button>
+            <button data-theme="scrolly">Scrollytelling</button>
+            <button data-theme="day">Day mode</button>
+            <button data-theme="scrollyday">Scrolly Day</button>
+        </div>
+    </div>
+    <p class="lucide-credit">Icons: <a href="https://lucide.dev" style="color:var(--a1)">Lucide</a> — ISC licensed, free for commercial use. Matches the icon-set decision made in the canonical component library doc.</p>
+<p class="cat-title">Core UI</p>
+<p class="cat-sub">Site chrome that appears on every page, independent of theme.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-menu"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" />
+</svg></div>
+    <span class="icon-name">Menu</span>
+  </div>
+  <p class="icon-explainer">Opens the site navigation drawer.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-menu"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M4 5h16" /&gt;
+  &lt;path d="M4 12h16" /&gt;
+  &lt;path d="M4 19h16" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-x"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></div>
+    <span class="icon-name">Close</span>
+  </div>
+  <p class="icon-explainer">Dismisses a modal, drawer, or overlay.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-x"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M18 6 6 18" /&gt;
+  &lt;path d="m6 6 12 12" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-search"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" />
+</svg></div>
+    <span class="icon-name">Search</span>
+  </div>
+  <p class="icon-explainer">Opens the site search field.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-search"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m21 21-4.34-4.34" /&gt;
+  &lt;circle cx="11" cy="11" r="8" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-chevron-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m6 9 6 6 6-6" />
+</svg></div>
+    <span class="icon-name">Expand</span>
+  </div>
+  <p class="icon-explainer">Marks an expandable section.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-chevron-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m6 9 6 6 6-6" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg></div>
+    <span class="icon-name">External link</span>
+  </div>
+  <p class="icon-explainer">Flags a link that leaves the site.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-external-link"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M15 3h6v6" /&gt;
+  &lt;path d="M10 14 21 3" /&gt;
+  &lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Commerce</p>
+<p class="cat-sub">Cart, wishlist, and checkout entry points for the merch shop.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-shopping-bag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 10a4 4 0 0 1-8 0" />
+  <path d="M3.103 6.034h17.794" />
+  <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+</svg></div>
+    <span class="icon-name">Basket</span>
+  </div>
+  <p class="icon-explainer">Opens the cart drawer.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-shopping-bag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M16 10a4 4 0 0 1-8 0" /&gt;
+  &lt;path d="M3.103 6.034h17.794" /&gt;
+  &lt;path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle filled"><svg
+  class="lucide lucide-shopping-bag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 10a4 4 0 0 1-8 0" />
+  <path d="M3.103 6.034h17.794" />
+  <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+</svg></div>
+    <span class="icon-name">Basket (active)</span>
+  </div>
+  <p class="icon-explainer">Same icon, gradient-filled once the basket has items.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-shopping-bag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M16 10a4 4 0 0 1-8 0" /&gt;
+  &lt;path d="M3.103 6.034h17.794" /&gt;
+  &lt;path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-heart"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+</svg></div>
+    <span class="icon-name">Wishlist</span>
+  </div>
+  <p class="icon-explainer">Saves an item for later.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-heart"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-heart"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+</svg></div>
+    <span class="icon-name">Wishlist (saved)</span>
+  </div>
+  <p class="icon-explainer">Same icon, tinted --a2 once the item is saved.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-heart"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-tag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></div>
+    <span class="icon-name">Product tag</span>
+  </div>
+  <p class="icon-explainer">Price, size, or limited-edition label on a product card.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-tag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /&gt;
+  &lt;circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-credit-card"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="20" height="14" x="2" y="5" rx="2" />
+  <line x1="2" x2="22" y1="10" y2="10" />
+</svg></div>
+    <span class="icon-name">Checkout</span>
+  </div>
+  <p class="icon-explainer">Enters the payment step.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-credit-card"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;rect width="20" height="14" x="2" y="5" rx="2" /&gt;
+  &lt;line x1="2" x2="22" y1="10" y2="10" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Checkout flow</p>
+<p class="cat-sub">Post-add-to-basket states, through to order confirmation.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-truck"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+  <path d="M15 18H9" />
+  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+  <circle cx="17" cy="18" r="2" />
+  <circle cx="7" cy="18" r="2" />
+</svg></div>
+    <span class="icon-name">Delivery</span>
+  </div>
+  <p class="icon-explainer">Shipping or collection info at checkout.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-truck"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /&gt;
+  &lt;path d="M15 18H9" /&gt;
+  &lt;path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /&gt;
+  &lt;circle cx="17" cy="18" r="2" /&gt;
+  &lt;circle cx="7" cy="18" r="2" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-package"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+  <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" />
+</svg></div>
+    <span class="icon-name">Order status</span>
+  </div>
+  <p class="icon-explainer">Post-purchase order tracking.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-package"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /&gt;
+  &lt;path d="M12 22V12" /&gt;
+  &lt;polyline points="3.29 7 12 12 20.71 7" /&gt;
+  &lt;path d="m7.5 4.27 9 5.15" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-receipt"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 17V7" />
+  <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" />
+  <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+</svg></div>
+    <span class="icon-name">Receipt</span>
+  </div>
+  <p class="icon-explainer">Order confirmation and receipt download.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-receipt"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M12 17V7" /&gt;
+  &lt;path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /&gt;
+  &lt;path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-percent"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="19" x2="5" y1="5" y2="19" />
+  <circle cx="6.5" cy="6.5" r="2.5" />
+  <circle cx="17.5" cy="17.5" r="2.5" />
+</svg></div>
+    <span class="icon-name">Discount code</span>
+  </div>
+  <p class="icon-explainer">Voucher field at checkout.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-percent"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;line x1="19" x2="5" y1="5" y2="19" /&gt;
+  &lt;circle cx="6.5" cy="6.5" r="2.5" /&gt;
+  &lt;circle cx="17.5" cy="17.5" r="2.5" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle filled"><svg
+  class="lucide lucide-check"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 6 9 17l-5-5" />
+</svg></div>
+    <span class="icon-name">Order confirmed</span>
+  </div>
+  <p class="icon-explainer">Success state once payment completes.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-check"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M20 6 9 17l-5-5" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Classes and booking</p>
+<p class="cat-sub">Class cards, the booking calendar, and member class history.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-calendar"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 2v4" />
+  <path d="M16 2v4" />
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+  <path d="M3 10h18" />
+</svg></div>
+    <span class="icon-name">Schedule</span>
+  </div>
+  <p class="icon-explainer">Class timetable and booking calendar.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-calendar"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M8 2v4" /&gt;
+  &lt;path d="M16 2v4" /&gt;
+  &lt;rect width="18" height="18" x="3" y="4" rx="2" /&gt;
+  &lt;path d="M3 10h18" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-clock"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</svg></div>
+    <span class="icon-name">Class time</span>
+  </div>
+  <p class="icon-explainer">Start time and duration on a class card.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-clock"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;circle cx="12" cy="12" r="10" /&gt;
+  &lt;path d="M12 6v6l4 2" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-map-pin"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <circle cx="12" cy="10" r="3" />
+</svg></div>
+    <span class="icon-name">Studio location</span>
+  </div>
+  <p class="icon-explainer">Venue or address for a class or workshop.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-map-pin"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /&gt;
+  &lt;circle cx="12" cy="10" r="3" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-users"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" />
+</svg></div>
+    <span class="icon-name">Class size</span>
+  </div>
+  <p class="icon-explainer">Capacity or spaces-remaining indicator.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-users"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /&gt;
+  &lt;path d="M16 3.128a4 4 0 0 1 0 7.744" /&gt;
+  &lt;path d="M22 21v-2a4 4 0 0 0-3-3.87" /&gt;
+  &lt;circle cx="9" cy="7" r="4" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-star"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+</svg></div>
+    <span class="icon-name">Level tag</span>
+  </div>
+  <p class="icon-explainer">Beginner / intermediate / advanced badge.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-star"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-ticket"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+  <path d="M13 5v2" />
+  <path d="M13 17v2" />
+  <path d="M13 11v2" />
+</svg></div>
+    <span class="icon-name">My bookings</span>
+  </div>
+  <p class="icon-explainer">A member's booked classes and workshops.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-ticket"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /&gt;
+  &lt;path d="M13 5v2" /&gt;
+  &lt;path d="M13 17v2" /&gt;
+  &lt;path d="M13 11v2" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Account and dashboard</p>
+<p class="cat-sub">Signed-in member area.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-user"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+  <circle cx="12" cy="7" r="4" />
+</svg></div>
+    <span class="icon-name">Profile</span>
+  </div>
+  <p class="icon-explainer">Member account page.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-user"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /&gt;
+  &lt;circle cx="12" cy="7" r="4" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-settings"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+  <circle cx="12" cy="12" r="3" />
+</svg></div>
+    <span class="icon-name">Settings</span>
+  </div>
+  <p class="icon-explainer">Account preferences.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-settings"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /&gt;
+  &lt;circle cx="12" cy="12" r="3" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-bell"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+  <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+</svg></div>
+    <span class="icon-name">Notifications</span>
+  </div>
+  <p class="icon-explainer">Booking reminders and updates.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-bell"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M10.268 21a2 2 0 0 0 3.464 0" /&gt;
+  &lt;path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-log-out"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 17 5-5-5-5" />
+  <path d="M21 12H9" />
+  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+</svg></div>
+    <span class="icon-name">Log out</span>
+  </div>
+  <p class="icon-explainer">Ends the member session.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-log-out"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m16 17 5-5-5-5" /&gt;
+  &lt;path d="M21 12H9" /&gt;
+  &lt;path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Filter, sort, and discovery</p>
+<p class="cat-sub">Browsing controls for class and product listings.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-filter"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" />
+</svg></div>
+    <span class="icon-name">Filter</span>
+  </div>
+  <p class="icon-explainer">Narrows a listing by category, level, or price.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-filter"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-arrow-up-narrow-wide"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 8 4-4 4 4" />
+  <path d="M7 4v16" />
+  <path d="M11 12h4" />
+  <path d="M11 16h7" />
+  <path d="M11 20h10" />
+</svg></div>
+    <span class="icon-name">Sort</span>
+  </div>
+  <p class="icon-explainer">Reorders a listing by price, date, or popularity.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-arrow-up-narrow-wide"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m3 8 4-4 4 4" /&gt;
+  &lt;path d="M7 4v16" /&gt;
+  &lt;path d="M11 12h4" /&gt;
+  &lt;path d="M11 16h7" /&gt;
+  &lt;path d="M11 20h10" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-layout-grid"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg></div>
+    <span class="icon-name">Grid view</span>
+  </div>
+  <p class="icon-explainer">Switches a gallery or product list to grid layout.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-layout-grid"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;rect width="7" height="7" x="3" y="3" rx="1" /&gt;
+  &lt;rect width="7" height="7" x="14" y="3" rx="1" /&gt;
+  &lt;rect width="7" height="7" x="14" y="14" rx="1" /&gt;
+  &lt;rect width="7" height="7" x="3" y="14" rx="1" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-list"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 5h.01" />
+  <path d="M3 12h.01" />
+  <path d="M3 19h.01" />
+  <path d="M8 5h13" />
+  <path d="M8 12h13" />
+  <path d="M8 19h13" />
+</svg></div>
+    <span class="icon-name">List view</span>
+  </div>
+  <p class="icon-explainer">Switches a gallery or product list to list layout.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-list"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M3 5h.01" /&gt;
+  &lt;path d="M3 12h.01" /&gt;
+  &lt;path d="M3 19h.01" /&gt;
+  &lt;path d="M8 5h13" /&gt;
+  &lt;path d="M8 12h13" /&gt;
+  &lt;path d="M8 19h13" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Social proof</p>
+<p class="cat-sub">Testimonials, reviews, and partner endorsements.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-star"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+</svg></div>
+    <span class="icon-name">Rating</span>
+  </div>
+  <p class="icon-explainer">Star rating on a review or product.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-star"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-quote"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+  <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+</svg></div>
+    <span class="icon-name">Testimonial</span>
+  </div>
+  <p class="icon-explainer">Pull-quote styling for member reviews.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-quote"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /&gt;
+  &lt;path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-thumbs-up"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+  <path d="M7 10v12" />
+</svg></div>
+    <span class="icon-name">Endorsement</span>
+  </div>
+  <p class="icon-explainer">Partner or sponsor endorsement marker.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-thumbs-up"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" /&gt;
+  &lt;path d="M7 10v12" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-message-circle"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+</svg></div>
+    <span class="icon-name">Reviews</span>
+  </div>
+  <p class="icon-explainer">Links to the reviews or testimonial carousel.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-message-circle"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Scrollytelling and story</p>
+<p class="cat-sub">The pre-launch narrative site.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-play"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+</svg></div>
+    <span class="icon-name">Begin scroll</span>
+  </div>
+  <p class="icon-explainer">CTA that starts the scroll-driven story sequence.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-play"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-arrow-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m19 12-7 7-7-7" />
+</svg></div>
+    <span class="icon-name">Scroll cue</span>
+  </div>
+  <p class="icon-explainer">Prompts the visitor to keep scrolling.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-arrow-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M12 5v14" /&gt;
+  &lt;path d="m19 12-7 7-7-7" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-image"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+  <circle cx="9" cy="9" r="2" />
+  <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+</svg></div>
+    <span class="icon-name">Gallery</span>
+  </div>
+  <p class="icon-explainer">Photo or video grid within the story.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-image"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;rect width="18" height="18" x="3" y="3" rx="2" ry="2" /&gt;
+  &lt;circle cx="9" cy="9" r="2" /&gt;
+  &lt;path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-mail"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" />
+</svg></div>
+    <span class="icon-name">Newsletter</span>
+  </div>
+  <p class="icon-explainer">Launch signup capture.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-mail"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /&gt;
+  &lt;rect x="2" y="4" width="20" height="16" rx="2" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-share-2"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="18" cy="5" r="3" />
+  <circle cx="6" cy="12" r="3" />
+  <circle cx="18" cy="19" r="3" />
+  <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+  <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+</svg></div>
+    <span class="icon-name">Share</span>
+  </div>
+  <p class="icon-explainer">Social share action on a story card.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-share-2"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;circle cx="18" cy="5" r="3" /&gt;
+  &lt;circle cx="6" cy="12" r="3" /&gt;
+  &lt;circle cx="18" cy="19" r="3" /&gt;
+  &lt;line x1="8.59" x2="15.42" y1="13.51" y2="17.49" /&gt;
+  &lt;line x1="15.41" x2="8.59" y1="6.51" y2="10.49" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+<p class="cat-title">Governance and operations</p>
+<p class="cat-sub">Internal-facing — for an admin dashboard or internal portal, not the public site.</p>
+<div class="icon-grid">
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-file-text"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></div>
+    <span class="icon-name">Governance doc</span>
+  </div>
+  <p class="icon-explainer">A policy, SOP, or handbook document and its status.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-file-text"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /&gt;
+  &lt;path d="M14 2v5a1 1 0 0 0 1 1h5" /&gt;
+  &lt;path d="M10 9H8" /&gt;
+  &lt;path d="M16 13H8" /&gt;
+  &lt;path d="M16 17H8" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-pen-line"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 21h8" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+</svg></div>
+    <span class="icon-name">E-signature</span>
+  </div>
+  <p class="icon-explainer">A document sent for signing, e.g. via DocuSign.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-pen-line"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M13 21h8" /&gt;
+  &lt;path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-kanban"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 3v14" />
+  <path d="M12 3v8" />
+  <path d="M19 3v18" />
+</svg></div>
+    <span class="icon-name">Action board</span>
+  </div>
+  <p class="icon-explainer">The Trello-style board used as the single source of truth for actions.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-kanban"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M5 3v14" /&gt;
+  &lt;path d="M12 3v8" /&gt;
+  &lt;path d="M19 3v18" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle accent"><svg
+  class="lucide lucide-alert-triangle"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" />
+</svg></div>
+    <span class="icon-name">Risk or blocker</span>
+  </div>
+  <p class="icon-explainer">Flags a risk, dependency, or blocker on a project.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-alert-triangle"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /&gt;
+  &lt;path d="M12 9v4" /&gt;
+  &lt;path d="M12 17h.01" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-archive"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="20" height="5" x="2" y="3" rx="1" />
+  <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" />
+  <path d="M10 12h4" />
+</svg></div>
+    <span class="icon-name">Archive</span>
+  </div>
+  <p class="icon-explainer">Marks a document as superseded but kept for reference.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-archive"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;rect width="20" height="5" x="2" y="3" rx="1" /&gt;
+  &lt;path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" /&gt;
+  &lt;path d="M10 12h4" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-clipboard-list"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="M12 11h4" />
+  <path d="M12 16h4" />
+  <path d="M8 11h.01" />
+  <path d="M8 16h.01" />
+</svg></div>
+    <span class="icon-name">Highlight report</span>
+  </div>
+  <p class="icon-explainer">Monthly wins, challenges, and dependencies summary.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-clipboard-list"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+  &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+  &lt;path d="M12 11h4" /&gt;
+  &lt;path d="M12 16h4" /&gt;
+  &lt;path d="M8 11h.01" /&gt;
+  &lt;path d="M8 16h.01" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle filled"><svg
+  class="lucide lucide-flag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" />
+</svg></div>
+    <span class="icon-name">Milestone</span>
+  </div>
+  <p class="icon-explainer">A roadmap milestone, e.g. governance framework established.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-flag"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-badge-check"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+  <path d="m9 12 2 2 4-4" />
+</svg></div>
+    <span class="icon-name">IP and licensing</span>
+  </div>
+  <p class="icon-explainer">Intellectual property and licensing status on archived media.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-badge-check"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /&gt;
+  &lt;path d="m9 12 2 2 4-4" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-target"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <circle cx="12" cy="12" r="6" />
+  <circle cx="12" cy="12" r="2" />
+</svg></div>
+    <span class="icon-name">Afrolabs</span>
+  </div>
+  <p class="icon-explainer">The pay-as-you-go training space for identifying committed dancers.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-target"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;circle cx="12" cy="12" r="10" /&gt;
+  &lt;circle cx="12" cy="12" r="6" /&gt;
+  &lt;circle cx="12" cy="12" r="2" /&gt;
+&lt;/svg&gt;</div>
+</div>
+<div class="icon-card">
+  <div class="icon-card-top">
+    <div class="icon-circle"><svg
+  class="lucide lucide-bar-chart-3"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</svg></div>
+    <span class="icon-name">Impact and BI</span>
+  </div>
+  <p class="icon-explainer">The business-intelligence view behind an impact report.</p>
+  <div class="icon-snippet">&lt;svg
+  class="lucide lucide-bar-chart-3"
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+&gt;
+  &lt;path d="M3 3v16a2 2 0 0 0 2 2h16" /&gt;
+  &lt;path d="M18 17V9" /&gt;
+  &lt;path d="M13 17V5" /&gt;
+  &lt;path d="M8 17v-3" /&gt;
+&lt;/svg&gt;</div>
+</div>
+</div>
+</div>
+<script>
+document.getElementById('toggle').addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  document.getElementById('root').setAttribute('data-theme', btn.dataset.theme);
+  document.querySelectorAll('#toggle button').forEach(b => b.classList.toggle('active', b === btn));
+});
+</script>
+</body>
+</html>

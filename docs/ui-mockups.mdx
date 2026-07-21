@@ -1,0 +1,47 @@
+---
+title: UI Mockups
+description: High-fidelity page mockups built on the design system — homepage, class listing, booking, commerce, checkout, member dashboard, internal ops, and the noir contrast reference — across all four themes.
+---
+
+# UI Mockups
+
+Full-page, high-fidelity mockups assembled from the [Component Library](./component-library) and [Icon Library](./icon-library) tokens — each shown in the specific theme it's designed for, not a generic default. A live, tabbed version of all eleven — one mockup shown at a time via the tab bar — lives at [`/ui-mockups.html`](/ui-mockups.html), embedded below.
+
+| Mockup | Theme | What it covers |
+| --- | --- | --- |
+| Homepage hero | Wine / Gold | Nav, gradient headline, dual CTA |
+| Scrollytelling landing | Scrollytelling | Hero mark, gradient headline, scroll-cued story card |
+| Class listing | Day mode | Filter/sort bar, grid view, class cards with level tags |
+| Class detail + booking | Wine / Gold | Class detail, booking sidebar, date/capacity indicators |
+| Shop + cart drawer | Scrolly Day | Product grid, wishlist state, basket summary |
+| Checkout | Day mode | Step indicator, delivery/payment fields, order summary |
+| Member account dashboard | Wine / Gold | Sidebar nav, upcoming bookings |
+| Internal ops dashboard | Wine / Gold | Stat row, three-column action board, live/archive chips |
+| Scrollytelling commerce | Scrollytelling | Frosted-glass product grid and basket, pill checkout |
+| Scrolly Day hero | Scrolly Day | Same gradient and voice as Scrollytelling, lit on cream |
+| Noir / near-black pixel sample | Wine / Gold | The four near-black tokens compared against pure black, with real contrast ratios — see Design System for how each is used |
+
+## On the noir/near-black tokens
+
+There's no single token named "noir" — it's a descriptive phrase from the working session, not a color. The four real near-black values in the system each do a different job:
+
+- `--bg-base` (`#09080C`) — the page canvas, Wine/Gold and Bootstrap dark theme
+- `--color-bg-deep` (`#0d0c11`) — a third, darker step for recessed elements
+- `--bg-offset` (`#141116`) — one step up from the canvas, for cards and panels, so they read as sitting *on* the surface rather than flattened into it
+- Scrollytelling canvas (`#050507`) — its own deliberately darker value, serving that theme's cinematic register specifically
+
+All four sit within about 2.5 points of pure black's maximum 21:1 contrast against white text, so none of them is a contrast compromise — the softer values buy comfort (avoiding the halation a true `#000` can produce next to white), not compliance. Each also carries a faint warm tint toward violet/plum rather than true neutral grey, the same wine hue bleeding into the canvas.
+
+## Live gallery
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/ui-mockups.html"
+      title="AFJ Cardiff UI mockups gallery"
+      style={{ width: '100%', height: '620px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
+    />
+  )}
+</BrowserOnly>
