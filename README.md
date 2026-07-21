@@ -5,6 +5,14 @@ Docusaurus site documenting AFJ Cardiff's canonical design system, component lib
 **Staging:** `https://<your-username>.github.io/afj-docs/` (GitHub Pages, set up below)
 **Production (planned):** `doc.afjcardiff.com`, once the custom domain is wired up.
 
+## Preview
+
+Screenshots below are generated automatically by `.github/workflows/screenshots.yml` (Playwright, run on GitHub's own CI — this sandbox can't render a browser to do it locally) every time the static HTML files change. They won't appear until that workflow has run at least once after this push.
+
+![Component Library](static/screenshots/component-library.png)
+![Icon Library](static/screenshots/icon-library.png)
+![UI Mockups](static/screenshots/ui-mockups.png)
+
 ## What's in here
 
 | Path | What it is |
