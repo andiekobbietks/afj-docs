@@ -44,6 +44,7 @@ async function main() {
         const clipHeight = Math.min(t.sliceHeight, fullHeight - i * t.sliceHeight);
         await page.screenshot({
           path: `static/screenshots/${t.slug}-${i + 1}.png`,
+          fullPage: true,
           clip: { x: 0, y: i * t.sliceHeight, width: t.width, height: clipHeight },
         });
       }
