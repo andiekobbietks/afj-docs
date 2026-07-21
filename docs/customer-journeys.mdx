@@ -1,0 +1,66 @@
+---
+title: Customer Journeys
+description: The full end-to-end mockup files — six complete interactive flows.
+---
+
+# Customer Journeys
+
+The full end-to-end mockup files — six complete interactive flows.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-journeys"
+      title="Customer Journeys live preview"
+      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## Customer journeys
+
+Not screenshots, these are the real files, live in the preview window below. Add to basket, tap a class to book it, type an email into the subscription gate: every interaction actually runs. The fifth possible journey, the staging password gate, stays out of scope here since it's an internal dev tool a customer never sees, not a shopping flow.
+
+Every mockup above is embedded fully inline ( srcdoc , not a linked file), this one HTML file is entirely self-contained. Copy it on its own, email it, open it from anywhere, and all six journeys still render live with no other files required. That's also why this page is heavier than it looks: it's carrying six working apps inside it, not six links to them.
+
+**Merch shop & image lightbox. Wine/Gold**
+
+```text
+// afj-commerce-mockup.html, the add-to-basket / cart flow
+function addToCart() {
+    cart.push({ name: activeProduct.name, price: activeProduct.price, size: currentSize, qty: currentQty });
+    updateCartUI();
+    showToast('Added to basket');
+    openCart();
+}
+```
+
+**Class booking. Wine/Gold**
+
+```text
+// afj-class-booking-wine.html, expand-to-book, no calendar (see ADR-004)
+function bookClass(id, e) {
+    e.stopPropagation();
+    const c = classes.find(x => x.id === id);
+    if (bookings.find(b => b.id === id)) return;
+    bookings.push(c);
+    btn.textContent = 'Booked ✓';
+    renderBookings();
+    showToast(`Booked, ${c.name}`);
+}
+```
+
+**Course subscription. Wine/Gold**
+
+```text
+// afj-course-subscription-wine.html, email gate, real validation
+function submitEmail() {
+    const input = document.getElementById('emailInput');
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+    if (!isValid) { showToast('Enter a valid email address'); return; }
+    showToast('Early access confirmed');
+    showView('plans');
+}
+```

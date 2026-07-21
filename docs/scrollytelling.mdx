@@ -1,0 +1,77 @@
+---
+title: Scrollytelling Experience
+description: The pixel-sampled source values and every component built from them.
+---
+
+# Scrollytelling Experience
+
+The pixel-sampled source values and every component built from them.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-scrollysample"
+      title="Scrollytelling live preview"
+      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## Pixel-sampled source
+
+Every value below was read directly out of the live scrollytelling site's own source CSS ( gregarious-faun-060e2f.netlify.app ), not estimated off a screenshot, not eyeballed from a rendered page. This is the same discipline that caught the original brand mistake: the wine/gold gradient documented on this whole page only exists because pixel-sampling the master logo file surfaced the real #C99552 → #A43E53 values against a guessed CodeRabbit orange that had been wrongly applied. Applying that same rigour here means the Scrollytelling theme in this library is provably accurate to what's actually deployed, not a close approximation of it, which matters the moment someone builds a new page off this doc and expects the colours to match production exactly.
+
+This is why "Pixel-sampled source" sits first in the Scrollytelling group, ahead of the components it powers: everything below, the hero, the story card, the manifesto, the signup box, is built from these five sampled values and two typefaces. Change the sample and every component downstream should be re-verified against it, the same way a wine-scale correction upstream would ripple through every button and badge in the Wine/Gold theme.
+
+**Sampled palette**
+
+```text
+/* read directly from the site's :root, not guessed */
+--bg-color: #050507;
+--accent-red: #ff3344;
+--accent-orange: #f39c12;
+--text-color: #f5f5f7;
+--muted-color: #8e8e93;
+```
+
+## Scrollytelling hero
+
+Floating mark, gradient headline, outline CTA, reads calm and warm in Day mode instead of cinematic.
+
+**Preview**
+
+```css
+.demo-scrolly-hero h1 { background: linear-gradient(135deg, var(--text) 30%, var(--accent-1) 70%, var(--accent-2) 100%); -webkit-background-clip: text; }
+```
+
+## Scroll story card
+
+The floating narrative card from the scroll-scrubbed dancer stage, with a scroll-progress dot rail.
+
+**Preview**
+
+```css
+.demo-dot.active { background: var(--accent-2); box-shadow: 0 0 6px var(--accent-2); }
+```
+
+## Manifesto quote
+
+Large pull-quote with two emphasised words carrying the emotional thesis.
+
+**Preview**
+
+```html
+<span>entertain</span> /* color: var(--accent-2); font-weight: 800 */
+```
+
+## Launch signup
+
+Single email field, single CTA, no competing choices at the point of highest visitor intent.
+
+**Preview**
+
+```css
+.demo-signup-box { background: var(--bg-panel); border: 1px solid var(--border); }
+```

@@ -1,7 +1,7 @@
 .wrap {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 500;
 }
 
@@ -25,7 +25,7 @@
 .panel {
   position: absolute;
   bottom: 54px;
-  right: 0;
+  left: 0;
   width: 260px;
   background: var(--afj-card-bg, #1E1B22);
   border: 1px solid var(--afj-line, #3A3441);

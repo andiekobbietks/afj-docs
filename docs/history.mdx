@@ -1,0 +1,42 @@
+---
+title: History
+description: Changelog, roadmap, and the downloadable real assets.
+---
+
+# History
+
+Changelog, roadmap, and the downloadable real assets.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-changelog"
+      title="History live preview"
+      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## Changelog
+
+No dates, this tracks the actual sequence of decisions and builds that arrived at the library the way it stands today, reconstructed from the real conversation history, not reconstructed from memory. Versions before v1.0 predate the library existing as a single doc; that's the point where "a pile of widgets" became "one canonical site."
+
+## Roadmap
+
+What's planned but not built yet, written down for the same reason the ADRs are: so the plan lives somewhere other than one person's memory.
+
+## Downloads
+
+Real files, not placeholders, generated from the actual uploaded master logo, real font files, and the real icon set documented in Iconography. Everything lives under a /static folder, deliberately matching Docusaurus's own static-asset convention, so this can be dropped straight into a Docusaurus project root later with nothing to rename or restructure.
+
+**Modern formats: WebP, WebM, and why they're worth having alongside the originals**
+
+```html
+<picture>
+  <source srcset="logo.webp" type="image/webp">
+  <img src="logo.png" alt="AFJ Cardiff">
+</picture>
+/* browser picks WebP if it can, silently falls back to PNG if not */
+```

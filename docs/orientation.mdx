@@ -1,0 +1,39 @@
+---
+title: Orientation
+description: Start here, about this site, glossary, and how this all fits the live production site.
+---
+
+# Orientation
+
+Start here, about this site, glossary, and how this all fits the live production site.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-starthere"
+      title="Orientation live preview"
+      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## Start here
+
+This site serves three different readers with three different reasons for being here. The table below is a real table of contents, not a list of links, each row explains who clicks it and why, so you can jump straight to what's relevant rather than reading top to bottom.
+
+## About this site
+
+AFJ Cardiff is Wales' first dedicated African dance organisation, founded by Plamedi Santima-Akiso. This site is the internal component library and decision record for AFJ Cardiff's digital properties, the merch shop, class booking, course subscriptions, and the pre-launch scrollytelling teaser.
+
+Three groups use this site for different reasons: engineers copy component markup and read the ADR log before making a change; designers and marketing check that a colour, radius, or piece of copy is on-brand before it ships; and anyone new to the project uses Start Here and the Glossary to get oriented without needing to ask. Nothing here is customer-facing, that's why the repo should stay private for now.
+
+## Glossary
+
+Every piece of jargon used anywhere on this site, defined once here. Dotted-underline terms throughout the site link back to this list.
+
+## How this fits the live site
+
+See [How This Fits the Live Site](./live-site-status) for the full write-up: current production status, and the launch checklist this library doesn't cover.
+

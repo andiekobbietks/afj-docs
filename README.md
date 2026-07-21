@@ -7,11 +7,33 @@ Docusaurus site documenting AFJ Cardiff's canonical design system, component lib
 
 ## Preview
 
-Screenshots below are generated automatically by `.github/workflows/screenshots.yml` (Playwright, run on GitHub's own CI — this sandbox can't render a browser to do it locally) every time the static HTML files change. They won't appear until that workflow has run at least once after this push.
+Screenshots are generated automatically by `.github/workflows/screenshots.yml` (Playwright, run on GitHub's own CI). The two long reference docs are sliced into numbered parts rather than one giant image, and each part is its own collapsible section below — expand only the part you want.
 
-![Component Library](static/screenshots/component-library.png)
+<details>
+<summary><strong>Component Library</strong> (click to expand — 4 parts)</summary>
+
+![Component Library, part 1](static/screenshots/component-library-1.png)
+![Component Library, part 2](static/screenshots/component-library-2.png)
+![Component Library, part 3](static/screenshots/component-library-3.png)
+![Component Library, part 4](static/screenshots/component-library-4.png)
+
+</details>
+
+<details>
+<summary><strong>Icon Library</strong> (click to expand)</summary>
+
 ![Icon Library](static/screenshots/icon-library.png)
-![UI Mockups](static/screenshots/ui-mockups.png)
+
+</details>
+
+<details>
+<summary><strong>UI Mockups</strong> (click to expand — sliced into parts)</summary>
+
+![UI Mockups, part 1](static/screenshots/ui-mockups-1.png)
+![UI Mockups, part 2](static/screenshots/ui-mockups-2.png)
+![UI Mockups, part 3](static/screenshots/ui-mockups-3.png)
+
+</details>
 
 ## What's in here
 
@@ -118,6 +140,19 @@ In the repo's **Settings → Pages**, set **Source** to **GitHub Actions** — t
 ### On repo visibility
 
 GitHub Pages on Free/Pro personal accounts publishes the **built site publicly** regardless of whether the source repo is private — private repo hides the code, not the deployed page. Worth deciding deliberately when this repo goes public, not by default.
+
+## ADR: No external cross-references, squashed history
+
+**Context.** An earlier version of this repo referenced a separate site by name and URL in several places (a README description, live `<img>` sources pulling assets from its domain, and direct hyperlinks in two doc pages). That site is not something this repo should ever point at, name, or link to, in any file, in any commit. The repo was also briefly public before this was caught.
+
+**Options considered.**
+1. Patch the current files only, leave history as-is. Cheapest, but every reference stays fully readable in `git log -p` on the old commits, indefinitely.
+2. Patch current files, squash history into a single commit. Removes the reference from every commit that's part of `main`'s history.
+3. Option 2, plus audit and close out any other branch or PR that forked from the old history before squashing (a bot-opened image-optimization PR had done exactly this).
+
+**Decision.** Option 3. Every file was scrubbed of the reference; live cross-domain image sources were pointed at a local placeholder pending real self-hosted copies; the bot PR and its branch were closed and deleted; the repo was made private during the fix; and the entire history was squashed to one orphan commit before making it public again.
+
+**Reasoning.** A squash-only fix is incomplete if any other branch or PR still holds the old commits — GitHub keeps those reachable independently of what `main` points at. Closing every other ref first, then squashing, then force-pushing, is the only sequence that actually removes it everywhere this repo controls. What happened during the window it was already public is outside this repo's control to undo; the fix is closing the window as fast as possible and making sure it can't reopen through old history or stray branches.
 
 ## Licensing
 

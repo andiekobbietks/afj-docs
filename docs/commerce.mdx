@@ -1,0 +1,41 @@
+---
+title: Commerce
+description: Cart drawer and class booking card.
+---
+
+# Commerce
+
+Cart drawer and class booking card.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-drawer"
+      title="Commerce live preview"
+      style={{ width: '100%', height: '600px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## Cart drawer
+
+Static snapshot, see the full interactive slide-in version in the commerce mockup files.
+
+**Preview**
+
+```css
+.cart-drawer { transform: translateX(100%); }
+.cart-drawer.active { transform: translateX(0); }
+```
+
+## Class booking card
+
+Level tag always reads on --accent-1 .
+
+**Preview**
+
+```css
+.demo-level-tag { background: var(--accent-1); color: var(--bg-base); }
+```

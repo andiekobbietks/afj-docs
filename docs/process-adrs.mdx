@@ -1,0 +1,244 @@
+---
+title: Process & ADRs
+description: Every Architecture Decision Record behind this system, in context → options → decision → reasoning format.
+---
+
+# Process & ADRs
+
+Every Architecture Decision Record behind this system, in context → options → decision → reasoning format.
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/component-library.html#sec-adr"
+      title="Process and ADRs live preview"
+      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+    />
+  )}
+</BrowserOnly>
+
+## What is an ADR
+
+An Architecture Decision Record is a short note that captures one decision, not a formal sign-off, not a long report, just a record anyone can read later and understand why something was built the way it was. The format below follows the UK Government Digital Service's own ADR framework, introduced by their Enterprise Architecture team to help teams across government make and record decisions consistently.
+
+**Why it matters to non-engineers, too**
+
+*For engineering*
+
+Stops the same debate happening twice. When someone asks "why don't we just use Tailwind," the ADR already has the answer, with the alternatives that were weighed and rejected on record.
+
+*For marketing / brand*
+
+Explains why a visual choice (like the wine-to-gold gradient) is locked in as policy, not a developer's personal preference, so brand reviews reference the decision instead of relitigating the colour.
+
+*For anyone joining later, including Plamedi*
+
+Ramp-up without asking around. Reading four short paragraphs (what was the situation, what were the choices, what got picked, why) explains a decision faster than a meeting would, and the reasoning is written down instead of living in one person's head or a deleted Slack thread.
+
+## ADR: Bootstrap as the theming framework
+
+The actual ADR behind why every component on this page is built on Bootstrap 5.3 rather than a bespoke CSS system or Tailwind, following the context → options → decision → reasoning structure.
+
+**Adopt Bootstrap 5.3 as the base component framework, themed via CSS custom properties** — _Accepted_
+
+*Context*
+
+AFJ Cardiff's original site used hand-written CSS classes ( .afj-btn-hero , .afj-feature-card , etc.) styled with hardcoded hex values. Every new page meant re-solving layout, responsive behaviour, and accessibility from scratch. The commerce build (product grid, cart, checkout) needed a faster, more consistent base without losing the brand's specific look.
+
+*Options considered*
+
+1. Keep hand-rolled CSS , full control, but every grid, gap, and responsive rule gets rebuilt per page. 2. Adopt Tailwind , fast utility authoring, but a compiler step and a different mental model from the team's existing CSS. 3. Adopt Bootstrap 5.3, themed via CSS custom properties , grid, gap utilities, and form controls for free; brand identity supplied entirely through a token layer.
+
+*Decision*
+
+Option 3. Bootstrap's grid and utility classes ( row-cols-3 , g-1 , form-control ) replace the hand-written layout CSS. All AFJ-specific values live in one [data-bs-theme="afj-dark"] block of custom properties, never hardcoded inside a component.
+
+*Reasoning*
+
+Bootstrap's own dark-mode and utility system does the layout work no-code, so the team writes brand decisions once instead of re-deriving grid math per page. Routing every colour through CSS custom properties (not Bootstrap's Sass compile step) means a future move to Tailwind is a token remap, not a rewrite, the design decisions were never coupled to the framework's internals to begin with.
+
+## ADR: Four-theme token system
+
+Written retroactively, since it was never formally recorded when the third and fourth themes were added, exactly the kind of gap running an ADR pass is meant to catch.
+
+**Run Wine/Gold, Scrollytelling, Day, and Scrolly Day as one token set behind a singledata-themeswitch, not four separate builds** — _Accepted_
+
+*Context*
+
+Once a second visual system (Scrollytelling) and a light variant (Day mode, later Scrolly Day) existed, the component library needed a way to preview all four without either duplicating every component's markup four times or shipping four separate HTML files.
+
+*Options considered*
+
+1. Four separate static files , simplest to build, but doubles as four things to keep in sync every time a component changes. 2. Four CSS files swapped via <link> , one HTML file, but a page reload on every theme switch. 3. One file, four [data-theme="x"] variable blocks, one JS attribute switch , instant switching, single source of truth per component.
+
+*Decision*
+
+Option 3. Every component reads var(--bg-base) , var(--accent-1) , etc.; only the four theme blocks at the top of the stylesheet contain literal hex values.
+
+*Reasoning*
+
+A reviewer can confirm a component works in all four themes by clicking a button, not by opening four files and comparing them by eye. It also made the Scrolly Day theme trivial to add later, a fifth block, zero component changes, which is the real test of whether the token architecture was right.
+
+## ADR: Remove the calendar from class booking
+
+A genuine product decision from the build call, not just a UI pattern choice, worth recording as an ADR since "why isn't there a calendar" is exactly the kind of question a new team member would otherwise have to ask around about.
+
+**Replace the calendar/date-picker booking flow with direct expand-to-book on a fixed weekly class list** — _Accepted_
+
+*Context*
+
+The original booking flow used a calendar and date picker. AFJ Cardiff's actual classes run on a fixed weekly schedule (same day, same time, every week) rather than one-off bookable slots, so a calendar was solving a scheduling problem the business doesn't have.
+
+*Options considered*
+
+1. Keep the calendar , familiar pattern, but adds a date-selection step for a schedule that never actually changes week to week. 2. Remove the calendar; list classes with an inline "Book class" button , matches how the schedule actually works.
+
+*Decision*
+
+Option 2. Each class card expands on tap to reveal its description and a direct "Book class" button, no date picker, no calendar widget.
+
+*Reasoning*
+
+Removing a whole interaction step reduces booking friction directly, and it removes a UI component (calendar) that has to be built, tested, and kept accessible for a scheduling flexibility the business doesn't use. Simpler UI, fewer edge cases, faster booking, recorded here so nobody re-adds a calendar later without knowing this was already tried and deliberately removed.
+
+## ADR: Adopt Wikipedia's AI-writing checklist as the style standard
+
+Written after the fact, inferred from why the em-dash audit happened at all: a subjective request to "make it sound less AI" has no way to be checked or closed out. This ADR names the actual reasoning.
+
+**Use Wikipedia's published "Signs of AI writing" guide as an external, checkable editing standard for this site's prose** — _Accepted_
+
+*Context*
+
+Documentation written collaboratively with an AI assistant risks reading as generic or formulaic, but "sound more human" is not a testable instruction, and every reviewer would apply it differently.
+
+*Options considered*
+
+1. Manual proofreading on a case-by-case basis , inconsistent, depends entirely on whoever's reviewing that day. 2. Ban specific words outright (delve, tapestry, and so on), treats the symptom, not the pattern. 3. Adopt WikiProject AI Cleanup's published checklist , a maintained, external, specific list of patterns, checkable the same way every time.
+
+*Decision*
+
+Option 3. The actual audit run against this page checked for negative parallelism, stock AI vocabulary, and em-dash density, the three most concrete, checkable items on the list.
+
+*Reasoning*
+
+An external, published standard means the bar doesn't move depending on who's reading. It also means the audit is repeatable: the same checklist can be re-run after future edits without reinventing the criteria each time.
+
+## ADR: Docusaurus-pattern mobile navigation
+
+Inferred from the actual request ("fully mobile responsive like Docusaurus") rather than a generic responsive redesign brief.
+
+**Collapse the sidebar into a slide-in drawer behind a hamburger button below 900px, matching Docusaurus's own mobile pattern exactly** — _Accepted_
+
+*Context*
+
+This page's 220px fixed sidebar plus a wide reading pane works on desktop but has no way to fit a narrow phone viewport without a different navigation model, and this doc is explicitly planned to become a real Docusaurus site later.
+
+*Options considered*
+
+1. Stack the sidebar above the content on mobile, pushes all reading content below a long list of links. 2. Invent a custom mobile nav pattern , more design work, and one more pattern for a future Docusaurus migration to un-learn. 3. Copy Docusaurus's own drawer pattern (hamburger, slide-in, dimmed overlay, auto-close on tap) now.
+
+*Decision*
+
+Option 3. The mobile nav behaviour is deliberately identical to what Docusaurus ships by default.
+
+*Reasoning*
+
+Since the eventual destination is a real Docusaurus site, building the same interaction pattern now means the mobile experience doesn't change shape twice, once for this HTML version and again on migration. It also means anyone testing this page on mobile today is already testing the future site's actual navigation model.
+
+## ADR: Search filters content, category chips filter the sidebar
+
+Inferred directly from a correction mid-build: search and category filtering were originally built to both touch the sidebar, then explicitly separated once that overlap was flagged as the wrong design.
+
+**Keep search and category filtering as two separate mechanisms with one job each, combined by AND logic, not one mechanism doing both** — _Accepted_
+
+*Context*
+
+The first version of search filtered both the sidebar nav and the reading pane at once. Once category filter chips were added for the sidebar specifically, the two systems began fighting: searching while a category was active silently pulled sections back in from other categories.
+
+*Options considered*
+
+1. Let search override category when active, simplest to build, but silently breaks whatever category the person had deliberately chosen. 2. Let category override search , same problem in the other direction. 3. Track both states independently and require a section to satisfy both to stay visible .
+
+*Decision*
+
+Option 3. A single currentCategory variable plus the live search term are combined in one applyFilters() pass, every section must pass both checks.
+
+*Reasoning*
+
+Two features that each silently undo the other is worse than either feature alone, since the person can no longer predict what a click or keystroke will do. Combining them by AND logic means both choices stay visibly true to what the person actually selected, tested directly against a written Gherkin scenario rather than assumed to work.
+
+## ADR: Real generated assets under a Docusaurus-matching /static folder
+
+Inferred from the explicit requirement that downloadable assets "doesn't break" the eventual Docusaurus port.
+
+**Generate the favicon set, fonts, and icons as real files under/static, matching Docusaurus's own static-asset convention exactly, rather than describing them or inventing a different folder layout** — _Accepted_
+
+*Context*
+
+A favicon and font set were needed now, for this HTML doc, but also needed to survive an eventual move to Docusaurus without requiring rework.
+
+*Options considered*
+
+1. Describe the required assets in prose without generating them, cheapest now, but produces nothing usable. 2. Generate them in a convenient ad hoc folder , usable now, but requires renaming and restructuring on migration. 3. Generate them directly under /static/img and /static/fonts , Docusaurus's own default convention.
+
+*Decision*
+
+Option 3. Favicon set generated from the real uploaded master logo at every standard size, fonts converted to self-hostable woff2, icons exported as individual SVGs, all under /static .
+
+*Reasoning*
+
+Matching the destination folder convention before the migration happens turns the whole asset-porting step into copying one folder, not a rework. The <link rel="icon"> tags already written into this page's own <head> reference static/img/favicon.ico for the same reason, so that markup carries over unchanged too.
+
+## ADR: Modern format strategy, WebP and WebM alongside originals
+
+Written after generating the actual WebP files and measuring the real size difference, not adopted on the assumption that WebP is simply "better."
+
+**Ship WebP alongside PNG for images, keep WebM-first with MP4 fallback for video, and hold off on AVIF for now** — _Accepted_
+
+*Context*
+
+Every image asset generated so far was PNG. PNG is safe and universal but not the smallest option for the gradient-heavy logo artwork specifically, and the existing brand-audit video already demonstrates a working multi-format delivery pattern worth extending to images.
+
+*Options considered*
+
+1. PNG only , safest compatibility, but leaves real, measurable file-size savings on the table for no reason. 2. Replace PNG with WebP entirely , smaller files, but breaks on the handful of older email clients and tools that still can't open WebP. 3. Ship WebP alongside the existing PNGs , using <picture> so the browser picks WebP when it can and falls back to PNG when it can't.
+
+*Decision*
+
+Option 3, for images. For video, keep the existing WebM-first, OGV, MP4-fallback pattern the Brand Audit's own logo assembly video already uses, don't reinvent it. AVIF was considered and set aside for now: real compression gains over WebP, but support isn't universal enough yet to justify a third format on top of two.
+
+*Reasoning*
+
+Measured, not assumed: converting the actual logo files produced real savings of 76–86% (81,849 bytes down to 11,596 for the 512px logo, for example). That's large enough to matter for page load, but only worth taking if nothing breaks for whoever can't render WebP, hence shipping both rather than replacing one with the other.
+
+## ADR: Continue the full site build, no rushed placeholder
+
+Carried over from a governance review of the live production build, not made in this library, included here because it directly determines when this design system actually gets implemented. Scoped deliberately to the sequencing decision itself, the underlying contract details live in AFJ Cardiff's legal documentation, not in a design-system reference read by designers and videographers too.
+
+**Continue the proper website build rather than ship a fast placeholder, bridge the gap with an interim Linktree and Canva presence instead** — _Accepted_
+
+*Context*
+
+External feedback from a business mentor flagged the absence of a live AFJ Cardiff site as a credibility gap when approaching partners. A quick landing page was proposed as a fast fix while the real build continues.
+
+*Options considered*
+
+1. Ship a fast landing page now , closes the credibility gap immediately, kept on the table as a bridge rather than rejected outright. 2. Do nothing and wait in silence , rejected, an already-long wait shouldn't be compounded with total silence toward partners. 3. Continue the proper build, use a tidied Linktree and a Canva one-pager as the interim public face .
+
+*Decision*
+
+Option 3. The real build continues; the interim presence is explicitly a bridge, not a substitute, and is not this component library either, this library is the reference the real build should implement against once it resumes.
+
+*Reasoning*
+
+Preserves brand quality control at the cost of a continued short-term credibility gap, an accepted trade-off, not an oversight. The practical consequence for this library specifically: the components, tokens, and mocked-up commerce and booking flows documented here exist precisely so the real build doesn't have to make those decisions from scratch once it resumes, the wait is for build capacity and contract mechanics external to this document, not for design decisions that are already settled.
+
+## Why Bootstrap
+
+ADR-002 above records the formal decision. This is the plainer version, for anyone who wants the reasoning without reading it in ADR format.
+
+## Future: Tailwind
+
+Not a decision that's been made, a note for whoever revisits this in a year, so the option is on the table with context instead of being proposed cold.
