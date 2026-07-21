@@ -7,15 +7,41 @@ Docusaurus site documenting AFJ Cardiff's canonical design system, component lib
 
 ## Preview
 
-Screenshots are generated automatically by `.github/workflows/screenshots.yml` (Playwright, run on GitHub's own CI). The two long reference docs are sliced into numbered parts rather than one giant image, and each part is its own collapsible section below — expand only the part you want.
+Screenshots are generated automatically by `.github/workflows/screenshots.yml` (Playwright, run on GitHub's own CI) via `scripts/screenshot.js`. The Component Library reference is long (43 sections), so it's sliced into 30 numbered parts rather than one massive image — collapsed by default, so it costs nothing to scroll past. Icon Library and UI Mockups are short enough to stay as one shot each.
 
 <details>
-<summary><strong>Component Library</strong> (click to expand — 4 parts)</summary>
+<summary><strong>Component Library</strong> (click to expand — 30 parts)</summary>
 
 ![Component Library, part 1](static/screenshots/component-library-1.png)
 ![Component Library, part 2](static/screenshots/component-library-2.png)
 ![Component Library, part 3](static/screenshots/component-library-3.png)
 ![Component Library, part 4](static/screenshots/component-library-4.png)
+![Component Library, part 5](static/screenshots/component-library-5.png)
+![Component Library, part 6](static/screenshots/component-library-6.png)
+![Component Library, part 7](static/screenshots/component-library-7.png)
+![Component Library, part 8](static/screenshots/component-library-8.png)
+![Component Library, part 9](static/screenshots/component-library-9.png)
+![Component Library, part 10](static/screenshots/component-library-10.png)
+![Component Library, part 11](static/screenshots/component-library-11.png)
+![Component Library, part 12](static/screenshots/component-library-12.png)
+![Component Library, part 13](static/screenshots/component-library-13.png)
+![Component Library, part 14](static/screenshots/component-library-14.png)
+![Component Library, part 15](static/screenshots/component-library-15.png)
+![Component Library, part 16](static/screenshots/component-library-16.png)
+![Component Library, part 17](static/screenshots/component-library-17.png)
+![Component Library, part 18](static/screenshots/component-library-18.png)
+![Component Library, part 19](static/screenshots/component-library-19.png)
+![Component Library, part 20](static/screenshots/component-library-20.png)
+![Component Library, part 21](static/screenshots/component-library-21.png)
+![Component Library, part 22](static/screenshots/component-library-22.png)
+![Component Library, part 23](static/screenshots/component-library-23.png)
+![Component Library, part 24](static/screenshots/component-library-24.png)
+![Component Library, part 25](static/screenshots/component-library-25.png)
+![Component Library, part 26](static/screenshots/component-library-26.png)
+![Component Library, part 27](static/screenshots/component-library-27.png)
+![Component Library, part 28](static/screenshots/component-library-28.png)
+![Component Library, part 29](static/screenshots/component-library-29.png)
+![Component Library, part 30](static/screenshots/component-library-30.png)
 
 </details>
 
@@ -27,11 +53,9 @@ Screenshots are generated automatically by `.github/workflows/screenshots.yml` (
 </details>
 
 <details>
-<summary><strong>UI Mockups</strong> (click to expand — sliced into parts)</summary>
+<summary><strong>UI Mockups</strong> (click to expand)</summary>
 
-![UI Mockups, part 1](static/screenshots/ui-mockups-1.png)
-![UI Mockups, part 2](static/screenshots/ui-mockups-2.png)
-![UI Mockups, part 3](static/screenshots/ui-mockups-3.png)
+![UI Mockups](static/screenshots/ui-mockups-1.png)
 
 </details>
 
