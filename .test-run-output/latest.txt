@@ -1,141 +1,79 @@
 
 Failed scenarios:
-  1) Text size cannot go below the minimum # features/accessibility_menu.feature:38
-       And I set text size to "50" # features/step_definitions/accessibility_menu_steps.js:38
-           page.fill: Error: Malformed value
-           Call log:
-             - waiting for locator('#a11yTextSize')
-               - locator resolved to <input min="75" step="5" max="150" value="100" type="range" id="a11yTextSize" oninput="updateA11y('textSize', this.value)"/>
-               - fill("50")
-             - attempting fill action
-               - waiting for element to be visible, enabled and editable
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/accessibility_menu_steps.js:39:19)
-  2) Text size cannot go above the maximum # features/accessibility_menu.feature:43
-       And I set text size to "200" # features/step_definitions/accessibility_menu_steps.js:38
-           page.fill: Error: Malformed value
-           Call log:
-             - waiting for locator('#a11yTextSize')
-               - locator resolved to <input min="75" step="5" max="150" value="100" type="range" id="a11yTextSize" oninput="updateA11y('textSize', this.value)"/>
-               - fill("200")
-             - attempting fill action
-               - waiting for element to be visible, enabled and editable
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/accessibility_menu_steps.js:39:19)
-  3) Every doc-block has both a preview pane and a code pane # features/component_widgets_render.feature:45
-       Then every ".doc-block" element should contain a ".preview-pane" # features/step_definitions/component_render_steps.js:45
+  1) Every doc-block has a code pane, and most have a live preview too # features/component_widgets_render.feature:45
+       Then every ".doc-block" element should contain a ".code-pane" # features/step_definitions/component_render_steps.js:45
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
-               -67
+               -23
                +71
            
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/component_render_steps.js:49:10)
-  4) Icon color follows the active theme # features/icon_library.feature:31
-       When I click the "wine" theme button # features/step_definitions/common_steps.js:37
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  5) Icon color follows the active theme # features/icon_library.feature:32
-       When I click the "scrolly" theme button # features/step_definitions/common_steps.js:37
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  6) Icon color follows the active theme # features/icon_library.feature:33
-       When I click the "day" theme button # features/step_definitions/common_steps.js:37
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  7) Icon color follows the active theme # features/icon_library.feature:34
-       When I click the "scrollyday" theme button # features/step_definitions/common_steps.js:37
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  8) No icon card is empty or broken # features/icon_library.feature:41
-       Then every icon card's SVG should contain at least one visible path or line element # features/step_definitions/icon_library_steps.js:63
+  2) Icon color follows the active theme # features/icon_library.feature:32
+       Then icon color should match the "scrolly" theme's text color # features/step_definitions/icon_library_steps.js:35
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
-               -47
-               +49
+               -rgb(245, 245, 247)
+               +rgb(255, 255, 255)
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:67:10)
-  9) Booking a class updates its state without a page reload # features/interactive_class_booking_demo.feature:35
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
+  3) Icon color follows the active theme # features/icon_library.feature:33
+       Then icon color should match the "day" theme's text color # features/step_definitions/icon_library_steps.js:35
+           AssertionError [ERR_ASSERTION]
+               + expected - actual
+           
+               -rgb(26, 23, 18)
+               +rgb(255, 255, 255)
+           
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
+  4) Icon color follows the active theme # features/icon_library.feature:34
+       Then icon color should match the "scrollyday" theme's text color # features/step_definitions/icon_library_steps.js:35
+           AssertionError [ERR_ASSERTION]
+               + expected - actual
+           
+               -rgb(26, 23, 18)
+               +rgb(255, 255, 255)
+           
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
+  5) Booking a class updates its state without a page reload # features/interactive_class_booking_demo.feature:35
        When I click "Book" on that class # features/step_definitions/class_booking_steps.js:60
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  10) The back control returns to the grid # features/interactive_shop_demo.feature:19
-       When I click "Back to shop" # features/step_definitions/shop_demo_steps.js:38
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  11) Selecting a size marks it as selected and no other size # features/interactive_shop_demo.feature:24
-       Then size "L" should be marked selected # features/step_definitions/shop_demo_steps.js:46
-           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-           
-           'false' !== 'true'
-           
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/shop_demo_steps.js:48:10)
-  12) Cart badge count matches the number of items added # features/interactive_shop_demo.feature:47
+  6) Cart badge count matches the number of items added # features/interactive_shop_demo.feature:47
        When I add 3 different items to the cart # features/step_definitions/shop_demo_steps.js:109
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  13) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
+  7) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
        Given I add 1 item to the cart # features/step_definitions/shop_demo_steps.js:124
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  14) Opening the mobile nav updates aria-expanded on its toggle # features/keyboard_accessibility.feature:13
-       When I click the mobile menu toggle # features/step_definitions/keyboard_a11y_steps.js:14
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  15) Escape closes the mobile nav drawer # features/keyboard_accessibility.feature:20
-       Given I click the mobile menu toggle # features/step_definitions/keyboard_a11y_steps.js:14
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  16) Tabbing through the page reaches the search box, theme buttons, and nav links in order # features/keyboard_accessibility.feature:35
-       Then continuing to press "Tab" should reach a theme toggle button next # features/step_definitions/keyboard_a11y_steps.js:75
-           AssertionError [ERR_ASSERTION]: expected focus to land on a theme toggle button, got #
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/keyboard_a11y_steps.js:78:10)
-  17) Clicking a nav link scrolls to its section # features/navigation_and_search.feature:9
-       Then the "sec-buttons" section should be in view # features/step_definitions/common_steps.js:87
+  8) Clicking a nav link scrolls to its section # features/navigation_and_search.feature:9
+       Then the "sec-buttons" section should be in view # features/step_definitions/common_steps.js:92
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:94:10)
-  18) Search alone filters sections by matching text # features/navigation_and_search.feature:26
-       And the "Buttons" nav link should not be visible # features/step_definitions/navigation_search_steps.js:46
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:99:10)
+  9) Search alone filters sections by matching text # features/navigation_and_search.feature:26
+       And the "Buttons" nav link should not be visible # features/step_definitions/navigation_search_steps.js:51
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:49:10)
-  19) Search with no matches shows no nav links, not an error # features/navigation_and_search.feature:42
-       Then no nav links should be visible # features/step_definitions/navigation_search_steps.js:52
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:54:10)
+  10) Search with no matches shows no nav links, not an error # features/navigation_and_search.feature:42
+       Then no nav links should be visible # features/step_definitions/navigation_search_steps.js:57
            AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
            
            43 !== 0
@@ -145,55 +83,22 @@ Failed scenarios:
                -43
                +0
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:54:10)
-  20) Switching theme keeps the page scroll position # features/theme_system.feature:23
-       Then the "sec-winescale" section should still be in view # features/step_definitions/common_steps.js:97
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:59:10)
+  11) Switching theme keeps the page scroll position # features/theme_system.feature:23
+       Then the "sec-winescale" section should still be in view # features/step_definitions/common_steps.js:102
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:104:10)
-  21) The mockups page loads with all mockup sections present # features/ui_mockups_and_docs_site.feature:6
-       Then I should see the following mockups: # features/step_definitions/docs_site_steps.js:4
-         | Homepage hero                  |
-         | Scrollytelling landing         |
-         | Class listing                  |
-         | Class detail + booking         |
-         | Shop + cart drawer             |
-         | Checkout                       |
-         | Member account dashboard       |
-         | Internal ops dashboard         |
-         | Scrollytelling commerce        |
-         | Scrolly Day hero               |
-         | Noir / near-black pixel sample |
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:8:12)
-  22) Each mockup is visibly non-empty # features/ui_mockups_and_docs_site.feature:21
-       Then every mockup section should have non-zero rendered height # features/step_definitions/docs_site_steps.js:12
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:18:12)
-  23) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:54
-       Then the iframe should contain visible content, not a blank page # features/step_definitions/docs_site_steps.js:34
-           TypeError: this.frame.evaluate is not a function
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:35:37)
-  24) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:59
-       Then the copied content should match the code block's text # features/step_definitions/docs_site_steps.js:52
-           page.evaluate: NotAllowedError: Failed to execute 'readText' on 'Clipboard': Read permission denied.
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:53:41)
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:109:10)
+  12) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:51
+       Then the iframe should contain visible content, not a blank page # features/step_definitions/docs_site_steps.js:45
+           AssertionError [ERR_ASSERTION]: expected the iframe body to contain visible text
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:47:10)
 
 2 hooks (2 passed)
-114 scenarios (90 passed, 24 failed)
-697 steps (653 passed, 20 skipped, 24 failed)
-2m 19.20s (2m 18.780s executing your code)
+114 scenarios (102 passed, 12 failed)
+697 steps (676 passed, 9 skipped, 12 failed)
+1m 38.614s (1m 38.382s executing your code)
