@@ -1,0 +1,15 @@
+Capturing component-library.html...
+Screenshot capture failed: page.screenshot: Clipped area is either empty or outside the resulting image
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at main (/home/runner/work/afj-docs/afj-docs/scripts/screenshot.js:45:20) {
+  log: [
+    '  - taking page screenshot',
+    '  - waiting for fonts to load...',
+    '  - fonts loaded'
+  ],
+  name: 'Error'
+}
