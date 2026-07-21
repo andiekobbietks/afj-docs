@@ -32,7 +32,16 @@ jobs:
         run: |
           rm -rf static/screenshots
           mkdir -p static/screenshots
-          node scripts/screenshot.js
+          node scripts/screenshot.js > /tmp/screenshot-log.txt 2>&1
+          echo "SCRIPT_EXIT=$?" >> /tmp/screenshot-log.txt
+          cat /tmp/screenshot-log.txt
+        continue-on-error: true
+
+      - name: Save debug log regardless of outcome
+        if: always()
+        run: |
+          mkdir -p static/screenshots
+          cp /tmp/screenshot-log.txt static/screenshots/_debug-log.txt || echo "no log file produced" > static/screenshots/_debug-log.txt
 
       - name: Commit screenshots if changed
         run: |
