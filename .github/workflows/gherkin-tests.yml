@@ -52,6 +52,17 @@ jobs:
           mkdir -p test-results
           cat test-results/console-output.txt 2>/dev/null || echo "no console output captured" > test-results/console-output.txt
 
+      - name: Commit results for inspection
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p .test-run-output
+          cp test-results/console-output.txt .test-run-output/latest.txt
+          git add .test-run-output
+          git diff --cached --quiet && echo "no change" || git commit -m "Gherkin suite run output [skip ci]"
+          git push || echo "push failed, non-fatal for this diagnostic step"
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
