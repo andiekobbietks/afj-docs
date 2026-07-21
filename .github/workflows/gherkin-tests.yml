@@ -1,0 +1,65 @@
+name: Gherkin test suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Build the Docusaurus site
+        run: npm run build
+
+      - name: Serve the build the way GitHub Pages actually serves it
+        # docusaurus.config.js sets baseUrl '/afj-docs/', but the physical
+        # build/ folder has no such prefix on disk — GitHub Pages supplies
+        # that prefix via routing, not folder structure. Recreate that
+        # here with a plain static server (not `docusaurus serve`, which
+        # has its own URL-rewriting that does NOT match how GitHub Pages
+        # serves raw static .html files — confirmed the hard way).
+        run: |
+          mkdir -p serve-root/afj-docs
+          cp -r build/. serve-root/afj-docs/
+          npx http-server serve-root -p 4173 --silent &
+          npx wait-on http://127.0.0.1:4173/afj-docs/ --timeout 30000
+
+      - name: Run the Gherkin suite
+        id: cucumber
+        continue-on-error: true
+        run: |
+          mkdir -p test-results
+          npx cucumber-js > test-results/console-output.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Always save results, even on failure
+        if: always()
+        run: |
+          mkdir -p test-results
+          cat test-results/console-output.txt 2>/dev/null || echo "no console output captured" > test-results/console-output.txt
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gherkin-test-results
+          path: test-results/
+          retention-days: 14
+
+      - name: Fail the job if the suite failed
+        if: steps.cucumber.outputs.exit_code != '0'
+        run: exit 1
