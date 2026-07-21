@@ -3,6 +3,9 @@ const assert = require('assert');
 
 When('I click the {string} nav link', async function (label) {
   await this.page.click(`.doc-nav-link:text-is("${label}")`);
+  // The site scrolls via scrollIntoView({behavior:'smooth'}) — give the
+  // animation time to actually finish before anything checks position.
+  await this.page.waitForTimeout(700);
 });
 
 Then('every sidebar nav link should have a real {string} attribute', async function (attr) {
@@ -33,10 +36,12 @@ Then('every nav group should be visible', async function () {
 
 When('I search for {string}', async function (term) {
   await this.page.fill('#siteSearch', term);
+  await this.page.waitForTimeout(200); // site debounces filterNav by 120ms
 });
 
 When('I clear the search field', async function () {
   await this.page.fill('#siteSearch', '');
+  await this.page.waitForTimeout(200);
 });
 
 Then('the {string} nav link should be visible', async function (label) {

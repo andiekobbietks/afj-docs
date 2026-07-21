@@ -35,7 +35,12 @@ Then('the page should contain a visible {string} heading', async function (tag) 
 // --- Theme switching (shared across many features) ---
 
 When('I click the {string} theme button', async function (theme) {
-  await this.page.click(`#btn-${theme}`);
+  const byId = this.page.locator(`#btn-${theme}`);
+  if (await byId.count() > 0) {
+    await byId.click();
+  } else {
+    await this.page.locator(`button[data-theme="${theme}"]`).click();
+  }
 });
 
 Then('the active theme should be {string}', async function (theme) {

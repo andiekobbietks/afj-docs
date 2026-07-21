@@ -36,8 +36,11 @@ Then('the text size should read {string}', async function (value) {
 });
 
 When('I set text size to {string}', async function (value) {
-  await this.page.fill('#a11yTextSize', value);
-  await this.page.dispatchEvent('#a11yTextSize', 'input');
+  await this.page.evaluate((v) => {
+    const el = document.getElementById('a11yTextSize');
+    el.value = v;
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+  }, value);
 });
 
 Then('the root font size should be {string}', async function (expected) {

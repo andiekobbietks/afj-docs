@@ -9,13 +9,23 @@ Then('I should see the following mockups:', async function (dataTable) {
   }
 });
 
-Then('every mockup section should have non-zero rendered height', async function () {
-  const heights = await this.page.locator('.mockup-section').evaluateAll((els) =>
-    els.map((el) => el.getBoundingClientRect().height)
-  );
-  assert.ok(heights.length > 0, 'expected at least one .mockup-section');
-  for (const h of heights) {
-    assert.ok(h > 0, 'expected every mockup section to have non-zero height');
+Then('clicking through every mockup tab should reveal non-empty content each time', async function () {
+  const targets = await this.page.locator('.tab-btn').evaluateAll((btns) => btns.map((b) => b.dataset.target));
+  for (const target of targets) {
+    await this.page.click(`.tab-btn[data-target="${target}"]`);
+    const info = await this.page.evaluate((id) => {
+      const section = document.getElementById(id);
+      if (!section) return null;
+      return {
+        isActive: section.classList.contains('active'),
+        height: section.getBoundingClientRect().height,
+        hasText: section.innerText.trim().length > 0,
+      };
+    }, target);
+    assert.ok(info, `expected a #${target} section to exist`);
+    assert.ok(info.isActive, `expected #${target} to gain the active class after its tab was clicked`);
+    assert.ok(info.height > 0, `expected #${target} to have non-zero height once active`);
+    assert.ok(info.hasText, `expected #${target} to contain visible text once active`);
   }
 });
 
@@ -27,7 +37,8 @@ Then('the sidebar should contain a link to each of the {int} documentation pages
 When('I switch to the embedded preview iframe', async function () {
   const iframeLocator = this.page.locator('iframe').first();
   await iframeLocator.waitFor({ state: 'attached', timeout: 10000 });
-  this.frame = await iframeLocator.contentFrame();
+  const handle = await iframeLocator.elementHandle();
+  this.frame = await handle.contentFrame();
   assert.ok(this.frame, 'expected the embedded iframe to expose a content frame');
 });
 

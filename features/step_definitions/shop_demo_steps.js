@@ -36,7 +36,7 @@ Then('a {string} control should be visible', async function (label) {
 });
 
 When('I click {string}', async function (label) {
-  await this.frame.locator(`text="${label}"`).first().click();
+  await this.frame.locator(`.view.active :text-is("${label}"), .view.active .back-btn:has-text("${label}")`).first().click();
 });
 
 When('I select size {string}', async function (size) {

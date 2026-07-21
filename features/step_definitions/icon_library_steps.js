@@ -63,6 +63,6 @@ Then('the two colors should differ', function () {
 Then('every icon card\'s SVG should contain at least one visible path or line element', async function () {
   const total = await this.page.locator('.icon-card svg').count();
   assert.ok(total > 0, 'expected at least one icon svg');
-  const withShape = await this.page.locator('.icon-card svg:has(path), .icon-card svg:has(line)').count();
-  assert.strictEqual(withShape, total, 'expected every icon svg to contain a path or line element');
+  const withShape = await this.page.locator('.icon-card svg:has(path), .icon-card svg:has(line), .icon-card svg:has(circle), .icon-card svg:has(rect), .icon-card svg:has(polyline), .icon-card svg:has(polygon)').count();
+  assert.strictEqual(withShape, total, 'expected every icon svg to contain a visible shape element');
 });

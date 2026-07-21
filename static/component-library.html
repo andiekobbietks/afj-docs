@@ -1647,8 +1647,9 @@
 
     // ---- Size selection ----
     function selectSize(el) {
-        document.querySelectorAll('.size-opt').forEach(s => s.classList.remove('selected'));
+        document.querySelectorAll('.size-opt').forEach(s => { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
         el.classList.add('selected');
+        el.setAttribute('aria-pressed', 'true');
         currentSize = el.dataset.size;
     }
 
@@ -2212,8 +2213,9 @@
     }
 
     function selectSize(el) {
-        document.querySelectorAll('.size-opt').forEach(s => s.classList.remove('selected'));
+        document.querySelectorAll('.size-opt').forEach(s => { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
         el.classList.add('selected');
+        el.setAttribute('aria-pressed', 'true');
         currentSize = el.dataset.size;
     }
 

@@ -49,6 +49,14 @@ Then('every {string} element should contain a {string}', async function (parentS
   assert.strictEqual(withChild, total, `expected every ${parentSelector} to contain ${childSelector}`);
 });
 
+Then('at least {int}% of {string} elements should contain a {string}', async function (pct, parentSelector, childSelector) {
+  const total = await this.page.locator(parentSelector).count();
+  assert.ok(total > 0, `expected at least one ${parentSelector}`);
+  const withChild = await this.page.locator(`${parentSelector}:has(${childSelector})`).count();
+  const actualPct = (withChild / total) * 100;
+  assert.ok(actualPct >= pct, `expected at least ${pct}% of ${parentSelector} to contain ${childSelector}, got ${actualPct.toFixed(1)}%`);
+});
+
 Then('the code pane text in that section should not be empty', async function () {
   assert.ok(this.lastScrolledSectionId, 'no section has been scrolled to yet in this scenario');
   const text = await this.page.evaluate((id) => {

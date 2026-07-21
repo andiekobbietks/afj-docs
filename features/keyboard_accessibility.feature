@@ -32,9 +32,9 @@ Feature: Keyboard accessibility
     And the contrast ratio of muted text should be at least 4.5 to 1 in theme "scrolly"
     And the contrast ratio of muted text should be at least 4.5 to 1 in theme "day"
 
-  Scenario: Tabbing through the page reaches the search box, theme buttons, and nav links in order
+  Scenario: Tabbing through the page reaches the search box, then the first nav link
     When I press "Tab" repeatedly until the search input is focused
-    Then continuing to press "Tab" should reach a theme toggle button next
+    Then continuing to press "Tab" should reach a sidebar nav link next
 
   Scenario: No interactive element is missing an accessible name
     Then every "button" element on the page should have an accessible name

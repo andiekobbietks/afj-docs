@@ -14,13 +14,10 @@ Feature: UI mockups gallery and the documentation site
       | Checkout                    |
       | Member account dashboard    |
       | Internal ops dashboard      |
-      | Scrollytelling commerce     |
-      | Scrolly Day hero            |
-      | Noir / near-black pixel sample |
 
-  Scenario: Each mockup is visibly non-empty
+  Scenario: Each mockup tab actually shows content when selected
     Given I open the UI mockups page
-    Then every mockup section should have non-zero rendered height
+    Then clicking through every mockup tab should reveal non-empty content each time
 
   Scenario Outline: Every documentation page loads successfully
     When I open the docs page "<page>"

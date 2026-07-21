@@ -23,7 +23,10 @@ class AfjWorld {
   }
 
   async openPage() {
-    this.context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    this.context = await browser.newContext({
+      viewport: { width: 1280, height: 900 },
+      permissions: ['clipboard-read', 'clipboard-write'],
+    });
     this.page = await this.context.newPage();
     return this.page;
   }

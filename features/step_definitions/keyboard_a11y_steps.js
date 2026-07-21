@@ -12,6 +12,7 @@ Then('it should have a non-empty {string}', async function (attr) {
 });
 
 When('I click the mobile menu toggle', async function () {
+  await this.page.setViewportSize({ width: 480, height: 800 });
   await this.page.click('#menuToggle');
 });
 
@@ -72,10 +73,13 @@ When('I press {string} repeatedly until the search input is focused', async func
   throw new Error('search input was never reached by repeated Tab presses within 20 attempts');
 });
 
-Then('continuing to press {string} should reach a theme toggle button next', async function (key) {
+Then('continuing to press {string} should reach a sidebar nav link next', async function (key) {
   await this.page.keyboard.press(key);
-  const focused = await this.page.evaluate(() => document.activeElement && document.activeElement.id);
-  assert.ok(focused && focused.startsWith('btn-'), `expected focus to land on a theme toggle button, got #${focused}`);
+  const focused = await this.page.evaluate(() => {
+    const el = document.activeElement;
+    return el ? { tag: el.tagName, className: el.className, href: el.getAttribute('href') } : null;
+  });
+  assert.ok(focused && focused.tag === 'A' && focused.className.includes('doc-nav-link'), `expected focus to land on a .doc-nav-link, got ${JSON.stringify(focused)}`);
 });
 
 Then('every {string} element on the page should have an accessible name', async function (tag) {

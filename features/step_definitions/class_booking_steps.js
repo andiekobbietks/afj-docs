@@ -58,7 +58,7 @@ When('I focus the first class row', async function () {
 });
 
 When('I click {string} on that class', async function (label) {
-  await this.frame.locator(`button:has-text("${label}")`).first().click();
+  await this.frame.locator(`.class-card.open button:has-text("${label}")`).first().click();
 });
 
 Then('that class should be marked as booked', async function () {
