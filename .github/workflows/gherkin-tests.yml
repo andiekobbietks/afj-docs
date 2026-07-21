@@ -60,8 +60,13 @@ jobs:
           mkdir -p .test-run-output
           cp test-results/console-output.txt .test-run-output/latest.txt
           git add .test-run-output
-          git diff --cached --quiet && echo "no change" || git commit -m "Gherkin suite run output [skip ci]"
-          git push || echo "push failed, non-fatal for this diagnostic step"
+          if git diff --cached --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "Gherkin suite run output [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
 
       - name: Upload test results
         if: always()
