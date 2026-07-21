@@ -11,11 +11,13 @@ Docusaurus site documenting AFJ Cardiff's canonical design system, component lib
 | --- | --- |
 | `docs/component-library.mdx` | Buttons, cards, cart drawer, class booking card, gallery, carousel, tonal scale |
 | `docs/icon-library.mdx` | Full Lucide icon set by site section (core UI, commerce, classes, checkout, account, scrollytelling, internal ops) |
+| `docs/ui-mockups.mdx` | 11 high-fidelity page mockups — homepage, class listing/detail/booking, shop+cart, checkout, member dashboard, internal ops, Scrollytelling commerce, Scrolly Day hero, and the noir/near-black contrast reference |
 | `docs/for-graphic-designers.mdx` | Print/CMYK constraints, minimum size, clear space, redraw source material |
 | `docs/for-videographers.mdx` | Existing logo assembly video, motion/looping rules, framing per theme |
 | `docs/live-site-status.mdx` | Honest status of the real production build vs. this reference library, plus the launch checklist (cookie notice, privacy notice, Equality Act 2010) this library doesn't cover |
 | `static/component-library.html` | Standalone live preview, themeable across Wine/Gold, Scrollytelling, Day, Scrolly Day — canonical source, keyboard-accessibility fixes applied (see below) |
 | `static/icon-library.html` | Standalone live preview of every icon, generated from the real `lucide-static` npm package, same theme toggle |
+| `static/ui-mockups.html` | All 11 page mockups in one scrollable reference, each in its designed theme |
 | `static/img/favicon*.png`, `static/img/favicon.ico`, `static/img/apple-touch-icon.png` | Real favicon set, extracted from the canonical doc's embedded assets — not placeholders |
 | `src/components/AccessibilityMenu/` | Text size, high contrast, hyperlegible font (Atkinson Hyperlegible Next), reduce motion, underline links, large cursor — mirrors the sister site's documented settings, same `localStorage` key |
 | `src/theme/Root.js` | Mounts the accessibility menu site-wide |
@@ -68,6 +70,7 @@ module.exports = {
   docsSidebar: [
     { type: 'doc', id: 'component-library', label: 'Component Library' },
     { type: 'doc', id: 'icon-library', label: 'Icon Library' },
+    { type: 'doc', id: 'ui-mockups', label: 'UI Mockups' },
     { type: 'doc', id: 'for-graphic-designers', label: 'For Graphic Designers' },
     { type: 'doc', id: 'for-videographers', label: 'For Videographers' },
     { type: 'doc', id: 'live-site-status', label: 'How This Fits the Live Site' },
