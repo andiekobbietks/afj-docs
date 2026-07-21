@@ -1,0 +1,1 @@
+Cucumber can only run on Node.js versions 22 || 24 || >=26. This Node.js version is v20.20.2
