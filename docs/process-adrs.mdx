@@ -71,7 +71,7 @@ Once a second visual system (Scrollytelling) and a light variant (Day mode, late
 
 *Options considered*
 
-1. Four separate static files , simplest to build, but doubles as four things to keep in sync every time a component changes. 2. Four CSS files swapped via <link> , one HTML file, but a page reload on every theme switch. 3. One file, four [data-theme="x"] variable blocks, one JS attribute switch , instant switching, single source of truth per component.
+1. Four separate static files , simplest to build, but doubles as four things to keep in sync every time a component changes. 2. Four CSS files swapped via `<link>` , one HTML file, but a page reload on every theme switch. 3. One file, four [data-theme="x"] variable blocks, one JS attribute switch , instant switching, single source of truth per component.
 
 *Decision*
 
@@ -189,7 +189,7 @@ Option 3. Favicon set generated from the real uploaded master logo at every stan
 
 *Reasoning*
 
-Matching the destination folder convention before the migration happens turns the whole asset-porting step into copying one folder, not a rework. The <link rel="icon"> tags already written into this page's own <head> reference static/img/favicon.ico for the same reason, so that markup carries over unchanged too.
+Matching the destination folder convention before the migration happens turns the whole asset-porting step into copying one folder, not a rework. The `<link rel="icon">` tags already written into this page's own `<head>` reference static/img/favicon.ico for the same reason, so that markup carries over unchanged too.
 
 ## ADR: Modern format strategy, WebP and WebM alongside originals
 
@@ -203,7 +203,7 @@ Every image asset generated so far was PNG. PNG is safe and universal but not th
 
 *Options considered*
 
-1. PNG only , safest compatibility, but leaves real, measurable file-size savings on the table for no reason. 2. Replace PNG with WebP entirely , smaller files, but breaks on the handful of older email clients and tools that still can't open WebP. 3. Ship WebP alongside the existing PNGs , using <picture> so the browser picks WebP when it can and falls back to PNG when it can't.
+1. PNG only , safest compatibility, but leaves real, measurable file-size savings on the table for no reason. 2. Replace PNG with WebP entirely , smaller files, but breaks on the handful of older email clients and tools that still can't open WebP. 3. Ship WebP alongside the existing PNGs , using `<picture>` so the browser picks WebP when it can and falls back to PNG when it can't.
 
 *Decision*
 
