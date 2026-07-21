@@ -1,0 +1,26 @@
+---
+title: For Graphic Designers
+description: What this library has for graphic designers specifically — print/CMYK constraints, minimum size, clear space, and redraw source material.
+---
+
+# For Graphic Designers
+
+What this site actually has for you, beyond the [Component Library](./component-library): real source material and the constraints already discovered while working with it.
+
+## RGB vs CMYK
+
+The documented gradient (gold to copper to wine) was sampled directly from screen pixels, so it's an RGB value set. The Visual Brand Audit is explicit about the consequence for print: those values will need careful ink calibration to CMYK before going on paper or fabric, or the warm gold and copper tones risk reading duller and colder than they do on screen. Treat any merch, print, or signage proof as the real test, not the on-screen hex codes.
+
+## Minimum size and clear space
+
+Generating the actual favicon set surfaced a real legibility limit: at 32px and below, the Cardiff script and the interlocking continent outline stop reading as anything other than noise — the AFJ letters are the only element that survives at that size. The 180px apple-touch-icon still holds up.
+
+**Practical rule:** anywhere the mark renders under roughly 40px (favicons, app icons, small social avatars), use an AFJ-letters-only reduction, not the full lockup shrunk down.
+
+**Clear space:** no minimum clear-space ratio has been formally specified yet. Treat the continent outline's own bounding box as the working clear-space boundary until a proper spec exists — don't crop tighter than the map's own edges.
+
+## Redraw source material
+
+The Real Logo Imagery section has the actual close-up crops (letter A, letter F, the Cardiff script isolated from the J, the weave crossing) pulled from the master file, computed by pixel-density profiling rather than eyeballed — useful as literal tracing reference for any vector redraw.
+
+The Typeface Families section has the computed font matches with real IoU shape-overlap scores, and the honest caveat that none of them is a guaranteed pixel match — hand-tracing the letterforms is the safer route for anything that needs to be pixel-exact.

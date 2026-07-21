@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --afj-font-body: 'Montserrat', sans-serif;
+  --afj-font-display: 'Space Grotesk', sans-serif;
+  --afj-font-hyperlegible: 'Atkinson Hyperlegible Next', sans-serif;
+
+  /* Fixed, not toggle-gated: the faint/muted text tokens from the
+     source file measured below WCAG AA (3.1:1 / 2.41:1 / 3.2:1 across
+     the three themes that use them). These are the corrected values —
+     same visual intent, now >= 4.5:1 against each theme's background. */
+  --afj-text-faint-wine: rgba(255, 255, 255, 0.48);    /* was .35 → 3.1:1, now 5.0:1 */
+  --afj-text-faint-scrolly: rgba(245, 245, 247, 0.50); /* was .30 → 2.41:1, now 4.96:1 */
+  --afj-text-faint-day: #726c5e;                       /* was #8a8578 → 3.2:1, now 4.54:1 */
+}
+
+html[data-a11y-font='hyperlegible'] body,
+html[data-a11y-font='hyperlegible'] * {
+  font-family: var(--afj-font-hyperlegible) !important;
+}
+
+html[data-a11y-contrast='high'] {
+  --afj-text-faint-wine: #ffffff;
+  --afj-text-faint-scrolly: #ffffff;
+  --afj-text-faint-day: #000000;
+}
+
+html[data-a11y-contrast='high'] * {
+  border-color: currentColor !important;
+}
+
+html[data-a11y-motion='reduce'] *,
+html[data-a11y-motion='reduce'] *::before,
+html[data-a11y-motion='reduce'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html[data-a11y-underline='true'] a {
+  text-decoration: underline !important;
+}
+
+html[data-a11y-cursor='large'],
+html[data-a11y-cursor='large'] * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%23000" stroke="%23fff" stroke-width="1" d="M4 2l14 8-6 2 4 8-3 1-4-8-5 5z"/></svg>') 4 4, auto !important;
+}

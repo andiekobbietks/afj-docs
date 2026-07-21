@@ -1,0 +1,124 @@
+---
+title: Icon Library
+description: Canonical AFJ Cardiff icon set — Lucide (ISC licensed), organised by site section, with theme variants.
+---
+
+# Icon Library
+
+Icons are [Lucide](https://lucide.dev) (ISC licensed — free for commercial use, no attribution required) — the working icon-set decision made directly in the canonical component library doc, chosen for its consistent 24×24 grid and active maintenance rather than mixing icon sets ad hoc. Every icon is inline SVG with `stroke="currentColor"`, so it tints automatically per theme with no separate icon-colour token needed.
+
+A live, themeable preview (Wine/Gold, Scrollytelling, Day mode, Scrolly Day) lives at [`/icon-library.html`](/icon-library.html), embedded inline at the bottom of this page.
+
+**Source:** `icon-library.html`, generated from the real `lucide-static` npm package (not hand-drawn approximations).
+
+---
+
+## Core UI
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Menu | `menu.svg` | Opens the site navigation drawer |
+| Close | `x.svg` | Dismisses a modal, drawer, or overlay |
+| Search | `search.svg` | Opens the site search field |
+| Expand | `chevron-down.svg` | Marks an expandable section (accent tint) |
+| External link | `external-link.svg` | Flags a link that leaves the site |
+
+## Commerce
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Basket | `shopping-bag.svg` | Opens the cart drawer; gradient-filled once basket has items |
+| Wishlist | `heart.svg` | Saves an item; tinted `--a2` once saved |
+| Product tag | `tag.svg` | Price, size, or limited-edition label |
+| Checkout | `credit-card.svg` | Enters the payment step |
+
+## Checkout flow
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Delivery | `truck.svg` | Shipping or collection info |
+| Order status | `package.svg` | Post-purchase tracking |
+| Receipt | `receipt.svg` | Order confirmation, receipt download |
+| Discount code | `percent.svg` | Voucher field at checkout |
+| Order confirmed | `check.svg` | Success state, gradient-filled |
+
+## Classes and booking
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Schedule | `calendar.svg` | Class timetable and booking calendar |
+| Class time | `clock.svg` | Start time and duration |
+| Studio location | `map-pin.svg` | Venue or address |
+| Class size | `users.svg` | Capacity or spaces remaining |
+| Level tag | `star.svg` | Beginner / intermediate / advanced badge |
+| My bookings | `ticket.svg` | A member's booked classes |
+
+## Account and dashboard
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Profile | `user.svg` | Member account page |
+| Settings | `settings.svg` | Account preferences |
+| Notifications | `bell.svg` | Booking reminders (accent when unread) |
+| Log out | `log-out.svg` | Ends the member session |
+
+## Filter, sort, and discovery
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Filter | `filter.svg` | Narrows a listing |
+| Sort | `arrow-up-narrow-wide.svg` | Reorders a listing |
+| Grid view | `layout-grid.svg` | Grid layout toggle |
+| List view | `list.svg` | List layout toggle |
+
+## Social proof
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Rating | `star.svg` | Star rating on a review |
+| Testimonial | `quote.svg` | Pull-quote styling |
+| Endorsement | `thumbs-up.svg` | Partner/sponsor marker |
+| Reviews | `message-circle.svg` | Links to reviews carousel |
+
+## Scrollytelling and story
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Begin scroll | `play.svg` | Starts the scroll-driven story sequence |
+| Scroll cue | `arrow-down.svg` | Prompts the visitor to keep scrolling |
+| Gallery | `image.svg` | Photo/video grid within the story |
+| Newsletter | `mail.svg` | Launch signup capture |
+| Share | `share-2.svg` | Social share action |
+
+## Governance and operations
+
+Internal-facing — for an admin dashboard or internal portal, not the public site.
+
+| Icon | Lucide file | Explainer |
+| --- | --- | --- |
+| Governance doc | `file-text.svg` | Policy, SOP, or handbook document status |
+| E-signature | `pen-line.svg` | Document sent for signing (DocuSign) |
+| Action board | `kanban.svg` | Trello-style single source of truth for actions |
+| Risk or blocker | `alert-triangle.svg` | Flags a risk or dependency (accent tint) |
+| Archive | `archive.svg` | Marks a document as superseded but retained |
+| Highlight report | `clipboard-list.svg` | Monthly wins/challenges/dependencies summary |
+| Milestone | `flag.svg` | A roadmap milestone (gradient-filled) |
+| IP and licensing | `badge-check.svg` | IP/licensing status on archived media |
+| Afrolabs | `target.svg` | Pay-as-you-go training space |
+| Impact and BI | `bar-chart-3.svg` | Business-intelligence view behind an impact report |
+
+---
+
+## Live preview
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => (
+    <iframe
+      src="/icon-library.html"
+      title="AFJ Cardiff icon library live preview"
+      style={{ width: '100%', height: '1400px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
+    />
+  )}
+</BrowserOnly>

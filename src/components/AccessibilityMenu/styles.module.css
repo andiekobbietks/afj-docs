@@ -1,0 +1,64 @@
+.wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 500;
+}
+
+.trigger {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--afj-line, #3A3441);
+  background: var(--afj-wine, #A43E53);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.trigger:focus-visible {
+  outline: 3px solid var(--afj-wine, #A43E53);
+  outline-offset: 2px;
+}
+
+.panel {
+  position: absolute;
+  bottom: 54px;
+  right: 0;
+  width: 260px;
+  background: var(--afj-card-bg, #1E1B22);
+  border: 1px solid var(--afj-line, #3A3441);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.row input[type='range'] {
+  width: 110px;
+}
+
+.reset {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--afj-line, #3A3441);
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.reset:focus-visible,
+.row input:focus-visible {
+  outline: 3px solid var(--afj-wine, #A43E53);
+  outline-offset: 2px;
+}
