@@ -1,52 +1,31 @@
 
 Failed scenarios:
-  1) Selecting the annual plan marks it selected and not monthly # features/interactive_course_subscription_demo.feature:35
-       Then the "annual" plan should be marked selected # features/step_definitions/course_subscription_steps.js:64
-           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-           
-           'false' !== 'true'
-           
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:66:10)
-  2) Confirming a subscription reveals the course library # features/interactive_course_subscription_demo.feature:42
-       Then the library view should be active # features/step_definitions/course_subscription_steps.js:78
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:83:10)
-  3) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
-       When I remove that item # features/step_definitions/shop_demo_steps.js:143
+  1) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
+       When I remove that item # features/step_definitions/shop_demo_steps.js:144
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  4) Search is case-insensitive # features/navigation_and_search.feature:52
-       Then the "sec-buttons" content section should be visible # features/step_definitions/navigation_search_steps.js:47
+  2) Search is case-insensitive # features/navigation_and_search.feature:52
+       Then the "sec-buttons" content section should be visible # features/step_definitions/navigation_search_steps.js:51
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -true
                +false
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:52:10)
-  5) Switching theme keeps the page scroll position # features/theme_system.feature:23
-       Then the page scroll position should not have changed # features/step_definitions/navigation_search_steps.js:90
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:56:10)
+  3) Switching theme keeps the page scroll position # features/theme_system.feature:23
+       Then the page scroll position should not have changed # features/step_definitions/navigation_search_steps.js:94
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:92:10)
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:102:10)
 
 2 hooks (2 passed)
-152 scenarios (147 passed, 5 failed)
-942 steps (933 passed, 4 skipped, 5 failed)
-2m 18.966s (2m 18.578s executing your code)
+152 scenarios (149 passed, 3 failed)
+942 steps (937 passed, 2 skipped, 3 failed)
+2m 24.947s (2m 24.572s executing your code)
