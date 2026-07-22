@@ -2805,6 +2805,8 @@
         selectedPlan = plan;
         document.getElementById('plan-monthly').classList.toggle('selected', plan === 'monthly');
         document.getElementById('plan-annual').classList.toggle('selected', plan === 'annual');
+        document.getElementById('plan-monthly').setAttribute('aria-pressed', String(plan === 'monthly'));
+        document.getElementById('plan-annual').setAttribute('aria-pressed', String(plan === 'annual'));
     }
 
     function confirmSubscription() {
@@ -3002,6 +3004,8 @@
         selectedPlan = plan;
         document.getElementById('plan-monthly').classList.toggle('selected', plan === 'monthly');
         document.getElementById('plan-annual').classList.toggle('selected', plan === 'annual');
+        document.getElementById('plan-monthly').setAttribute('aria-pressed', String(plan === 'monthly'));
+        document.getElementById('plan-annual').setAttribute('aria-pressed', String(plan === 'annual'));
     }
 
     function confirmSubscription() {

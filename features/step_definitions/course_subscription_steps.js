@@ -73,6 +73,7 @@ Then('the {string} plan should not be marked selected', async function (plan) {
 
 When('I confirm the subscription', async function () {
   await this.frame.locator('button:has-text("Start subscription")').click();
+  await this.page.waitForTimeout(700); // confirmSubscription() deliberately delays showView('library') by 500ms
 });
 
 Then('the library view should be active', async function () {
