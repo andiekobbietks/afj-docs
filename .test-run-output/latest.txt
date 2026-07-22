@@ -15,7 +15,19 @@ Failed scenarios:
                +true
            
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:101:10)
-  3) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:51
+  3) The sidebar lists every documentation page # features/ui_mockups_and_docs_site.feature:47
+       Then the sidebar should contain a link to each of the 17 documentation pages # features/step_definitions/docs_site_steps.js:32
+           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+           
+           18 !== 17
+           
+               + expected - actual
+           
+               -18
+               +17
+           
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:34:10)
+  4) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:51
        When I switch to the embedded preview iframe # features/step_definitions/docs_site_steps.js:37
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
@@ -23,6 +35,6 @@ Failed scenarios:
                at process.processTimers (node:internal/timers:521:7)
 
 2 hooks (2 passed)
-152 scenarios (149 passed, 3 failed)
-942 steps (936 passed, 3 skipped, 3 failed)
-2m 17.976s (2m 17.595s executing your code)
+152 scenarios (148 passed, 4 failed)
+942 steps (935 passed, 3 skipped, 4 failed)
+2m 16.287s (2m 15.910s executing your code)
