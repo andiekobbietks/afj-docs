@@ -7,31 +7,14 @@ description: Buttons and the product card — the base primitives everything els
 
 Buttons and the product card — the base primitives everything else assembles from.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-buttons');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="Core UI live preview"
-          style={{ width: '100%', height: '600px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
+import DemoButtons from '@site/src/components/DemoButtons';
+import DemoProductCard from '@site/src/components/DemoProductCard';
 
 ## 1. Button component
 
-Radius switches from 8-10px in Wine/Gold and Day mode to a full pill in Scrollytelling via --btn-radius .
+Radius switches from 8-10px in Wine/Gold and Day mode to a full pill in Scrollytelling via `--btn-radius`.
 
-**Preview**
+<DemoButtons />
 
 ```css
 .demo-btn.primary { background: var(--gradient); border-radius: var(--btn-radius); }
@@ -39,9 +22,9 @@ Radius switches from 8-10px in Wine/Gold and Day mode to a full pill in Scrollyt
 
 ## 2. Card component, shared-border frame
 
-Badge colour pulls --accent-2 in all three themes.
+Badge colour pulls `--accent-2` in all three themes.
 
-**Preview**
+<DemoProductCard />
 
 ```html
 <div class="demo-card">...</div>

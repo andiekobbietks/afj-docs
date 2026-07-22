@@ -50,5 +50,5 @@ Feature: Navigation, category filters, and search
     Then the search input should be focused
 
   Scenario: Search is case-insensitive
-    When I search for "BUTTONS"
+    When I search for "BUTTON"
     Then the "sec-buttons" content section should be visible

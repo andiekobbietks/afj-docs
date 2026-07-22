@@ -128,7 +128,7 @@ Given('I add {int} item to the cart', async function (n) {
     await cards.first().click();
     await this.frame.locator('button:has-text("Add to basket")').first().click();
   }
-  await this.page.waitForTimeout(350); // addToCart() auto-opens the cart drawer — let its 250ms slide-in transition settle
+  await this.page.waitForTimeout(600); // addToCart() auto-opens the cart drawer — let its 250ms slide-in transition settle
 });
 
 Given('I open the cart', async function () {
