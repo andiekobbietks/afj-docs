@@ -8,16 +8,24 @@ description: Where Lottie fits in the system.
 Where Lottie fits in the system.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-lottie"
-      title="Motion live preview"
-      style={{ width: '100%', height: '500px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-lottie');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Motion live preview"
+          style={{ width: '100%', height: '500px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## Where Lottie fits
 

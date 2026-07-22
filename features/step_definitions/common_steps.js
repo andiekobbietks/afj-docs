@@ -41,6 +41,7 @@ When('I click the {string} theme button', async function (theme) {
   } else {
     await this.page.locator(`button[data-theme="${theme}"]`).click();
   }
+  await this.page.waitForTimeout(300); // theme colors transition over 250ms
 });
 
 Then('the active theme should be {string}', async function (theme) {

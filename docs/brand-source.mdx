@@ -8,16 +8,24 @@ description: Real logo imagery, typeface families, and audience-specific guidanc
 Real logo imagery, typeface families, and audience-specific guidance for designers and videographers.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-brandimagery"
-      title="Brand Source live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-brandimagery');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Brand Source live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## Real logo imagery
 

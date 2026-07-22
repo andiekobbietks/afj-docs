@@ -8,16 +8,24 @@ description: The full end-to-end mockup files — six complete interactive flows
 The full end-to-end mockup files — six complete interactive flows.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-journeys"
-      title="Customer Journeys live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-journeys');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Customer Journeys live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## Customer journeys
 

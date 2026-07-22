@@ -44,19 +44,28 @@ When('I clear the search field', async function () {
   await this.page.waitForTimeout(200);
 });
 
-Then('the {string} nav link should be visible', async function (label) {
-  await this.page.locator(`.doc-nav-link:text-is("${label}")`).first().waitFor({ state: 'visible', timeout: 3000 });
+Then('the {string} content section should be visible', async function (sectionId) {
+  const hidden = await this.page.evaluate((id) => {
+    const el = document.getElementById(id);
+    return el ? el.classList.contains('content-hidden') : null;
+  }, sectionId);
+  assert.strictEqual(hidden, false, `expected #${sectionId} to not have content-hidden`);
 });
 
-Then('the {string} nav link should not be visible', async function (label) {
-  const link = this.page.locator(`.doc-nav-link:text-is("${label}")`).first();
-  const visible = await link.isVisible().catch(() => false);
-  assert.ok(!visible, `expected "${label}" nav link to not be visible`);
+Then('the {string} content section should not be visible', async function (sectionId) {
+  const hidden = await this.page.evaluate((id) => {
+    const el = document.getElementById(id);
+    return el ? el.classList.contains('content-hidden') : null;
+  }, sectionId);
+  assert.strictEqual(hidden, true, `expected #${sectionId} to have content-hidden`);
 });
 
-Then('no nav links should be visible', async function () {
-  const visibleCount = await this.page.locator('.doc-nav-link:visible').count();
-  assert.strictEqual(visibleCount, 0);
+Then('the search-empty pane should be visible', async function () {
+  const active = await this.page.evaluate(() => {
+    const el = document.getElementById('searchEmptyPane');
+    return el ? el.classList.contains('active') : false;
+  });
+  assert.ok(active, 'expected #searchEmptyPane to have the active class');
 });
 
 Then('the search input should be focused', async function () {

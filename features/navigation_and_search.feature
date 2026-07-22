@@ -23,25 +23,25 @@ Feature: Navigation, category filters, and search
     When I click the "All" category chip
     Then every nav group should be visible
 
-  Scenario: Search alone filters sections by matching text
+  Scenario: Search alone filters the main content sections by matching text
     When I search for "tonal scale"
-    Then the "Wine tonal scale" nav link should be visible
-    And the "Buttons" nav link should not be visible
+    Then the "sec-winescale" content section should be visible
+    And the "sec-buttons" content section should not be visible
 
   Scenario: Search and category combine with AND logic, not override
     Given I click the "Commerce" category chip
     When I search for "gallery"
-    Then the "Gallery grid" nav link should not be visible
+    Then the "sec-gallery" content section should not be visible
 
   Scenario: Clearing the search term while a category is active restores that category's items
     Given I click the "Commerce" category chip
     When I search for "nonexistent-term-xyz"
     And I clear the search field
-    Then the "Cart drawer" nav link should be visible
+    Then the "sec-drawer" content section should be visible
 
-  Scenario: Search with no matches shows no nav links, not an error
+  Scenario: Search with no matches shows the empty-state pane, not an error
     When I search for "zzz-no-such-thing-zzz"
-    Then no nav links should be visible
+    Then the search-empty pane should be visible
     And the page should not show a JavaScript error
 
   Scenario: Keyboard shortcut Ctrl+F focuses the search box

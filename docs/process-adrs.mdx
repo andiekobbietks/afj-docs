@@ -8,16 +8,24 @@ description: Every Architecture Decision Record behind this system, in context �
 Every Architecture Decision Record behind this system, in context → options → decision → reasoning format.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-adr"
-      title="Process and ADRs live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-adr');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Process and ADRs live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## What is an ADR
 

@@ -32,7 +32,7 @@ Then('the product detail view should be visible', async function () {
 });
 
 Then('a {string} control should be visible', async function (label) {
-  await this.frame.locator(`.back-btn:has-text("${label}")`).first().waitFor({ state: 'visible', timeout: 3000 });
+  await this.frame.locator(`.view.active .back-btn:has-text("${label}")`).first().waitFor({ state: 'visible', timeout: 3000 });
 });
 
 When('I click {string}', async function (label) {
@@ -112,7 +112,7 @@ When('I add {int} different items to the cart', async function (n) {
   for (let i = 0; i < Math.min(n, total); i++) {
     await cards.nth(i).click();
     await this.frame.locator('button:has-text("Add to basket")').first().click();
-    await this.frame.locator('.back-btn').first().click();
+    await this.frame.locator('.view.active .back-btn').first().click();
   }
 });
 
@@ -126,7 +126,7 @@ Given('I add {int} item to the cart', async function (n) {
   for (let i = 0; i < n; i++) {
     await cards.first().click();
     await this.frame.locator('button:has-text("Add to basket")').first().click();
-    await this.frame.locator('.back-btn').first().click();
+    await this.frame.locator('.view.active .back-btn').first().click();
   }
 });
 

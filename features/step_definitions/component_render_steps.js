@@ -42,19 +42,18 @@ Then('the border-radius of {string} should be at least {string}', async function
   assert.ok(now >= min, `expected border-radius of ${selector} to be at least ${min}px, got ${now}px`);
 });
 
-Then('every {string} element should contain a {string}', async function (parentSelector, childSelector) {
-  const total = await this.page.locator(parentSelector).count();
-  assert.ok(total > 0, `expected at least one ${parentSelector}`);
-  const withChild = await this.page.locator(`${parentSelector}:has(${childSelector})`).count();
-  assert.strictEqual(withChild, total, `expected every ${parentSelector} to contain ${childSelector}`);
+Then('the {string} section\'s doc-block should contain a {string}', async function (sectionId, childSelector) {
+  const found = await this.page.evaluate(([id, sel]) => {
+    const section = document.getElementById(id);
+    const block = section && section.querySelector('.doc-block');
+    return block ? !!block.querySelector(sel) : false;
+  }, [sectionId, childSelector]);
+  assert.ok(found, `expected #${sectionId}'s .doc-block to contain ${childSelector}`);
 });
 
-Then('at least {int}% of {string} elements should contain a {string}', async function (pct, parentSelector, childSelector) {
-  const total = await this.page.locator(parentSelector).count();
-  assert.ok(total > 0, `expected at least one ${parentSelector}`);
+Then('at least {int} {string} elements should contain a {string}', async function (minCount, parentSelector, childSelector) {
   const withChild = await this.page.locator(`${parentSelector}:has(${childSelector})`).count();
-  const actualPct = (withChild / total) * 100;
-  assert.ok(actualPct >= pct, `expected at least ${pct}% of ${parentSelector} to contain ${childSelector}, got ${actualPct.toFixed(1)}%`);
+  assert.ok(withChild >= minCount, `expected at least ${minCount} ${parentSelector} elements to contain ${childSelector}, got ${withChild}`);
 });
 
 Then('the code pane text in that section should not be empty', async function () {

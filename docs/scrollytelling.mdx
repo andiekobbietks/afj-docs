@@ -8,16 +8,24 @@ description: The pixel-sampled source values and every component built from them
 The pixel-sampled source values and every component built from them.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-scrollysample"
-      title="Scrollytelling live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-scrollysample');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Scrollytelling live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## Pixel-sampled source
 

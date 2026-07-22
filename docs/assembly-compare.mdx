@@ -8,16 +8,24 @@ description: How the primitives assemble into real commerce flows, and how Wine/
 How the primitives assemble into real commerce flows, and how Wine/Gold and Scrollytelling divide responsibilities.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-assembly"
-      title="Assembly and Compare live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-assembly');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="Assembly and Compare live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## Parts → commerce assembly
 

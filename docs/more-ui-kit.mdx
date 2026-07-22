@@ -8,16 +8,24 @@ description: Gallery grid, carousel, interactive input, and the wine tonal scale
 Gallery grid, carousel, interactive input, and the wine tonal scale explainer.
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/component-library.html#sec-gallery"
-      title="More UI Kit live preview"
-      style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/component-library.html#sec-gallery');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="More UI Kit live preview"
+          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
 
 ## 3. Gallery grid
 

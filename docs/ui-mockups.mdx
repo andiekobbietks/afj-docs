@@ -35,13 +35,21 @@ All four sit within about 2.5 points of pure black's maximum 21:1 contrast again
 ## Live gallery
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<BrowserOnly>
-  {() => (
-    <iframe
-      src="/ui-mockups.html"
-      title="AFJ Cardiff UI mockups gallery"
-      style={{ width: '100%', height: '620px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
-    />
-  )}
-</BrowserOnly>
+export const EmbeddedPreview = () => {
+  const src = useBaseUrl('/ui-mockups.html');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="AFJ Cardiff UI mockups gallery"
+          style={{ width: '100%', height: '620px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<EmbeddedPreview />
