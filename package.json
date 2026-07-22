@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.0",
+    "@cucumber/html-formatter": "^24.1.0",
     "http-server": "^14.1.1",
     "playwright": "^1.61.1",
     "wait-on": "^9.1.0"

@@ -5,6 +5,7 @@ module.exports = {
     format: [
       'progress-bar',
       'json:test-results/cucumber-report.json',
+      'html:static/gherkin-report.html',
       'summary',
     ],
     formatOptions: { snippetInterface: 'async-await' },

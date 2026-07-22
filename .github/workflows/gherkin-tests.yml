@@ -3,6 +3,9 @@ name: Gherkin test suite
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '.test-run-output/**'
+      - 'static/gherkin-report.html'
   pull_request:
   workflow_dispatch:
 
@@ -61,11 +64,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p .test-run-output
           cp test-results/console-output.txt .test-run-output/latest.txt
-          git add .test-run-output
+          git add .test-run-output static/gherkin-report.html
           if git diff --cached --quiet; then
             echo "no change to commit"
           else
-            git commit -m "Gherkin suite run output [skip ci]"
+            git commit -m "Update Gherkin suite results and HTML report"
             git pull --rebase origin main
             git push
           fi

@@ -165,6 +165,130 @@ In the repo's **Settings → Pages**, set **Source** to **GitHub Actions** — t
 
 GitHub Pages on Free/Pro personal accounts publishes the **built site publicly** regardless of whether the source repo is private — private repo hides the code, not the deployed page. Worth deciding deliberately when this repo goes public, not by default.
 
+## Test suite
+
+A real Gherkin/Cucumber/Playwright suite — 152 scenarios across 15 feature files, run against a real build served the way GitHub Pages actually serves it (see `.github/workflows/gherkin-tests.yml`). This is the acceptance test for the ongoing atomic-design migration: if every scenario still passes after a component gets decomposed into real React, the feature survived the migration.
+
+**Live, interactive report:** [`/afj-docs/gherkin-report.html`](https://andiekobbietks.github.io/afj-docs/gherkin-report.html) — colored pass/fail per scenario, searchable, regenerated automatically on every push. Raw run output (for debugging a CI failure without needing Actions log access) lives in `.test-run-output/latest.txt`.
+
+<details>
+<summary><strong>Global theme toggle</strong> (10 scenarios) — the site-wide navbar toggle</summary>
+
+```gherkin
+Feature: Global site-wide theme toggle
+  The theme system applied at the Docusaurus root — four component themes
+  plus the independent day/night site-chrome switch, both driving real
+  Infima/Docusaurus chrome (navbar, sidebar, page background), not just
+  content inside an embedded iframe.
+
+  Scenario: The site day/night switch is independent of the four themes
+    Given the html element should have data-afj-theme "wine"
+    When I click the global site day/night switch
+    Then the html element should have data-afj-mode "day"
+    And the html element should still have data-afj-theme "wine"
+
+  Scenario: The global theme choice persists across navigation to a different page
+    When I click the global "day" theme button
+    And I open the docs page "core-ui"
+    And I wait for the global theme toggle to be ready
+    Then the html element should have data-afj-theme "day"
+```
+
+</details>
+
+<details>
+<summary><strong>Interactive shop demo</strong> (14 scenarios) — real edge cases, not just the happy path</summary>
+
+```gherkin
+Feature: Interactive shop demo
+  The embedded commerce mockup (product grid -> detail -> cart -> checkout ->
+  confirmation) inside an iframe within component-library.html must actually
+  function, including its edge cases, not just look right statically.
+
+  Scenario: Quantity cannot go below 1
+    Given I click the first product card
+    When I decrease quantity 5 times
+    Then the quantity should read "1"
+
+  Scenario: Removing the only item in the cart empties it, not errors
+    Given I add 1 item to the cart
+    And I open the cart
+    When I remove that item
+    Then the cart should contain 0 line items
+    And no JavaScript error should have occurred
+```
+
+</details>
+
+<details>
+<summary><strong>Course subscription journey</strong> (8 scenarios) — real email-regex validation edge cases</summary>
+
+```gherkin
+Feature: Interactive course subscription journey
+  Real email regex validation gates progress, which is exactly the kind
+  of edge case worth testing directly rather than assuming a gate "just
+  works".
+
+  Scenario: An email with no domain does not pass the gate
+    When I go to the email gate
+    And I submit the email "someone@"
+    Then a toast should be shown
+
+  Scenario: An email with no @ does not pass the gate
+    When I go to the email gate
+    And I submit the email "someone.example.com"
+    Then a toast should be shown
+```
+
+</details>
+
+<details>
+<summary><strong>Accessibility menu</strong> (13 scenarios) — boundary values, not just on/off</summary>
+
+```gherkin
+Feature: Accessibility menu
+  Six controls, persisted to localStorage under the same key used by
+  the Docusaurus shell's AccessibilityMenu component.
+
+  Scenario: Text size cannot go below the minimum
+    When I open the accessibility menu
+    And I set text size to "50"
+    Then the text size should read "75"
+
+  Scenario: Reset restores every control to its default in one action
+    Given I open the accessibility menu
+    And I set text size to "150"
+    And I enable high contrast
+    When I click reset accessibility settings
+    Then the text size should read "100"
+    And high contrast should be disabled
+```
+
+</details>
+
+<details>
+<summary><strong>Every feature file, by scenario count</strong></summary>
+
+| Feature file | Scenarios | Covers |
+| --- | --- | --- |
+| `interactive_shop_demo.feature` | 14 | Product grid, detail, cart, checkout, quantity/empty-cart edge cases |
+| `accessibility_menu.feature` | 13 | Text size, contrast, hyperlegible font, motion, underline, cursor, reset |
+| `interactive_course_subscription_demo.feature` | 8 | Teaser, email gate (with real validation edge cases), plans, library |
+| `ui_mockups_and_docs_site.feature` | 8 | All 17 docs pages, sidebar completeness, iframes, copy buttons |
+| `keyboard_accessibility.feature` | 9 | Regression coverage for the original WCAG audit's exact findings |
+| `global_theme_toggle.feature` | 10 | Site-wide navbar toggle, persistence, Infima chrome integration |
+| `navigation_and_search.feature` | 10 | Sidebar nav, category chips, search (content-section filtering) |
+| `interactive_class_booking_demo.feature` | 6 | Expand/collapse rows, keyboard operability, booking state |
+| `theme_system.feature` | 6 | The in-iframe four-theme toggle inside component-library.html |
+| `component_widgets_render.feature` | 6 | Every core component actually renders visible content, all themes |
+| `foundations_and_adrs.feature` | 5 | Design tokens, typography, structural consistency across all 9 ADRs |
+| `icon_library.feature` | 5 | All 9 icon categories, theme-following color, no broken SVGs |
+| `brand_source_and_assembly.feature` | 4 | Imagery alt-text quality, Assembly chips, Compare & Contrast Gherkin |
+| `history_content.feature` | 4 | Changelog volume, roadmap content, Downloads section's overstated claims |
+| `orientation_content.feature` | 4 | Start Here's table of contents, About's content, Glossary consistency |
+
+</details>
+
 ## ADR: No external cross-references, squashed history
 
 **Context.** An earlier version of this repo referenced a separate site by name and URL in several places (a README description, live `<img>` sources pulling assets from its domain, and direct hyperlinks in two doc pages). That site is not something this repo should ever point at, name, or link to, in any file, in any commit. The repo was also briefly public before this was caught.
