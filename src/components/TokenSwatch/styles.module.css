@@ -1,0 +1,24 @@
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.swatch {
+  width: 84px;
+}
+
+.fill {
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  border: 1px solid var(--border, #3A3441);
+}
+
+.label {
+  font-size: 10px;
+  color: var(--text-muted, rgba(255,255,255,.55));
+  font-family: 'JetBrains Mono', monospace;
+  word-break: break-all;
+}

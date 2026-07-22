@@ -31,6 +31,17 @@ export const EmbeddedPreview = () => {
 
 Three themes now live side by side: the pixel-sampled Wine/Gold dark system, the Scrollytelling red/orange editorial system, and Day mode, the beige surfaces ( --afj-bg #F1EFE8 , --afj-beige #ECE7D8 , --afj-ink #1a1712 ). Toggle above, every preview updates at once.
 
+import TokenSwatch, { TokenSwatchRow } from '@site/src/components/TokenSwatch';
+
+<TokenSwatchRow>
+  <TokenSwatch color="#09080C" label="--bg-base" />
+  <TokenSwatch color="#141116" label="--bg-offset" />
+  <TokenSwatch color="#1E1B22" label="--bg-panel" />
+  <TokenSwatch color="#C99552" label="--accent-1" />
+  <TokenSwatch color="#A43E53" label="--accent-2" />
+  <TokenSwatch color="linear-gradient(135deg, #C99552, #A43E53)" label="--gradient" />
+</TokenSwatchRow>
+
 **Preview**
 
 ```css
@@ -45,6 +56,10 @@ Three themes now live side by side: the pixel-sampled Wine/Gold dark system, the
 ## Typography
 
 Wine/Gold and Day mode stay sentence case in Montserrat. Scrollytelling goes uppercase in Space Grotesk with a gradient clip.
+
+import GradientHeading from '@site/src/components/GradientHeading';
+
+<GradientHeading as="p">Impact through dance</GradientHeading>
 
 **Preview**
 

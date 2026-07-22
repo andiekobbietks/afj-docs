@@ -1,0 +1,13 @@
+.heading {
+  font-family: var(--heading-font, 'Montserrat', sans-serif);
+  font-weight: var(--heading-weight, 600);
+  text-transform: var(--heading-transform, none);
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, var(--text, #fff) 30%, var(--accent-1, #C99552) 70%, var(--accent-2, #A43E53) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
