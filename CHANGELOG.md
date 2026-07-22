@@ -6,6 +6,29 @@ This mirrors the Changelog section inside `static/component-library.html` (the c
 
 ## [Unreleased]
 
+Planned: full atomic-design decomposition of `static/component-library.html` into real Docusaurus/React components (atoms → molecules → organisms → templates), replacing the current iframe-embedded static file entirely, while retaining every one of the ~141 documented features. Scoped as its own migration, not a drop-in change — tracked separately from the entries below.
+
+## v2.0.0 — Migrated to a real Docusaurus deployment
+
+The single canonical HTML file is now a full, deployed, multi-page site rather than something read in isolation. Everything below happened in service of getting `static/component-library.html` onto GitHub Pages as a real, working, tested site — not just a bigger version of the same document.
+
+**Site structure**
+- Scaffolded an actual buildable Docusaurus project (`package.json`, `docusaurus.config.js`, `sidebars.js`) — previously just the reference HTML with no build pipeline
+- 12 new docs pages (Orientation, Foundations, Brand Source, Core UI, Commerce, Customer Journeys, Scrollytelling, More UI Kit, Assembly & Compare, Motion, Process & ADRs, History) populated from the real HTML content, not summaries
+- Local search (`@easyops-cn/docusaurus-search-local`) wired into the site
+- The accessibility menu (text size, high contrast, hyperlegible font, reduce motion, underline links, large cursor) ported into the Docusaurus shell as a real React component, sharing the same `localStorage` key as the standalone HTML so a setting changed on either surface applies to both
+
+**Deployment pipeline**
+- GitHub Actions build + deploy workflow onto GitHub Pages
+- An auto-screenshot workflow (Playwright, run on GitHub's own CI) that slices the long reference pages into numbered parts for collapsible README sections, rather than one unreadable full-page image
+
+**A real test suite, and three real bugs it found**
+- 114-scenario Gherkin/Cucumber/Playwright suite covering theme switching, navigation/search, the accessibility menu, every core component, the icon library, the interactive shop and class-booking demos, and the full doc site
+- Caught and fixed three genuine site bugs in the process, not just test bugs: `selectSize()` in the shop demo updated a CSS class but never `aria-pressed`, so a screen reader reported the wrong selected size after a click; a missing space in `.class-card.open.class-detail` (a compound selector, not a descendant one) meant the class-detail expand animation's CSS rule never matched anything and the accordion was permanently broken; and every embedded preview iframe used a hardcoded absolute path instead of a baseUrl-aware one, so all 14 of them 404'd once actually deployed under `/afj-docs/` — caught by a user screenshot before the test suite itself got to that scenario
+
+**Housekeeping**
+- An earlier commit briefly referenced a separate, unrelated site by name and URL before being caught; scrubbed from every tracked file, and the entire git history was squashed to a single clean commit to remove it from old commits too — including closing an automated PR/branch that had forked from the old history independently
+
 ## v1.25 — Connected to the real production build's status
 Surfaced the actual governance decision on the live AFJ Cardiff site's sequencing (continue the proper build, bridge with an interim Linktree/Canva presence rather than a rushed placeholder), added as "How this fits the live site" and ADR-010, scoped to the sequencing decision itself rather than the underlying legal contract mechanics, which stay in AFJ Cardiff's governance documentation.
 
