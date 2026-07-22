@@ -1,104 +1,49 @@
 
+Undefined scenarios:
+  1) Search is case-insensitive # features/navigation_and_search.feature:51
+       Then the "Buttons" nav link should be visible
+
 Failed scenarios:
-  1) Every doc-block has a code pane, and most have a live preview too # features/component_widgets_render.feature:45
-       Then every ".doc-block" element should contain a ".code-pane" # features/step_definitions/component_render_steps.js:45
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -23
-               +71
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/component_render_steps.js:49:10)
-  2) Icon color follows the active theme # features/icon_library.feature:32
-       Then icon color should match the "scrolly" theme's text color # features/step_definitions/icon_library_steps.js:35
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -rgb(245, 245, 247)
-               +rgb(255, 255, 255)
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
-  3) Icon color follows the active theme # features/icon_library.feature:33
-       Then icon color should match the "day" theme's text color # features/step_definitions/icon_library_steps.js:35
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -rgb(26, 23, 18)
-               +rgb(255, 255, 255)
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
-  4) Icon color follows the active theme # features/icon_library.feature:34
-       Then icon color should match the "scrollyday" theme's text color # features/step_definitions/icon_library_steps.js:35
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -rgb(26, 23, 18)
-               +rgb(255, 255, 255)
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/icon_library_steps.js:42:10)
-  5) Booking a class updates its state without a page reload # features/interactive_class_booking_demo.feature:35
-       When I click "Book" on that class # features/step_definitions/class_booking_steps.js:60
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
-  6) Cart badge count matches the number of items added # features/interactive_shop_demo.feature:47
+  1) Cart badge count matches the number of items added # features/interactive_shop_demo.feature:47
        When I add 3 different items to the cart # features/step_definitions/shop_demo_steps.js:109
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  7) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
+  2) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
        Given I add 1 item to the cart # features/step_definitions/shop_demo_steps.js:124
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  8) Clicking a nav link scrolls to its section # features/navigation_and_search.feature:9
-       Then the "sec-buttons" section should be in view # features/step_definitions/common_steps.js:92
+  3) Clicking a nav link scrolls to its section # features/navigation_and_search.feature:9
+       Then the "sec-buttons" section should be in view # features/step_definitions/common_steps.js:93
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:99:10)
-  9) Search alone filters sections by matching text # features/navigation_and_search.feature:26
-       And the "Buttons" nav link should not be visible # features/step_definitions/navigation_search_steps.js:51
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:100:10)
+  4) Switching theme keeps the page scroll position # features/theme_system.feature:23
+       Then the "sec-winescale" section should still be in view # features/step_definitions/common_steps.js:103
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:54:10)
-  10) Search with no matches shows no nav links, not an error # features/navigation_and_search.feature:42
-       Then no nav links should be visible # features/step_definitions/navigation_search_steps.js:57
-           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-           
-           43 !== 0
-           
-               + expected - actual
-           
-               -43
-               +0
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:59:10)
-  11) Switching theme keeps the page scroll position # features/theme_system.feature:23
-       Then the "sec-winescale" section should still be in view # features/step_definitions/common_steps.js:102
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:109:10)
-  12) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:51
-       Then the iframe should contain visible content, not a blank page # features/step_definitions/docs_site_steps.js:45
-           AssertionError [ERR_ASSERTION]: expected the iframe body to contain visible text
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:47:10)
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:110:10)
 
 2 hooks (2 passed)
-114 scenarios (102 passed, 12 failed)
-697 steps (676 passed, 9 skipped, 12 failed)
-1m 38.614s (1m 38.382s executing your code)
+115 scenarios (110 passed, 1 undefined, 4 failed)
+705 steps (695 passed, 5 skipped, 1 undefined, 4 failed)
+1m 51.745s (1m 51.514s executing your code)
+
+You can implement missing steps with the snippets below:
+
+Then('the {string} nav link should be visible', async function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
