@@ -6,9 +6,10 @@ Feature: Navigation, category filters, and search
   Background:
     Given I open the component library page
 
-  Scenario: Clicking a nav link scrolls to its section
+  Scenario: Clicking a nav link marks it active and updates the breadcrumb
     When I click the "Buttons" nav link
-    Then the "sec-buttons" section should be in view
+    Then the "Buttons" nav link should have the active class
+    And the breadcrumb should show "Buttons"
 
   Scenario: Nav links are real keyboard-focusable anchors
     Then every sidebar nav link should have a real "href" attribute

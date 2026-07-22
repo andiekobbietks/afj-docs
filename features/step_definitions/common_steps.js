@@ -88,6 +88,7 @@ Then('the site chrome should be in {string} mode', async function (mode) {
 When('I scroll to the {string} section', async function (sectionId) {
   this.lastScrolledSectionId = sectionId;
   await this.page.locator(`#${sectionId}`).scrollIntoViewIfNeeded();
+  this.scrollYAfterScroll = await this.page.evaluate(() => window.scrollY);
 });
 
 Then('the {string} section should be in view', async function (sectionId) {

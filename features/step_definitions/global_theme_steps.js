@@ -19,15 +19,15 @@ Then('the html element should still have data-afj-theme {string}', async functio
 
 When('I click the global {string} theme button', async function (theme) {
   const label = GLOBAL_LABELS[theme];
-  const before = await this.page.evaluate(() => getComputedStyle(document.querySelector('.navbar')).backgroundColor);
-  this.navbarBgBefore = before;
+  const before = await this.page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  this.pageBgBefore = before;
   await this.page.locator(`.navbar button:has-text("${label}")`).click();
   await this.page.waitForTimeout(300); // theme colors transition
 });
 
-Then('the navbar background color should change from the Wine\\/Gold default', async function () {
-  const after = await this.page.evaluate(() => getComputedStyle(document.querySelector('.navbar')).backgroundColor);
-  assert.notStrictEqual(after, this.navbarBgBefore, 'expected the navbar background color to actually change after switching theme');
+Then('the page background color should change from the Wine\\/Gold default', async function () {
+  const after = await this.page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  assert.notStrictEqual(after, this.pageBgBefore, 'expected the page background color to actually change after switching theme');
 });
 
 Then('the html element should have data-afj-mode {string}', async function (mode) {

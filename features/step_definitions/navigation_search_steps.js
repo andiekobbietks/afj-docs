@@ -36,12 +36,12 @@ Then('every nav group should be visible', async function () {
 
 When('I search for {string}', async function (term) {
   await this.page.fill('#siteSearch', term);
-  await this.page.waitForTimeout(200); // site debounces filterNav by 120ms
+  await this.page.waitForTimeout(350); // site debounces filterNav by 120ms — widened margin for slower CI runners
 });
 
 When('I clear the search field', async function () {
   await this.page.fill('#siteSearch', '');
-  await this.page.waitForTimeout(200);
+  await this.page.waitForTimeout(350);
 });
 
 Then('the {string} content section should be visible', async function (sectionId) {
@@ -71,4 +71,26 @@ Then('the search-empty pane should be visible', async function () {
 Then('the search input should be focused', async function () {
   const focused = await this.page.evaluate(() => document.activeElement && document.activeElement.id);
   assert.strictEqual(focused, 'siteSearch');
+});
+
+Then('the {string} nav link should have the active class', async function (label) {
+  const hasActive = await this.page.evaluate((l) => {
+    const links = Array.from(document.querySelectorAll('.doc-nav-link'));
+    const link = links.find((el) => el.textContent.trim() === l);
+    return link ? link.classList.contains('active') : null;
+  }, label);
+  assert.strictEqual(hasActive, true, `expected the "${label}" nav link to have the active class`);
+});
+
+Then('the breadcrumb should show {string}', async function (text) {
+  const crumb = await this.page.locator('.doc-crumb').textContent();
+  assert.ok(crumb.includes(text), `expected the breadcrumb to include "${text}", got "${crumb}"`);
+});
+
+Then('the page scroll position should not have changed', async function () {
+  const now = await this.page.evaluate(() => window.scrollY);
+  assert.ok(
+    Math.abs(now - this.scrollYAfterScroll) < 5,
+    `expected scrollY to stay near ${this.scrollYAfterScroll}, got ${now}`
+  );
 });

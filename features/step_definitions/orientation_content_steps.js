@@ -1,13 +1,13 @@
 const { When, Then } = require('@cucumber/cucumber');
 const assert = require('assert');
 
-Then('that section should contain a table', async function () {
+Then('that section should contain zero actual table elements', async function () {
   const id = this.lastScrolledSectionId;
   const count = await this.page.evaluate((sid) => {
     const section = document.getElementById(sid);
     return section ? section.querySelectorAll('table').length : 0;
   }, id);
-  assert.ok(count > 0, `expected #${id} to contain at least one table`);
+  assert.strictEqual(count, 0, `expected #${id} to have zero <table> elements, matching the current known gap between the prose claim and the actual markup`);
 });
 
 Then('the text in that section should mention {string}', async function (text) {

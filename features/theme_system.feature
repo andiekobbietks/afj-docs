@@ -23,7 +23,7 @@ Feature: Component library theme system
   Scenario: Switching theme keeps the page scroll position
     When I scroll to the "sec-winescale" section
     And I click the "scrolly" theme button
-    Then the "sec-winescale" section should still be in view
+    Then the page scroll position should not have changed
 
   Scenario: Site day/night toggle is independent of the four component themes
     Given the active theme is "wine"

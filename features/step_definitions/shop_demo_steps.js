@@ -131,7 +131,13 @@ Given('I add {int} item to the cart', async function (n) {
 });
 
 Given('I open the cart', async function () {
-  await this.frame.click('.icon-btn');
+  const alreadyOpen = await this.frame.evaluate(() => {
+    const el = document.getElementById('cartDrawer');
+    return el && el.classList.contains('active');
+  });
+  if (!alreadyOpen) {
+    await this.frame.click('.icon-btn');
+  }
 });
 
 When('I remove that item', async function () {

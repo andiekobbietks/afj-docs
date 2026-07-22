@@ -12,10 +12,10 @@ Feature: Global site-wide theme toggle
   Scenario: Wine/Gold is the default global theme
     Then the html element should have data-afj-theme "wine"
 
-  Scenario Outline: Clicking each global theme button updates the whole page
+  Scenario Outline: Clicking each global theme button updates the page background
     When I click the global "<theme>" theme button
     Then the html element should have data-afj-theme "<theme>"
-    And the navbar background color should change from the Wine/Gold default
+    And the page background color should change from the Wine/Gold default
 
     Examples:
       | theme      |

@@ -24,11 +24,13 @@ Then('the gate view should still be active', async function () {
 
 When('I go to the email gate', async function () {
   await this.frame.locator('button:has-text("Get early access")').click();
+  await this.page.waitForTimeout(400);
 });
 
 When('I submit the email {string}', async function (email) {
   await this.frame.fill('#emailInput', email);
   await this.frame.locator('button:has-text("Subscribe & continue")').click();
+  await this.page.waitForTimeout(400);
 });
 
 Then('an error toast should be shown', async function () {

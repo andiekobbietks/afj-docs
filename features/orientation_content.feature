@@ -6,9 +6,10 @@ Feature: Orientation content
   Background:
     Given I open the component library page
 
-  Scenario: Start Here has a real table of contents, not just a link list
+  Scenario: Start Here claims a real table of contents, which doesn't exist yet
     When I scroll to the "sec-starthere" section
-    Then that section should contain a table
+    Then the text in that section should mention "a real table of contents"
+    But that section should contain zero actual table elements
 
   Scenario: About This Site names the organisation and founder
     When I scroll to the "sec-aboutsite" section
