@@ -2,8 +2,9 @@
 
 Docusaurus site documenting AFJ Cardiff's canonical design system, component library, and icon library — for developer, designer, and videographer handoff.
 
-**Staging:** `https://<your-username>.github.io/afj-docs/` (GitHub Pages, set up below)
+**Live:** https://andiekobbietks.github.io/afj-docs/
 **Production (planned):** `doc.afjcardiff.com`, once the custom domain is wired up.
+**Releases:** [25 releases](https://github.com/andiekobbietks/afj-docs/releases), `v1.0` through `v2.0.0` — the earlier ones are backfilled from the standalone HTML doc's own pre-repo changelog history.
 
 ## Preview
 
@@ -59,27 +60,63 @@ Screenshots are generated automatically by `.github/workflows/screenshots.yml` (
 
 </details>
 
+## Migration status, at a glance
+
+Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens — Core UI is the first one done, proving the pattern works before the rest follow.
+
+```mermaid
+flowchart LR
+    subgraph done["✅ Real components"]
+        CoreUI["Core UI<br/>DemoButtons, DemoProductCard"]
+        Foundations["Foundations<br/>TokenSwatch, GradientHeading"]
+        ADRs["Process & ADRs<br/>AdrCard × 9"]
+    end
+
+    subgraph pending["⏳ Still the massive iframe"]
+        Commerce["Commerce"]
+        Journeys["Customer Journeys"]
+        Scrolly["Scrollytelling"]
+        MoreUI["More UI Kit"]
+        Assembly["Assembly & Compare"]
+        History["History"]
+        Brand["Brand Source"]
+    end
+
+    subgraph reference["📄 Reference — no conversion needed"]
+        Icons["Icon Library<br/>already real Lucide SVG"]
+        Mockups["UI Mockups<br/>already its own static file"]
+        Orient["Orientation, Designers,<br/>Videographers, Live Site Status"]
+    end
+
+    Source["static/component-library.html<br/>the original 43-section doc"] -.->|being decomposed from| pending
+    Source -->|already extracted into| done
+
+    style done fill:#1E1B22,stroke:#C99552,color:#fff
+    style pending fill:#1E1B22,stroke:#3A3441,color:#8a8990
+    style reference fill:#1E1B22,stroke:#3A3441,color:#8a8990
+```
+
 ## What's in here
 
+**Docs pages** (`docs/*.mdx`, 17 total): Orientation, Foundations, Icon Library, Brand Source, For Graphic Designers, For Videographers, Core UI, Commerce, Customer Journeys, UI Mockups, Scrollytelling Experience, More UI Kit, Assembly & Compare, Motion, Process & ADRs, History, How This Fits the Live Site.
+
+**Real components** (`src/components/`) — the migration's actual output so far:
 | Path | What it is |
 | --- | --- |
-| `docs/component-library.mdx` | Buttons, cards, cart drawer, class booking card, gallery, carousel, tonal scale |
-| `docs/icon-library.mdx` | Full Lucide icon set by site section (core UI, commerce, classes, checkout, account, scrollytelling, internal ops) |
-| `docs/ui-mockups.mdx` | 11 high-fidelity page mockups — homepage, class listing/detail/booking, shop+cart, checkout, member dashboard, internal ops, Scrollytelling commerce, Scrolly Day hero, and the noir/near-black contrast reference |
-| `docs/for-graphic-designers.mdx` | Print/CMYK constraints, minimum size, clear space, redraw source material |
-| `docs/for-videographers.mdx` | Existing logo assembly video, motion/looping rules, framing per theme |
-| `docs/live-site-status.mdx` | Honest status of the real production build vs. this reference library, plus the launch checklist (cookie notice, privacy notice, Equality Act 2010) this library doesn't cover |
-| `static/component-library.html` | Standalone live preview, themeable across Wine/Gold, Scrollytelling, Day, Scrolly Day — canonical source, keyboard-accessibility fixes applied (see below) |
-| `static/icon-library.html` | Standalone live preview of every icon, generated from the real `lucide-static` npm package, same theme toggle |
-| `static/ui-mockups.html` | All 11 page mockups in one scrollable reference, each in its designed theme |
-| `static/img/favicon*.png`, `static/img/favicon.ico`, `static/img/apple-touch-icon.png` | Real favicon set, extracted from the canonical doc's embedded assets — not placeholders |
-| `src/components/AccessibilityMenu/` | Text size, high contrast, hyperlegible font (Atkinson Hyperlegible Next), reduce motion, underline links, large cursor — mirrors the sister site's documented settings, same `localStorage` key |
-| `src/theme/Root.js` | Mounts the accessibility menu site-wide |
-| `src/css/custom.css` | Wires the accessibility menu's toggles to real style changes; also fixes the `text-faint` contrast failures found in the source doc (3.1:1 / 2.41:1 / 3.2:1 across three themes) as the **default**, not gated behind a toggle |
-| `NOTICE.md` | Third-party attribution — Lucide, Google Fonts, Docusaurus, Bootstrap — none of it is AFJ Cardiff's own IP |
-| `.github/workflows/deploy.yml` | Builds and deploys to GitHub Pages on every push to `main` |
+| `DemoButtons`, `DemoProductCard` | Core UI's real replacements for the iframe — exact same CSS values as the source, themed via CSS variables, no wiring needed beyond that |
+| `AdrCard` | All 9 ADRs on Process & ADRs, extracted from the source HTML and rendered as real cards, not flattened markdown |
+| `TokenSwatch`, `GradientHeading` | Foundations' live token grid and gradient-heading demo |
+| `ChangelogEntry` | Styled changelog entries (built, not yet wired into History — that page still uses the iframe) |
+| `AccessibilityMenu` | Text size, high contrast, hyperlegible font, reduce motion, underline links, large cursor — same `localStorage` key as the standalone HTML's own menu |
+| `SiteThemeToggle` + `SiteThemeContext` | The **global** theme system — four component themes plus the independent day/night site-chrome switch, applied via `data-afj-theme`/`data-afj-mode` (not Docusaurus's own `data-theme`, which Infima already owns) and mapped onto real Infima variables so the actual navbar/sidebar/page background respond, not just embedded content |
 
-Files in `static/` are served as-is by Docusaurus and are also embedded live via `<iframe>` inside the Component Library and Icon Library MDX pages, so the reference tables and the working preview sit on the same page.
+**Static reference files** (`static/`): `component-library.html` (the original 43-section doc, still the source for pages not yet migrated), `icon-library.html`, `ui-mockups.html`, the real favicon set, and `gherkin-report.html` (regenerated every CI run).
+
+**Test suite** (`features/`): 152 Gherkin scenarios across 15 feature files — full breakdown below.
+
+**CI/CD** (`.github/workflows/`): `deploy.yml` (build + publish to Pages), `gherkin-tests.yml` (run the suite, regenerate the report), `screenshots.yml` (slice the long reference docs into numbered README images).
+
+**Other**: `NOTICE.md` (third-party attribution — Lucide, Google Fonts, Docusaurus, Bootstrap, none of it AFJ Cardiff's own IP), `CHANGELOG.md` (the full pre-repo history, now also on GitHub as real releases).
 
 ## Source version
 
@@ -98,7 +135,7 @@ Every keyboard-accessibility failure found in the source doc is now fixed in `st
 
 ## A note on what these pages don't cover yet
 
-This repo has the design system, component/icon reference, and the two audience pages. It does **not** yet include the high-fidelity page mockups (homepage, class listing, class detail + booking, shop + cart, checkout, member dashboard, internal ops board) that were prototyped separately — those only exist as live inline previews in chat right now, not as exportable files.
+This repo has the full design system, component/icon reference, all 11 high-fidelity page mockups, and the two audience pages. What it doesn't have yet: most pages still render their content via the iframe rather than real components — see the migration status diagram above for exactly which ones.
 
 ## Local development
 
@@ -115,38 +152,25 @@ npm run build
 
 Builds the static site to `build/`.
 
-## Wiring the new pages into the sidebar
+## Sidebar structure
 
-This repo's `sidebars.js` should list its own docs:
-
-```js
-module.exports = {
-  docsSidebar: [
-    { type: 'doc', id: 'component-library', label: 'Component Library' },
-    { type: 'doc', id: 'icon-library', label: 'Icon Library' },
-    { type: 'doc', id: 'ui-mockups', label: 'UI Mockups' },
-    { type: 'doc', id: 'for-graphic-designers', label: 'For Graphic Designers' },
-    { type: 'doc', id: 'for-videographers', label: 'For Videographers' },
-    { type: 'doc', id: 'live-site-status', label: 'How This Fits the Live Site' },
-  ],
-};
-```
+`sidebars.js` lists all 17 pages, in the order they appear in the migration status diagram above — see the actual file in this repo rather than a hand-maintained copy here, since keeping two copies in sync has already gone stale once.
 
 ## Deploying to GitHub Pages
 
-### One-time repo setup (you run this, not me)
+This repo is already live at the URL above — what follows is how it got there, kept for reference (e.g. if this pattern gets reused for another repo) rather than as setup instructions to run again.
 
 ```bash
 gh auth login
 gh repo create afj-docs --source=. --remote=origin --push
 ```
 
-Then in `docusaurus.config.js`, set:
+`docusaurus.config.js` is already set to:
 
 ```js
-url: 'https://<your-username>.github.io',
+url: 'https://andiekobbietks.github.io',
 baseUrl: '/afj-docs/',
-organizationName: '<your-username>',
+organizationName: 'andiekobbietks',
 projectName: 'afj-docs',
 ```
 
@@ -157,13 +181,42 @@ In the repo's **Settings → Pages**, set **Source** to **GitHub Actions** — t
 ### Moving to `doc.afjcardiff.com` later
 
 1. Create a `static/CNAME` file containing exactly: `doc.afjcardiff.com`
-2. Add a CNAME DNS record for `doc.afjcardiff.com` pointing at `<your-username>.github.io`, wherever `afjcardiff.com`'s DNS is managed
+2. Add a CNAME DNS record for `doc.afjcardiff.com` pointing at `andiekobbietks.github.io`, wherever `afjcardiff.com`'s DNS is managed
 3. Update `url` in `docusaurus.config.js` to `https://doc.afjcardiff.com` and `baseUrl` to `/`
 4. Push — GitHub auto-provisions the TLS certificate via Let's Encrypt once DNS resolves
 
 ### On repo visibility
 
 GitHub Pages on Free/Pro personal accounts publishes the **built site publicly** regardless of whether the source repo is private — private repo hides the code, not the deployed page. Worth deciding deliberately when this repo goes public, not by default.
+
+## How the three workflows fit together
+
+The non-obvious part: `gherkin-tests.yml` commits its own results back to the repo, which would normally re-trigger itself forever. It's stopped with `paths-ignore` on its own output files — but that same push still needs to reach `deploy.yml` so the fresh report actually goes live, which is why that one has no such filter.
+
+```mermaid
+flowchart TD
+    push["git push to main"]
+    push --> deploy["deploy.yml<br/>build + publish to Pages"]
+    push -->|unless only .test-run-output/**<br/>or gherkin-report.html changed| gherkin["gherkin-tests.yml<br/>run 152 scenarios"]
+
+    gherkin --> results["Commit results:<br/>.test-run-output/latest.txt<br/>static/gherkin-report.html"]
+    results -->|pushes to main again| push2["git push to main"]
+    push2 --> deploy2["deploy.yml runs again<br/>publishes the fresh report"]
+    push2 -.->|blocked by paths-ignore,<br/>no infinite loop| gherkin
+
+    screenshot["screenshots.yml<br/>on push to static/*.html"]
+    push -.->|if a static HTML file changed| screenshot
+    screenshot --> commit2["Commit sliced PNGs<br/>to static/screenshots/"]
+    commit2 --> push3["git push to main"]
+    push3 --> deploy3["deploy.yml runs again"]
+
+    style push fill:#1E1B22,stroke:#C99552,color:#fff
+    style push2 fill:#1E1B22,stroke:#C99552,color:#fff
+    style push3 fill:#1E1B22,stroke:#C99552,color:#fff
+    style deploy fill:#1E1B22,stroke:#A43E53,color:#fff
+    style deploy2 fill:#1E1B22,stroke:#A43E53,color:#fff
+    style deploy3 fill:#1E1B22,stroke:#A43E53,color:#fff
+```
 
 ## Test suite
 
