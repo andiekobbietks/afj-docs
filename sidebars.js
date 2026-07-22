@@ -17,6 +17,7 @@ const sidebars = {
     { type: 'doc', id: 'motion', label: 'Motion' },
     { type: 'doc', id: 'process-adrs', label: 'Process & ADRs' },
     { type: 'doc', id: 'history', label: 'History' },
+    { type: 'doc', id: 'original-widget-gallery', label: 'Original Widget Gallery' },
     { type: 'doc', id: 'live-site-status', label: 'How This Fits the Live Site' },
   ],
 };

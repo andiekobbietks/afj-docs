@@ -1,0 +1,44 @@
+---
+title: Original Widget Gallery
+description: 50 widgets recovered from the source design session that originated this whole design system — pixel samples, the Wine/Gold and Bootstrap UI kits, the 5-section live homepage, full Scrollytelling and commerce variants.
+---
+
+# Original Widget Gallery
+
+This is the wider widget set from the session that originated this whole design system, recovered directly from that session's own transcript — 50 widgets, not summarized or rebuilt from memory, the real code. Organized by category below; the live version has anchor links per section.
+
+**Excluded on purpose:** 5 widgets from that same session (IP Strategy Categories, Evolving Strategy Matrix, Fitbit Case Study Comparison, Vector Rebuild Spec, Accessibility Statement) are the sister IP-brief site's own content — same boundary this whole repo already keeps, applied consistently here too.
+
+## What's in it
+
+- **Pixel Samples** (8) — the original CodeRabbit-orange-vs-real-gradient comparison, Scrollytelling color/type/essence samples, Day mode palette and pattern samples, real logo crops
+- **Wine/Gold Dark Theme UI Kit** (10) — the actual dark theme design system widgets: buttons, cards, gallery, carousel, input, tonal scale, design tokens
+- **Bootstrap Theme Variant** (5) — the same UI kit rebuilt on Bootstrap 5.3, plus a color-correction pass
+- **Live Homepage** (5) — the entire landing page, built as five section widgets: announcement header, hero stats, booking gallery, testimonials+CTA, footer
+- **Commerce — Wine/Gold** (4) and **Commerce — Scrollytelling** (4) — product grid, detail, cart drawer, checkout, in both themes
+- **Scrollytelling Experience (full)** (7) — hero, stage, manifesto, launch signup, footer, plus its own UI kit and tonal scale
+- **Wine vs Scrollytelling Compare** (1)
+- **Scrolly Day** (2) — hero+buttons, story+manifesto
+- **Brand Audit Reference** (4) — composition, real imagery, typeface families, the components/brief structure overview
+
+## Live gallery
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export const GalleryPreview = () => {
+  const src = useBaseUrl('/original-widgets-gallery.html');
+  return (
+    <BrowserOnly>
+      {() => (
+        <iframe
+          src={src}
+          title="AFJ Cardiff original widget gallery"
+          style={{ width: '100%', height: '1400px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px' }}
+        />
+      )}
+    </BrowserOnly>
+  );
+};
+
+<GalleryPreview />
