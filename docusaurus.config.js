@@ -62,6 +62,7 @@ const config = {
         },
         items: [
           { type: 'docSidebar', sidebarId: 'docsSidebar', position: 'left', label: 'Docs' },
+          { type: 'custom-siteThemeToggle', position: 'right' },
           { href: 'https://github.com/andiekobbietks/afj-docs', label: 'GitHub', position: 'right' },
         ],
       },
@@ -71,7 +72,8 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark',
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
+        disableSwitch: true,
       },
     }),
 };

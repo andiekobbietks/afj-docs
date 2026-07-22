@@ -112,6 +112,7 @@ When('I add {int} different items to the cart', async function (n) {
   for (let i = 0; i < Math.min(n, total); i++) {
     await cards.nth(i).click();
     await this.frame.locator('button:has-text("Add to basket")').first().click();
+    await this.frame.click('#scrim'); // addToCart() auto-opens the cart; close it before continuing
     await this.frame.locator('.view.active .back-btn').first().click();
   }
 });
@@ -126,7 +127,6 @@ Given('I add {int} item to the cart', async function (n) {
   for (let i = 0; i < n; i++) {
     await cards.first().click();
     await this.frame.locator('button:has-text("Add to basket")').first().click();
-    await this.frame.locator('.view.active .back-btn').first().click();
   }
 });
 

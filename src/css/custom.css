@@ -12,6 +12,86 @@
   --afj-text-faint-wine: rgba(255, 255, 255, 0.48);    /* was .35 → 3.1:1, now 5.0:1 */
   --afj-text-faint-scrolly: rgba(245, 245, 247, 0.50); /* was .30 → 2.41:1, now 4.96:1 */
   --afj-text-faint-day: #726c5e;                       /* was #8a8578 → 3.2:1, now 4.54:1 */
+
+  /* Site chrome (navbar/sidebar/page shell) — independent of the four
+     component themes below, exactly as in the source doc. Dark is the
+     default; --afj-mode="day" (further down) overrides these. */
+  --site-bg: #0a0a0c; --site-sidebar-bg: #08080a; --site-border: #232228;
+  --site-topbar-bg: rgba(10,10,12,.9); --site-text-primary: #ffffff; --site-text-secondary: #b5b4bc;
+  --site-text-muted: #6b6a72; --site-nav-hover-bg: #111116; --site-logo-muted: #888888;
+}
+
+/* ============ THE FOUR COMPONENT THEMES ============ */
+/* data-afj-theme, NOT data-theme — Docusaurus/Infima already owns
+   data-theme for its own dark/light mode. Using the same name would
+   silently break every built-in Infima component (code blocks,
+   admonitions, etc.) the moment a theme other than the values Infima
+   expects ('dark'/'light') got set. */
+html[data-afj-theme="wine"] {
+  --bg-page: #0d0c11; --bg-base: #09080C; --bg-offset: #141116; --bg-panel: #1E1B22;
+  --border: #3A3441;
+  --accent-1: #C99552; --accent-2: #A43E53;
+  --gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --text: #ffffff; --text-muted: rgba(255,255,255,.55); --text-faint: var(--afj-text-faint-wine);
+  --heading-font: 'Montserrat', sans-serif; --heading-weight: 600; --heading-transform: none;
+  --radius: 10px; --btn-radius: 8px;
+}
+html[data-afj-theme="scrolly"] {
+  --bg-page: #050507; --bg-base: #050507; --bg-offset: rgba(255,255,255,.02); --bg-panel: rgba(255,255,255,.05);
+  --border: rgba(255,255,255,.08);
+  --accent-1: #f39c12; --accent-2: #ff3344;
+  --gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --text: #f5f5f7; --text-muted: #8e8e93; --text-faint: var(--afj-text-faint-scrolly);
+  --heading-font: 'Space Grotesk', sans-serif; --heading-weight: 800; --heading-transform: uppercase;
+  --radius: 14px; --btn-radius: 50px;
+}
+html[data-afj-theme="day"] {
+  --bg-page: #E9E4D5; --bg-base: #F1EFE8; --bg-offset: #ffffff; --bg-panel: #ECE7D8;
+  --border: #e2ddd0;
+  --accent-1: #C99552; --accent-2: #A43E53;
+  --gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --text: #1a1712; --text-muted: #5c574c; --text-faint: var(--afj-text-faint-day);
+  --heading-font: 'Montserrat', sans-serif; --heading-weight: 600; --heading-transform: none;
+  --radius: 12px; --btn-radius: 6px;
+}
+html[data-afj-theme="scrollyday"] {
+  --bg-page: #EFEADD; --bg-base: #F5F2EA; --bg-offset: #ffffff; --bg-panel: #ECE7D8;
+  --border: #ddd6c4;
+  --accent-1: #f39c12; --accent-2: #ff3344;
+  --gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --text: #1a1712; --text-muted: #5c574c; --text-faint: var(--afj-text-faint-day);
+  --heading-font: 'Space Grotesk', sans-serif; --heading-weight: 800; --heading-transform: uppercase;
+  --radius: 14px; --btn-radius: 50px;
+}
+
+/* ============ INDEPENDENT SITE CHROME DAY/NIGHT ============ */
+html[data-afj-mode="day"] {
+  --site-bg: #F5F2EA; --site-sidebar-bg: #ffffff; --site-border: #ddd6c4;
+  --site-topbar-bg: rgba(245,242,234,.92); --site-text-primary: #1a1712; --site-text-secondary: #5c574c;
+  --site-text-muted: #8a8578; --site-nav-hover-bg: #ECE7D8; --site-logo-muted: #a39c8a;
+}
+
+/* ============ MAPPING INTO DOCUSAURUS'S OWN CHROME ============ */
+/* This is the part that makes the theme actually global — without it,
+   the tokens above exist but Docusaurus's real navbar/sidebar/content
+   never reads them, so the site looks unchanged regardless of toggle. */
+html {
+  --ifm-background-color: var(--bg-page, var(--site-bg));
+  --ifm-background-surface-color: var(--bg-base, var(--site-sidebar-bg));
+  --ifm-font-color-base: var(--text, var(--site-text-primary));
+  --ifm-font-family-base: var(--heading-font, var(--afj-font-body));
+  --ifm-color-primary: var(--accent-2, #A43E53);
+  --ifm-navbar-background-color: var(--site-topbar-bg);
+  --ifm-navbar-link-color: var(--site-text-primary);
+  --ifm-menu-color: var(--site-text-secondary);
+  --ifm-menu-color-background-active: var(--site-nav-hover-bg);
+  --ifm-menu-color-active: var(--accent-1, var(--site-text-primary));
+  --ifm-toc-border-color: var(--border, var(--site-border));
+  --ifm-hr-border-color: var(--border, var(--site-border));
+}
+body {
+  background: var(--bg-page, var(--site-bg));
+  transition: background .25s ease, color .25s ease;
 }
 
 html[data-a11y-font='hyperlegible'] body,

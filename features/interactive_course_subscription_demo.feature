@@ -14,7 +14,7 @@ Feature: Interactive course subscription journey
   Scenario: An invalid email does not pass the gate
     When I go to the email gate
     And I submit the email "not-an-email"
-    Then the teaser view should still be active
+    Then the gate view should still be active
     And an error toast should be shown
 
   Scenario: An email with no domain does not pass the gate

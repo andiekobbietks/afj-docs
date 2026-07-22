@@ -14,12 +14,12 @@ Then('the teaser view should be active', async function () {
   assert.ok(active, 'expected #view-teaser to be active');
 });
 
-Then('the teaser view should still be active', async function () {
+Then('the gate view should still be active', async function () {
   const active = await this.frame.evaluate(() => {
-    const el = document.getElementById('view-teaser');
+    const el = document.getElementById('view-gate');
     return el && el.classList.contains('active');
   });
-  assert.ok(active, 'expected #view-teaser to still be active — the invalid email should not have advanced the flow');
+  assert.ok(active, 'expected #view-gate to still be active — the invalid email should not have advanced the flow');
 });
 
 When('I go to the email gate', async function () {

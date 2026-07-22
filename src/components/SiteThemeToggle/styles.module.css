@@ -1,0 +1,63 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modeSwitch {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--site-border, #232228);
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--site-sidebar-bg, #08080a);
+  font-size: 14px;
+}
+.modeSwitch:hover {
+  border-color: var(--accent-1, #C99552);
+}
+.modeSwitch:focus-visible {
+  outline: 3px solid var(--accent-1, #C99552);
+  outline-offset: 2px;
+}
+
+.themeToggle {
+  display: flex;
+  background: var(--bg-offset, #16151a);
+  border: 1px solid var(--border, #232228);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.themeBtn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #8a8990);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.themeBtn:focus-visible {
+  outline: 3px solid var(--accent-1, #C99552);
+  outline-offset: 2px;
+}
+
+.active-wine { background: linear-gradient(135deg, #C99552, #A43E53); color: #fff; }
+.active-scrolly { background: linear-gradient(135deg, #f39c12, #ff3344); color: #050507; }
+.active-day { background: linear-gradient(135deg, #ECE7D8, #C99552); color: #1a1712; }
+.active-scrollyday { background: linear-gradient(135deg, #F5F2EA, #ff3344); color: #1a1712; }
+
+@media (max-width: 640px) {
+  .themeToggle {
+    flex-wrap: wrap;
+  }
+}
