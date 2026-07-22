@@ -62,17 +62,20 @@ Screenshots are generated automatically by `.github/workflows/screenshots.yml` (
 
 ## Migration status, at a glance
 
-Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens — Core UI is the first one done, proving the pattern works before the rest follow.
+Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens. Core UI is the only page where the iframe is actually gone. Foundations and Process & ADRs have real components added but still render the old iframe alongside them too — that's next to fix, not a second finished page. Everything else, including all 11 of the originally chat-built UI mockups (still living in `static/ui-mockups.html`), hasn't started.
 
 ```mermaid
 flowchart LR
-    subgraph done["✅ Real components"]
+    subgraph done["✅ Real components, iframe removed"]
         CoreUI["Core UI<br/>DemoButtons, DemoProductCard"]
-        Foundations["Foundations<br/>TokenSwatch, GradientHeading"]
-        ADRs["Process & ADRs<br/>AdrCard × 9"]
     end
 
-    subgraph pending["⏳ Still the massive iframe"]
+    subgraph half["🟡 Components added, old iframe NOT removed yet"]
+        Foundations["Foundations<br/>TokenSwatch, GradientHeading + iframe still there"]
+        ADRs["Process & ADRs<br/>AdrCard × 9 + iframe still there"]
+    end
+
+    subgraph pending["⏳ Iframe only, zero real components"]
         Commerce["Commerce"]
         Journeys["Customer Journeys"]
         Scrolly["Scrollytelling"]
@@ -80,18 +83,22 @@ flowchart LR
         Assembly["Assembly & Compare"]
         History["History"]
         Brand["Brand Source"]
+        Icons2["Icon Library"]
+        Orient2["Orientation"]
+        MotionPage["Motion"]
+        Mockups["UI Mockups<br/>all 11 chat-originated widgets live here"]
     end
 
-    subgraph reference["📄 Reference — no conversion needed"]
-        Icons["Icon Library<br/>already real Lucide SVG"]
-        Mockups["UI Mockups<br/>already its own static file"]
-        Orient["Orientation, Designers,<br/>Videographers, Live Site Status"]
+    subgraph reference["📄 Never needs conversion"]
+        Designers["For Graphic Designers,<br/>For Videographers, Live Site Status<br/>— prose only, no iframe"]
     end
 
     Source["static/component-library.html<br/>the original 43-section doc"] -.->|being decomposed from| pending
-    Source -->|already extracted into| done
+    Source -.->|partially extracted into| half
+    Source -->|fully extracted into| done
 
     style done fill:#1E1B22,stroke:#C99552,color:#fff
+    style half fill:#1E1B22,stroke:#f39c12,color:#fff
     style pending fill:#1E1B22,stroke:#3A3441,color:#8a8990
     style reference fill:#1E1B22,stroke:#3A3441,color:#8a8990
 ```
