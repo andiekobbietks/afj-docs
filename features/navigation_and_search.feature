@@ -50,4 +50,4 @@ Feature: Navigation, category filters, and search
 
   Scenario: Search is case-insensitive
     When I search for "BUTTONS"
-    Then the "Buttons" nav link should be visible
+    Then the "sec-buttons" content section should be visible
