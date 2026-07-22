@@ -1,28 +1,7 @@
 
 Failed scenarios:
-  1) Clicking each global theme button updates the whole page # features/global_theme_toggle.feature:22
-       And the navbar background color should change from the Wine/Gold default # features/step_definitions/global_theme_steps.js:28
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/global_theme_steps.js:30:10)
-  2) Clicking each global theme button updates the whole page # features/global_theme_toggle.feature:23
-       And the navbar background color should change from the Wine/Gold default # features/step_definitions/global_theme_steps.js:28
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/global_theme_steps.js:30:10)
-  3) Clicking each global theme button updates the whole page # features/global_theme_toggle.feature:24
-       And the navbar background color should change from the Wine/Gold default # features/step_definitions/global_theme_steps.js:28
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/global_theme_steps.js:30:10)
-  4) Selecting the annual plan marks it selected and not monthly # features/interactive_course_subscription_demo.feature:35
-       Then the "annual" plan should be marked selected # features/step_definitions/course_subscription_steps.js:62
+  1) Selecting the annual plan marks it selected and not monthly # features/interactive_course_subscription_demo.feature:35
+       Then the "annual" plan should be marked selected # features/step_definitions/course_subscription_steps.js:64
            AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
            
            'false' !== 'true'
@@ -32,32 +11,23 @@ Failed scenarios:
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:64:10)
-  5) Confirming a subscription reveals the course library # features/interactive_course_subscription_demo.feature:42
-       Then the library view should be active # features/step_definitions/course_subscription_steps.js:76
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:66:10)
+  2) Confirming a subscription reveals the course library # features/interactive_course_subscription_demo.feature:42
+       Then the library view should be active # features/step_definitions/course_subscription_steps.js:78
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:81:10)
-  6) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
-       And I open the cart # features/step_definitions/shop_demo_steps.js:133
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/course_subscription_steps.js:83:10)
+  3) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
+       When I remove that item # features/step_definitions/shop_demo_steps.js:143
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  7) Clicking a nav link scrolls to its section # features/navigation_and_search.feature:9
-       Then the "sec-buttons" section should be in view # features/step_definitions/common_steps.js:93
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:100:10)
-  8) Search is case-insensitive # features/navigation_and_search.feature:51
+  4) Search is case-insensitive # features/navigation_and_search.feature:52
        Then the "sec-buttons" content section should be visible # features/step_definitions/navigation_search_steps.js:47
            AssertionError [ERR_ASSERTION]
                + expected - actual
@@ -66,26 +36,17 @@ Failed scenarios:
                +false
            
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:52:10)
-  9) Start Here has a real table of contents, not just a link list # features/orientation_content.feature:9
-       Then that section should contain a table # features/step_definitions/orientation_content_steps.js:4
+  5) Switching theme keeps the page scroll position # features/theme_system.feature:23
+       Then the page scroll position should not have changed # features/step_definitions/navigation_search_steps.js:90
            AssertionError [ERR_ASSERTION]
                + expected - actual
            
                -false
                +true
            
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/orientation_content_steps.js:10:10)
-  10) Switching theme keeps the page scroll position # features/theme_system.feature:23
-       Then the "sec-winescale" section should still be in view # features/step_definitions/common_steps.js:103
-           AssertionError [ERR_ASSERTION]
-               + expected - actual
-           
-               -false
-               +true
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/common_steps.js:110:10)
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:92:10)
 
 2 hooks (2 passed)
-152 scenarios (142 passed, 10 failed)
-940 steps (925 passed, 5 skipped, 10 failed)
-2m 15.345s (2m 15.55s executing your code)
+152 scenarios (147 passed, 5 failed)
+942 steps (933 passed, 4 skipped, 5 failed)
+2m 18.966s (2m 18.578s executing your code)
