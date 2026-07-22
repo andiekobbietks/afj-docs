@@ -38,7 +38,7 @@ Failed scenarios:
 2 hooks (2 passed)
 115 scenarios (110 passed, 1 undefined, 4 failed)
 705 steps (695 passed, 5 skipped, 1 undefined, 4 failed)
-1m 51.745s (1m 51.514s executing your code)
+1m 43.686s (1m 43.458s executing your code)
 
 You can implement missing steps with the snippets below:
 
