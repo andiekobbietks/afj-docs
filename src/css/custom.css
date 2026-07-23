@@ -176,6 +176,9 @@ html[data-afj-theme] [class*="sidebarViewport"],
 html[data-afj-theme] [class*="sidebar_"] {
   background: var(--bg-base) !important;
 }
+html[data-afj-theme] .navbar {
+  background: var(--site-topbar-bg) !important;
+}
 html[data-afj-theme] .form-control:focus {
   border-color: var(--accent-1);
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-1) 25%, transparent);

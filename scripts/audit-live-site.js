@@ -89,18 +89,25 @@ function contrastRatio(fg, bg) {
       // looking broken together.
       const bgMismatch = await page.evaluate(() => {
         function parseRgb(str) {
-          const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-          return m ? [Number(m[1]), Number(m[2]), Number(m[3])] : null;
+          const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);
+          if (!m) return null;
+          const alpha = m[4] === undefined ? 1 : Number(m[4]);
+          if (alpha === 0) return null; // fully transparent — not a real color to compare
+          return [Number(m[1]), Number(m[2]), Number(m[3])];
         }
         function relLum(r, g, b) {
           const lin = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
           return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
         }
         const sidebar = document.querySelector('[class*="sidebar"]');
-        const main = document.querySelector('main') || document.body;
+        let main = document.querySelector('main') || document.body;
         if (!sidebar) return null;
         const sidebarBg = parseRgb(getComputedStyle(sidebar).backgroundColor);
-        const mainBg = parseRgb(getComputedStyle(main).backgroundColor);
+        let mainBg = parseRgb(getComputedStyle(main).backgroundColor);
+        while (!mainBg && main.parentElement) {
+          main = main.parentElement;
+          mainBg = parseRgb(getComputedStyle(main).backgroundColor);
+        }
         if (!sidebarBg || !mainBg) return null;
         const sidebarLum = relLum(...sidebarBg);
         const mainLum = relLum(...mainBg);
