@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 
 const BASE = 'https://andiekobbietks.github.io/afj-docs';
-const PAGES = ['/docs/live-site-status', '/docs/core-ui', '/docs/customer-journeys', '/docs/foundations'];
+const PAGES = ['/', '/docs/live-site-status', '/docs/core-ui', '/docs/customer-journeys', '/docs/foundations'];
 const THEMES = ['wine', 'scrolly', 'day', 'scrollyday'];
 
 function relativeLuminance(r, g, b) {
@@ -81,6 +81,40 @@ function contrastRatio(fg, bg) {
 
       if (failures.length > 0) {
         results.contrastFailures.push({ page: pagePath, theme, failures });
+      }
+
+      // Sidebar-vs-page background consistency — a real bug the pure
+      // contrast check above wouldn't catch: a light sidebar and dark
+      // page (or vice versa) can each individually pass contrast while
+      // looking broken together.
+      const bgMismatch = await page.evaluate(() => {
+        function parseRgb(str) {
+          const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+          return m ? [Number(m[1]), Number(m[2]), Number(m[3])] : null;
+        }
+        function relLum(r, g, b) {
+          const lin = (c) => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
+          return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+        }
+        const sidebar = document.querySelector('[class*="sidebar"]');
+        const main = document.querySelector('main') || document.body;
+        if (!sidebar) return null;
+        const sidebarBg = parseRgb(getComputedStyle(sidebar).backgroundColor);
+        const mainBg = parseRgb(getComputedStyle(main).backgroundColor);
+        if (!sidebarBg || !mainBg) return null;
+        const sidebarLum = relLum(...sidebarBg);
+        const mainLum = relLum(...mainBg);
+        // Flag if one side is clearly dark (luminance < 0.2) and the
+        // other clearly light (luminance > 0.6) — a real mismatch, not
+        // just a subtle intentional shade difference.
+        if ((sidebarLum < 0.2 && mainLum > 0.6) || (sidebarLum > 0.6 && mainLum < 0.2)) {
+          return { sidebarBg, mainBg, sidebarLum: sidebarLum.toFixed(2), mainLum: mainLum.toFixed(2) };
+        }
+        return null;
+      });
+      if (bgMismatch) {
+        results.backgroundMismatches = results.backgroundMismatches || [];
+        results.backgroundMismatches.push({ page: pagePath, theme, ...bgMismatch });
       }
     }
     await page.close();

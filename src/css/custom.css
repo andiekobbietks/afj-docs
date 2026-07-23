@@ -163,6 +163,19 @@ html[data-afj-theme] .menu__link--active,
 html[data-afj-theme] .navbar__link--active {
   color: var(--accent-1) !important;
 }
+
+/* Direct fix for the sidebar staying dark in Day/Scrolly Day — Infima's
+   own CSS has no explicit background rule on the sidebar container at
+   all (confirmed by reading the compiled output), so it should have
+   been inheriting the correctly-themed body background already. It
+   wasn't, in practice — a real screenshot showed a dark sidebar next
+   to a light main content area simultaneously. Forcing it directly
+   removes the ambiguity rather than tracing further. */
+html[data-afj-theme] [class*="docSidebarContainer"],
+html[data-afj-theme] [class*="sidebarViewport"],
+html[data-afj-theme] [class*="sidebar_"] {
+  background: var(--bg-base) !important;
+}
 html[data-afj-theme] .form-control:focus {
   border-color: var(--accent-1);
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-1) 25%, transparent);
