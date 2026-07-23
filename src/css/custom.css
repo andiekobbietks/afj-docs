@@ -75,7 +75,7 @@ html[data-afj-mode="day"] {
 /* This is the part that makes the theme actually global — without it,
    the tokens above exist but Docusaurus's real navbar/sidebar/content
    never reads them, so the site looks unchanged regardless of toggle. */
-html {
+html[data-afj-theme] {
   --ifm-background-color: var(--bg-page, var(--site-bg));
   --ifm-background-surface-color: var(--bg-base, var(--site-sidebar-bg));
   --ifm-font-color-base: var(--text, var(--site-text-primary));
@@ -98,6 +98,7 @@ html {
   --ifm-table-cell-color: var(--text-muted, var(--site-text-secondary));
   --ifm-code-background: var(--bg-offset, var(--site-nav-hover-bg));
   --ifm-pre-background: var(--bg-offset, var(--site-nav-hover-bg));
+  --ifm-card-background-color: var(--bg-offset, var(--site-nav-hover-bg));
 }
 /* ============ BOOTSTRAP 5.3 THEMING, PER ADR-001 ============ */
 /* Bootstrap 5.3 scopes its own CSS variables locally per component
@@ -213,6 +214,37 @@ html[data-afj-theme] .breadcrumbs__link {
 }
 html[data-afj-theme] .breadcrumbs__item--active .breadcrumbs__link {
   color: var(--accent-1) !important;
+}
+
+/* Direct table/code overrides — the CSS-variable versions of these
+   same properties (--ifm-table-stripe-background, --ifm-code-background,
+   etc., set at html{} scope above) were not taking effect in practice,
+   confirmed by a real audit: white text on a 7%-opacity white table
+   background, 1.00:1 ratio, on the Icon Library reference tables —
+   the primary content on that page, and the site's biggest un-checked
+   gap until now. Targeting the actual elements directly, the only
+   approach that's worked reliably all session. */
+html[data-afj-theme] table {
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+html[data-afj-theme] thead,
+html[data-afj-theme] tr:nth-child(2n) {
+  background: var(--bg-offset) !important;
+}
+html[data-afj-theme] th,
+html[data-afj-theme] td {
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+  background: transparent !important;
+}
+html[data-afj-theme] code {
+  background: var(--bg-offset) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+html[data-afj-theme] pre {
+  background: var(--bg-offset) !important;
 }
 html[data-afj-theme] .form-control:focus {
   border-color: var(--accent-1);
