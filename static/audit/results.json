@@ -23,32 +23,6 @@
   ],
   "contrastFailures": [
     {
-      "page": "/",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        }
-      ]
-    },
-    {
-      "page": "/",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        }
-      ]
-    },
-    {
       "page": "/docs/live-site-status",
       "theme": "wine",
       "failures": [
@@ -78,13 +52,6 @@
       "page": "/docs/live-site-status",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -122,31 +89,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousOriginal Widget Gallery",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
           "text": "Current status",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "What this library is for, once the build",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
-          "text": "Launch checklist this library doesn't co",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
+          "ratio": "2.09"
         }
       ]
     },
@@ -154,13 +100,6 @@
       "page": "/docs/live-site-status",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -198,31 +137,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousOriginal Widget Gallery",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
           "text": "Current status",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "What this library is for, once the build",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
-          "text": "Launch checklist this library doesn't co",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
+          "ratio": "1.83"
         }
       ]
     },
@@ -256,13 +174,6 @@
       "page": "/docs/core-ui",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -300,31 +211,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousFor Videographers",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "NextCommerce",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
           "text": "1. Button component",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "2. Card component, shared-border frame",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
+          "ratio": "2.09"
         }
       ]
     },
@@ -332,13 +222,6 @@
       "page": "/docs/core-ui",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -376,31 +259,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousFor Videographers",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "NextCommerce",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
           "text": "1. Button component",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "2. Card component, shared-border frame",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
+          "ratio": "1.83"
         }
       ]
     },
@@ -476,13 +338,6 @@
       "page": "/docs/customer-journeys",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -604,59 +459,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousCommerce",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "NextUI Mockups",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Class Booking journey",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Shop journey",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
-          "text": "How it got here — static markup, then a ",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Course Subscription jou",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
           "text": "Live preview of all six (original, not y",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "Customer journeys",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
+          "ratio": "2.09"
         }
       ]
     },
@@ -664,13 +470,6 @@
       "page": "/docs/customer-journeys",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -792,59 +591,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousCommerce",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "NextUI Mockups",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Class Booking journey",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Shop journey",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
-          "text": "How it got here — static markup, then a ",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
-          "text": "Real React port: Course Subscription jou",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
           "text": "Live preview of all six (original, not y",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "Customer journeys",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
+          "ratio": "1.83"
         }
       ]
     },
@@ -878,13 +628,6 @@
       "page": "/docs/foundations",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -922,38 +665,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousOrientation",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "NextIcon Library",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
           "text": "Design tokens",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
-          "ratio": "3.32"
-        },
-        {
-          "tag": "A",
-          "text": "Typography",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
-        },
-        {
-          "tag": "A",
-          "text": "Iconography",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.27"
+          "ratio": "2.09"
         }
       ]
     },
@@ -961,13 +676,6 @@
       "page": "/docs/foundations",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "AFJ Cardiff",
-          "color": "rgb(227, 227, 227)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.15"
-        },
         {
           "tag": "A",
           "text": "Docs",
@@ -1005,38 +713,10 @@
         },
         {
           "tag": "A",
-          "text": "PreviousOrientation",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "NextIcon Library",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
           "text": "Design tokens",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
-          "ratio": "3.52"
-        },
-        {
-          "tag": "A",
-          "text": "Typography",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
-        },
-        {
-          "tag": "A",
-          "text": "Iconography",
-          "color": "rgb(255, 255, 255)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.20"
+          "ratio": "1.83"
         }
       ]
     }
