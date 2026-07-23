@@ -62,7 +62,7 @@ Screenshots are generated automatically by `.github/workflows/screenshots.yml` (
 
 ## Migration status, at a glance
 
-Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens. Core UI is the only page where the iframe is actually gone. Foundations and Process & ADRs have real components added but still render the old iframe alongside them too — that's next to fix, not a second finished page. Everything else, including all 11 of the originally chat-built UI mockups (still living in `static/ui-mockups.html`), hasn't started.
+Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens. Core UI is the only page where the iframe is actually gone. Foundations and Process & ADRs have real components added but still render the old iframe alongside them too — that's next to fix, not a second finished page. Everything else — including all 11 of the originally chat-built UI mockups (still living in `static/ui-mockups.html`) and the 50 further widgets in Original Widget Gallery (built with nested iframes, a step away from real components rather than toward them) — hasn't started.
 
 ```mermaid
 flowchart LR
@@ -87,6 +87,7 @@ flowchart LR
         Orient2["Orientation"]
         MotionPage["Motion"]
         Mockups["UI Mockups<br/>all 11 chat-originated widgets live here"]
+        Gallery["Original Widget Gallery<br/>50 MORE widgets, nested iframes —<br/>50 inside 1, a step away from real<br/>components, not toward them"]
     end
 
     subgraph reference["📄 Never needs conversion"]
