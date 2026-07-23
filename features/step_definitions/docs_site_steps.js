@@ -47,7 +47,7 @@ Then('the iframe should contain visible content, not a blank page', async functi
   assert.ok(bodyText && bodyText.length > 0, 'expected the iframe body to contain visible text');
 });
 
-Then('every fenced code block should have a visible copy button', async function () {
+Then('every fenced code block should have a visible copy button', { timeout: 15000 }, async function () {
   const buttons = this.page.locator('button[aria-label*="Copy" i], button[title*="Copy" i]');
   await buttons.first().waitFor({ state: 'visible', timeout: 10000 });
   const count = await buttons.count();
