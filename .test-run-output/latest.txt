@@ -17,12 +17,13 @@ Failed scenarios:
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:101:10)
   3) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:57
        Then every fenced code block should have a visible copy button # features/step_definitions/docs_site_steps.js:50
-           Error: function timed out, ensure the promise resolves within 5000 milliseconds
-               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
-               at listOnTimeout (node:internal/timers:585:17)
-               at process.processTimers (node:internal/timers:521:7)
+           locator.waitFor: Timeout 10000ms exceeded.
+           Call log:
+             - waiting for locator('button[aria-label*="Copy" i], button[title*="Copy" i]').first() to be visible
+           
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:52:25)
 
 2 hooks (2 passed)
 162 scenarios (159 passed, 3 failed)
 1001 steps (994 passed, 4 skipped, 3 failed)
-2m 22.157s (2m 21.778s executing your code)
+2m 39.595s (2m 39.203s executing your code)
