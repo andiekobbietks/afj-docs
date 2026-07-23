@@ -7,58 +7,52 @@ description: Gallery grid, carousel, interactive input, and the wine tonal scale
 
 Gallery grid, carousel, interactive input, and the wine tonal scale explainer.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-gallery');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="More UI Kit live preview"
-          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
+import GalleryGridDemo from '@site/src/components/GalleryGridDemo';
+import CarouselDemo from '@site/src/components/CarouselDemo';
+import NewsletterInputDemo from '@site/src/components/NewsletterInputDemo';
+import TonalScaleDemo from '@site/src/components/TonalScaleDemo';
 
 ## 3. Gallery grid
 
-4 columns desktop, hover scales a tile to 1.03, collapses to 2 columns under 500px. The simplest component in the whole kit, on purpose.
+4 columns desktop, collapses to 2 columns under 500px — real Bootstrap `row row-cols-2 row-cols-md-4`, not custom grid CSS:
 
-**Preview**
+<GalleryGridDemo />
 
-```css
-.afj-gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 500px) {.afj-gallery-grid { grid-template-columns: 1fr 1fr; } }
+```html
+<div class="row row-cols-2 row-cols-md-4 g-2">...</div>
 ```
 
 ## 4. Carousel component
 
-overflow-x: auto handles native touch swipe, mouse-drag added via JS cursor feedback, no extra CSS needed for that part.
+**What Bootstrap doesn't provide here, and how it's built anyway:** Bootstrap's own `.carousel` is a single-slide auto-rotating slideshow — a genuinely different thing from this row, which shows multiple cards at once and scrolls by drag. Using `.carousel` here would be the wrong component for the job, not a shortcut. Real Bootstrap still does most of the work (`overflow-x-auto`, `d-flex`, `gap-2` are all real utilities); only the drag-to-scroll mouse handling is vanilla JS, since no framework — Bootstrap included — ships that as a utility:
 
-**Preview**
+<CarouselDemo />
 
-```css
-.afj-testimonial-row { display: flex; overflow-x: auto; cursor: grab; }
+```html
+<div class="d-flex overflow-x-auto gap-2">...</div>
 ```
 
 ## 5. Interactive input
 
-Bordered, transparent fill, stays visually quiet as a secondary action next to primary CTAs. Scales to 40px height on mobile for tap ease.
+Real Bootstrap `input-group`, not a bordered div wrapping a bare input:
 
-**Preview**
+<NewsletterInputDemo />
 
-```css
-.afj-newsletter { background: transparent; border: 1px solid var(--border); }
-@media (max-width: 500px) {.afj-newsletter { height: 40px; } }
+```html
+<div class="input-group">
+  <input type="email" class="form-control" placeholder="you@example.com">
+  <button class="btn btn-outline-primary" type="button">Subscribe</button>
+</div>
 ```
 
 ## 6. Tonal scale explainer
 
-How the seven derived shades of the base accent actually get used across UI states. This table is token-driven, it reads --accent-2 and derives the seven stops from it, so it's the wine scale in Wine/Gold, the orange→red scale in Scrollytelling, and the same wine scale again (just on beige) in Day mode. One rule, three renders.
+How the seven derived shades of the base accent actually get used across UI states — reads `--accent-2` and derives the seven stops from it via `color-mix()`, so it's the wine scale in Wine/Gold, the orange→red scale in Scrollytelling, and the same wine scale again (just on beige) in Day mode:
+
+<TonalScaleDemo />
+
+```css
+/* color-mix() is standard CSS, not Bootstrap-specific — no utility class
+   exists for "N% of a custom property" in any framework */
+background: color-mix(in srgb, var(--accent-2) 65%, var(--bg-base));
+```
