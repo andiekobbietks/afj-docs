@@ -28,17 +28,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
-        },
-        {
-          "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
         }
       ]
     },
@@ -48,17 +41,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
-        },
-        {
-          "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
         }
       ]
     },
@@ -94,10 +80,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
         },
         {
           "tag": "A",
@@ -163,10 +156,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
         },
         {
           "tag": "A",
@@ -258,10 +258,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
         },
         {
           "tag": "A",
@@ -327,10 +334,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
         },
         {
           "tag": "A",
@@ -464,10 +478,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
         },
         {
           "tag": "A",
@@ -645,10 +666,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
         },
         {
           "tag": "A",
@@ -852,10 +880,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
         },
         {
           "tag": "A",
@@ -928,10 +963,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "GitHub",
-          "color": "rgb(92, 87, 76)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "2.14"
+          "text": "AFJ Cardiff",
+          "color": "rgb(227, 227, 227)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.15"
+        },
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
         },
         {
           "tag": "A",
@@ -997,168 +1039,6 @@
           "ratio": "1.20"
         }
       ]
-    }
-  ],
-  "backgroundMismatches": [
-    {
-      "page": "/",
-      "theme": "day",
-      "sidebarBg": [
-        241,
-        239,
-        232
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.86",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/",
-      "theme": "scrollyday",
-      "sidebarBg": [
-        245,
-        242,
-        234
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.89",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/live-site-status",
-      "theme": "day",
-      "sidebarBg": [
-        241,
-        239,
-        232
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.86",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/live-site-status",
-      "theme": "scrollyday",
-      "sidebarBg": [
-        245,
-        242,
-        234
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.89",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/core-ui",
-      "theme": "day",
-      "sidebarBg": [
-        241,
-        239,
-        232
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.86",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/core-ui",
-      "theme": "scrollyday",
-      "sidebarBg": [
-        245,
-        242,
-        234
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.89",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/customer-journeys",
-      "theme": "day",
-      "sidebarBg": [
-        241,
-        239,
-        232
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.86",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/customer-journeys",
-      "theme": "scrollyday",
-      "sidebarBg": [
-        245,
-        242,
-        234
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.89",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/foundations",
-      "theme": "day",
-      "sidebarBg": [
-        241,
-        239,
-        232
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.86",
-      "mainLum": "0.00"
-    },
-    {
-      "page": "/docs/foundations",
-      "theme": "scrollyday",
-      "sidebarBg": [
-        245,
-        242,
-        234
-      ],
-      "mainBg": [
-        0,
-        0,
-        0
-      ],
-      "sidebarLum": "0.89",
-      "mainLum": "0.00"
     }
   ]
 }
