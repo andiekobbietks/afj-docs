@@ -164,7 +164,13 @@ Both fixed and re-verified with the same audit script against the redeployed sit
 
 Total measured contrast failures dropped from 86+ individual instances to a smaller, now-isolated remainder (mostly the Customer Journeys page's embedded interactive demo content, and one still-open item — see below). Homepage: zero failures. Background mismatches: zero, confirmed stable across two audit runs.
 
-**Still open, not silently left:** a handful of contrast failures remain concentrated in the Customer Journeys page's interactive demo components (ShopFlow/ClassBookingFlow/CourseSubscriptionFlow inline styles, not yet audited with the same rigor as the rest of the site), plus the pre-existing smaller items (active breadcrumb pill contrast at 2.66:1, one stray default-Infima-blue link). Each is a real, scoped, findable item for the next pass — not a mystery.
+**Third round: a screenshot of Icon Library exposed the biggest gap of all — the audit had only ever checked 5 of 17 pages.** Extended to 13. Real numbers from the expanded audit: 694 individual contrast failures, including 95 on Icon Library alone in Wine/Gold, a theme previously considered solid.
+
+Traced to a genuine systemic bug, not a missed CSS rule: the foundational variable mapping used a bare `html {}` selector. Docusaurus's own `html[data-theme=dark] { --ifm-background-surface-color: #242526; ... }` is *more specific* (attribute selector + element beats element alone), so it silently won over the mapping for every property inherited from that one variable — Bootstrap cards via `--ifm-card-background-color`, and more — regardless of source order. Confirmed with real evidence: the exact same `#242526` background traced independently on Icon Library's tables and on Process & ADRs' `AdrCard` components, in both Wine/Gold (where it happened to look tolerable) and Day mode (where it was catastrophic) — one root cause, multiple visible symptoms. Fixed by matching Docusaurus's own specificity instead of losing to it.
+
+Re-audit after the fix: 278 individual failures, a 60% reduction. Wine and Scrollytelling are now clean on nearly every page. Along the way, fixed a second bug in the audit script itself — it only recognized the *exact* string `rgba(0, 0, 0, 0)` as "keep walking up to find the real background," so genuine, intentional low-opacity highlight overlays (2–5%, real design in several Scrollytelling components) were misread as the actual background, inflating scrolly's numbers with false positives. Fixed to check the real alpha value instead of an exact string match.
+
+**Still open, concentrated and specific, not vague:** Day and Scrolly Day themes still show 6–16 failures per page consistently — a remaining pattern this fix didn't fully resolve. Process & ADRs is the clear outlier (36/16/52 across themes) and needs its own dedicated pass.
 
 ## Future: Tailwind
 
