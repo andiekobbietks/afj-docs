@@ -8,6 +8,16 @@ This mirrors the Changelog section inside `static/component-library.html` (the c
 
 Planned: full atomic-design decomposition of `static/component-library.html` into real Docusaurus/React components (atoms → molecules → organisms → templates), replacing the current iframe-embedded static file entirely, while retaining every one of the ~141 documented features. Scoped as its own migration, not a drop-in change — tracked separately from the entries below.
 
+## v2.1.0 — Site-wide accessibility fix, found via real headless testing
+
+A screenshot of the deployed site showed body text as nearly invisible. Rather than guess at CSS causes, built `scripts/audit-live-site.js` — screenshots the actual live `andiekobbietks.github.io` deployment across all four themes and measures real WCAG contrast ratios for every visible text node, run on GitHub's own CI.
+
+Found and fixed two real bugs, both re-verified against the redeployed site with the same audit, not assumed fixed:
+- Bootstrap 5's `body { color: var(--bs-body-color) }` was never themed globally, only inside `.form-control` — Bootstrap's hardcoded `#212529` default silently won everywhere else. Measured 1.26:1 against the dark page background, affecting every heading and paragraph.
+- Day/Scrolly Day themes correctly lightened page content but left the sidebar/navbar chrome dark, since chrome is governed by an independent `data-afj-mode` attribute the four-theme buttons never touched. Measured 1.07:1 on real sidebar links. Fixed by defaulting the chrome mode to match the selected theme, while the independent day/night toggle can still override it afterward.
+
+A third issue (Infima's `.navbar--dark` locally redefining `--ifm-menu-color`) fixed by targeting the actual link elements directly. Full writeup as a real ADR on Process & ADRs. Remaining smaller gaps (active breadcrumb pill contrast, one navbar background, a stray default-blue link) tracked as open, not silently left.
+
 ## v2.0.0 — Migrated to a real Docusaurus deployment
 
 The single canonical HTML file is now a full, deployed, multi-page site rather than something read in isolation. Everything below happened in service of getting `static/component-library.html` onto GitHub Pages as a real, working, tested site — not just a bigger version of the same document.

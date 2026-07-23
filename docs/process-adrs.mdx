@@ -139,6 +139,22 @@ Carried over from a governance review of the live production build, not made in 
 
 ADR-002 above records the formal decision. This is the plainer version, for anyone who wants the reasoning without reading it in ADR format.
 
+## ADR: Site-wide contrast audit found via real headless testing, not inspection
+
+**Context.** A screenshot of the deployed live site showed body text as barely visible — nearly illegible against the dark background. Rather than guess at CSS causes, built a real audit (`scripts/audit-live-site.js`) that screenshots the actual deployed `andiekobbietks.github.io` URL across all four themes and computes real WCAG contrast ratios for every visible text node, run on GitHub's CI where headless Chromium is available (this sandbox can't run one).
+
+**Options considered.**
+1. Read the CSS and guess at the cause.
+2. Build a real audit that measures actual computed colors against actual computed backgrounds on the live deployed site, not the local build.
+
+**Decision.** Option 2. Guessing from CSS alone had already produced two believable-but-wrong theories before the audit ran and gave real numbers.
+
+**Reasoning.** The real cause was two separate bugs the audit's own numbers pinpointed precisely:
+- Bootstrap 5's `body { color: var(--bs-body-color) }` was never themed globally (only inside `.form-control`), so Bootstrap's hardcoded light-mode default (`#212529`) silently won everywhere — measured at 1.26:1 against the dark page background, affecting every heading and paragraph on every page.
+- The Day/Scrolly Day themes correctly lightened page content, but the sidebar/navbar chrome is governed by a *separate* `data-afj-mode` attribute that only the independent day/night switch touches — nothing set it when picking a theme via the four-theme buttons, so the sidebar stayed dark-styled against a now-light page. Measured at 1.07:1 on real sidebar links.
+
+Both fixed and re-verified with the same audit script against the redeployed site — not assumed fixed from reading the diff. A third, smaller issue (Infima's `.navbar--dark` locally redefining `--ifm-menu-color` through a cascade path not fully traced) was fixed by targeting the actual `.menu__link`/`.navbar__link` elements directly rather than continuing to chase the variable cascade. Remaining smaller contrast gaps (the active breadcrumb pill, one un-migrated navbar background, a stray Infima-blue link) are tracked as open, not silently left for someone to rediscover.
+
 ## Future: Tailwind
 
 Not a decision that's been made, a note for whoever revisits this in a year, so the option is on the table with context instead of being proposed cold.
