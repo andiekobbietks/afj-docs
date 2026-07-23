@@ -1,16 +1,15 @@
 import React from 'react';
-import styles from './styles.module.css';
 
 export default function DemoProductCard() {
   return (
-    <div className={styles.previewBox}>
-      <div className={styles.card}>
-        <div className={styles.thumb}>
-          <span className={styles.badge}>Limited</span>
+    <div className="p-4 rounded-3 d-flex justify-content-center" style={{ background: 'var(--bg-base)', border: '1px solid var(--border)' }}>
+      <div className="card" style={{ width: '10rem' }}>
+        <div className="position-relative" style={{ aspectRatio: '1', background: 'linear-gradient(135deg, var(--bg-panel), var(--bg-offset))' }}>
+          <span className="badge text-bg-primary position-absolute top-0 start-0 m-2" style={{ fontSize: '9px' }}>Limited</span>
         </div>
-        <div className={styles.info}>
-          <p className={styles.name}>Red hoodie</p>
-          <p className={styles.price}>£42.00</p>
+        <div className="card-body p-2">
+          <p className="card-text mb-0" style={{ fontSize: '12px' }}>Red hoodie</p>
+          <p className="card-text mb-0" style={{ fontSize: '11px', color: 'var(--accent-1)' }}>£42.00</p>
         </div>
       </div>
     </div>

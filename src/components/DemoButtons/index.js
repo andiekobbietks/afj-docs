@@ -1,13 +1,10 @@
 import React from 'react';
-import styles from './styles.module.css';
 
 export default function DemoButtons() {
   return (
-    <div className={styles.previewBox}>
-      <div className={styles.row}>
-        <button className={`${styles.btn} ${styles.primary}`}>Book a class</button>
-        <button className={`${styles.btn} ${styles.outline}`}>View basket</button>
-      </div>
+    <div className="p-4 rounded-3 d-flex justify-content-center gap-2 flex-wrap" style={{ background: 'var(--bg-base)', border: '1px solid var(--border)' }}>
+      <button type="button" className="btn btn-primary">Book a class</button>
+      <button type="button" className="btn btn-outline-primary">View basket</button>
     </div>
   );
 }

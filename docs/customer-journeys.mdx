@@ -47,6 +47,16 @@ const toggleClass = (id) => {
 };
 ```
 
+**Production note:** the accordion markup above is real Bootstrap (`accordion`, `accordion-button`, `accordion-collapse`) — on afjcardiff.com, the same HTML pairs with Bootstrap's own `Collapse` API instead of React state:
+
+```js
+// Vanilla JS: bootstrap.Collapse instead of a React Set
+document.querySelectorAll('.accordion-button').forEach((btn) => {
+  const target = document.querySelector(btn.dataset.bsTarget);
+  new bootstrap.Collapse(target, { toggle: false }); // multiple can stay open — no data-bs-parent
+});
+```
+
 ## Real React port: Shop journey
 
 import ShopFlow from '@site/src/components/ShopFlow';
@@ -95,7 +105,33 @@ const addToCart = () => {
 
 The cart list itself goes from an `innerHTML` template-string loop to a real `.map()` returning JSX — no string concatenation, no risk of a stray unescaped character breaking the markup.
 
-## Live preview of all six (original, not yet ported)
+**Production note:** Docusaurus needs React to render anything, but afjcardiff.com doesn't use React — it's plain Bootstrap 5 + vanilla JS, confirmed by the actual "Coming Soon" page currently live. So the component above uses real Bootstrap classes (`btn`, `card`, `offcanvas`, `list-group`), but the *code that would actually paste into afjcardiff.com* is the vanilla JS version, not the JSX:
+
+```html
+<!-- The Bootstrap markup is identical either way — only the interactivity differs -->
+<div class="offcanvas offcanvas-end" id="cartDrawer" tabindex="-1">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Your basket</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body" id="drawerItems"></div>
+</div>
+```
+
+```js
+// Vanilla JS: Bootstrap's own Offcanvas API instead of React state
+const drawer = new bootstrap.Offcanvas('#cartDrawer');
+function addToCart() {
+  cart.push({ name: activeProduct.name, price: activeProduct.price, size: currentSize, qty: currentQty });
+  document.getElementById('cartCount').textContent = cart.length;
+  document.getElementById('drawerItems').innerHTML = cart.map(item =>
+    `<div class="list-group-item">${item.name} — £${item.price}</div>`
+  ).join('');
+  drawer.show(); // Bootstrap's real JS API, not classList.toggle
+}
+```
+
+## Real React port: Shop journey
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';

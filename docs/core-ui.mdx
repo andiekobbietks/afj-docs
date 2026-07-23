@@ -12,20 +12,38 @@ import DemoProductCard from '@site/src/components/DemoProductCard';
 
 ## 1. Button component
 
-Radius switches from 8-10px in Wine/Gold and Day mode to a full pill in Scrollytelling via `--btn-radius`.
+Radius switches from 8-10px in Wine/Gold and Day mode to a full pill in Scrollytelling via `--btn-radius`. Real Bootstrap 5 classes — no bespoke `.demo-btn` styling, this is the same markup that would work on afjcardiff.com directly (no React needed there):
 
 <DemoButtons />
 
+```html
+<button type="button" class="btn btn-primary">Book a class</button>
+<button type="button" class="btn btn-outline-primary">View basket</button>
+```
+
 ```css
-.demo-btn.primary { background: var(--gradient); border-radius: var(--btn-radius); }
+/* Themes Bootstrap's own component variables, not a parallel system */
+[data-afj-theme] .btn-primary {
+  background: var(--gradient);
+  border-color: transparent;
+  border-radius: var(--btn-radius);
+}
 ```
 
 ## 2. Card component, shared-border frame
 
-Badge colour pulls `--accent-2` in all three themes.
+Badge colour pulls `--accent-2` in all three themes. Real Bootstrap `.card`:
 
 <DemoProductCard />
 
 ```html
-<div class="demo-card">...</div>
+<div class="card" style="width: 10rem;">
+  <div class="position-relative" style="aspect-ratio: 1;">
+    <span class="badge text-bg-primary position-absolute top-0 start-0 m-2">Limited</span>
+  </div>
+  <div class="card-body p-2">
+    <p class="card-text mb-0">Red hoodie</p>
+    <p class="card-text mb-0">£42.00</p>
+  </div>
+</div>
 ```

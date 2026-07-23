@@ -89,6 +89,68 @@ html {
   --ifm-toc-border-color: var(--border, var(--site-border));
   --ifm-hr-border-color: var(--border, var(--site-border));
 }
+/* ============ BOOTSTRAP 5.3 THEMING, PER ADR-001 ============ */
+/* Bootstrap 5.3 scopes its own CSS variables locally per component
+   (.btn-primary defines --bs-btn-bg on itself, not at :root), so
+   overriding them here — scoped under each AFJ theme — is exactly
+   the "themed via CSS custom properties" approach the ADR describes,
+   not a parallel custom-CSS system living alongside Bootstrap. */
+html[data-afj-theme] .btn-primary {
+  background: var(--gradient);
+  border-color: transparent;
+  border-radius: var(--btn-radius);
+  color: #fff;
+  --bs-btn-hover-bg: var(--gradient);
+  --bs-btn-active-bg: var(--gradient);
+}
+html[data-afj-theme] .btn-outline-primary {
+  --bs-btn-color: var(--text);
+  --bs-btn-border-color: var(--text);
+  --bs-btn-hover-bg: var(--text);
+  --bs-btn-hover-color: var(--bg-base);
+  border-radius: var(--btn-radius);
+}
+html[data-afj-theme] .card {
+  --bs-card-bg: var(--bg-offset);
+  --bs-card-border-color: var(--border);
+  --bs-card-color: var(--text);
+  border-radius: var(--radius);
+}
+html[data-afj-theme] .card-header,
+html[data-afj-theme] .card-footer {
+  --bs-card-cap-bg: var(--bg-panel);
+  border-color: var(--border);
+}
+html[data-afj-theme] .badge.text-bg-primary {
+  background: var(--accent-1) !important;
+  color: var(--bg-base) !important;
+}
+html[data-afj-theme] .form-control {
+  --bs-body-bg: var(--bg-offset);
+  --bs-body-color: var(--text);
+  border-color: var(--border);
+}
+html[data-afj-theme] .form-control:focus {
+  border-color: var(--accent-1);
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-1) 25%, transparent);
+}
+html[data-afj-theme] .offcanvas {
+  --bs-offcanvas-bg: var(--bg-offset);
+  --bs-offcanvas-color: var(--text);
+  --bs-offcanvas-border-color: var(--border);
+}
+html[data-afj-theme] .accordion-item {
+  --bs-accordion-bg: var(--bg-offset);
+  --bs-accordion-border-color: var(--border);
+  --bs-accordion-active-bg: var(--bg-panel);
+  --bs-accordion-active-color: var(--text);
+  --bs-accordion-btn-color: var(--text);
+}
+html[data-afj-theme] .list-group-item {
+  --bs-list-group-bg: var(--bg-offset);
+  --bs-list-group-border-color: var(--border);
+  --bs-list-group-color: var(--text);
+}
 body {
   background: var(--bg-page, var(--site-bg));
   transition: background .25s ease, color .25s ease;
