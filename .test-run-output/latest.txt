@@ -37,4 +37,4 @@ Failed scenarios:
 2 hooks (2 passed)
 152 scenarios (148 passed, 4 failed)
 942 steps (935 passed, 3 skipped, 4 failed)
-2m 16.453s (2m 16.73s executing your code)
+2m 24.364s (2m 23.983s executing your code)
