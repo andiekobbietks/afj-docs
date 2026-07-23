@@ -1,0 +1,38 @@
+name: Accessibility audit of live site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Run live site audit
+        run: node scripts/audit-live-site.js
+
+      - name: Commit audit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/audit
+          if git diff --cached --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "Accessibility audit of live site"
+            git pull --rebase origin main
+            git push
+          fi
