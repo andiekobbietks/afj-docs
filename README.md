@@ -62,44 +62,38 @@ Screenshots are generated automatically by `.github/workflows/screenshots.yml` (
 
 ## Migration status, at a glance
 
-Every page started as an `<iframe>` embedding the massive `static/component-library.html`. The migration replaces that, page by page, with real Docusaurus/React components using the same tokens. Core UI is the only page where the iframe is actually gone. Foundations and Process & ADRs have real components added but still render the old iframe alongside them too — that's next to fix, not a second finished page. Everything else — including all 11 of the originally chat-built UI mockups (still living in `static/ui-mockups.html`) and the 50 further widgets in Original Widget Gallery (built with nested iframes, a step away from real components rather than toward them) — hasn't started.
+Every page started as an `<iframe>` embedding the massive `static/component-library.html`. All 13 pages that ever had one are now real Bootstrap 5 components — Core UI, Foundations, Process & ADRs, Commerce, Customer Journeys (all 6 flows, 3 real React ports covering all 4 themes via the global CSS variables, no separate Scrollytelling components needed), Scrollytelling Experience, More UI Kit, Assembly & Compare, History, Brand Source, and Icon Library (a real `lucide-react` sample alongside the complete generated set). Orientation and Motion had their iframes removed without a replacement component, since both are genuinely prose-only. What's left: the 11 originally chat-built UI Mockups (`static/ui-mockups.html`) and the 50 further widgets in Original Widget Gallery (nested iframes) — both still need the same treatment.
 
 ```mermaid
 flowchart LR
-    subgraph done["✅ Real components, iframe removed"]
-        CoreUI["Core UI<br/>DemoButtons, DemoProductCard"]
-    end
-
-    subgraph half["🟡 Components added, old iframe NOT removed yet"]
-        Foundations["Foundations<br/>TokenSwatch, GradientHeading + iframe still there"]
-        ADRs["Process & ADRs<br/>AdrCard × 9 + iframe still there"]
-    end
-
-    subgraph pending["⏳ Iframe only, zero real components"]
+    subgraph done["✅ Real Bootstrap 5 components, iframe removed"]
+        CoreUI["Core UI"]
+        Foundations["Foundations"]
+        ADRs["Process & ADRs"]
         Commerce["Commerce"]
-        Journeys["Customer Journeys"]
+        Journeys["Customer Journeys<br/>3 flows × 4 themes via CSS vars"]
         Scrolly["Scrollytelling"]
         MoreUI["More UI Kit"]
         Assembly["Assembly & Compare"]
         History["History"]
         Brand["Brand Source"]
-        Icons2["Icon Library"]
+        Icons2["Icon Library<br/>real lucide-react sample + full set"]
+    end
+
+    subgraph reference["📄 Prose only, iframe removed, no component needed"]
         Orient2["Orientation"]
         MotionPage["Motion"]
+        Designers["For Graphic Designers,<br/>For Videographers, Live Site Status<br/>— never had an iframe"]
+    end
+
+    subgraph pending["⏳ Not started"]
         Mockups["UI Mockups<br/>all 11 chat-originated widgets live here"]
-        Gallery["Original Widget Gallery<br/>50 MORE widgets, nested iframes —<br/>50 inside 1, a step away from real<br/>components, not toward them"]
+        Gallery["Original Widget Gallery<br/>50 widgets, nested iframes"]
     end
 
-    subgraph reference["📄 Never needs conversion"]
-        Designers["For Graphic Designers,<br/>For Videographers, Live Site Status<br/>— prose only, no iframe"]
-    end
-
-    Source["static/component-library.html<br/>the original 43-section doc"] -.->|being decomposed from| pending
-    Source -.->|partially extracted into| half
-    Source -->|fully extracted into| done
+    Source["static/component-library.html<br/>the original 43-section doc"] -->|fully extracted into| done
 
     style done fill:#1E1B22,stroke:#C99552,color:#fff
-    style half fill:#1E1B22,stroke:#f39c12,color:#fff
     style pending fill:#1E1B22,stroke:#3A3441,color:#8a8990
     style reference fill:#1E1B22,stroke:#3A3441,color:#8a8990
 ```
