@@ -19,7 +19,7 @@ function contrastFormula() {
   `;
 }
 
-Then('the computed body text contrast ratio should be at least {float} to {int}', async function (minRatio) {
+Then('the computed body text contrast ratio should be at least {float} to {int}', async function (minRatio, denom) {
   await this.page.waitForTimeout(400); // theme transition
   const actual = await this.page.evaluate(`(() => {
     ${contrastFormula()}
@@ -35,7 +35,7 @@ Then('the computed body text contrast ratio should be at least {float} to {int}'
   assert.ok(actual >= minRatio, `expected body text contrast >= ${minRatio}:1, got ${actual.toFixed(2)}:1`);
 });
 
-Then('the computed sidebar link contrast ratio should be at least {float} to {int}', async function (minRatio) {
+Then('the computed sidebar link contrast ratio should be at least {float} to {int}', async function (minRatio, denom) {
   await this.page.waitForTimeout(400);
   const actual = await this.page.evaluate(`(() => {
     ${contrastFormula()}

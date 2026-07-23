@@ -43,18 +43,19 @@ Feature: UI mockups gallery and the documentation site
       | process-adrs                            |
       | history                                  |
       | live-site-status                          |
+      | original-widget-gallery                    |
 
   Scenario: The sidebar lists every documentation page
     Given I open the docs page "orientation"
-    Then the sidebar should contain a link to each of the 17 documentation pages
+    Then the sidebar should contain a link to each of the 18 documentation pages
 
   Scenario: Every docs page's live iframe preview actually loads content
-    Given I open the docs page "core-ui"
+    Given I open the docs page "ui-mockups"
     When I switch to the embedded preview iframe
     Then the iframe should contain visible content, not a blank page
 
   Scenario: Every code sample on a docs page has a working native copy button
-    Given I open the docs page "core-ui"
+    Given I open the docs page "process-adrs"
     Then every fenced code block should have a visible copy button
     When I click the first copy button
     Then the copied content should match the code block's text
