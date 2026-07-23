@@ -7,25 +7,11 @@ description: The pixel-sampled source values and every component built from them
 
 The pixel-sampled source values and every component built from them.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-scrollysample');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="Scrollytelling live preview"
-          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
+import TokenSwatch, { TokenSwatchRow } from '@site/src/components/TokenSwatch';
+import ScrollyHeroDemo from '@site/src/components/ScrollyHeroDemo';
+import StoryCardDemo from '@site/src/components/StoryCardDemo';
+import ManifestoDemo from '@site/src/components/ManifestoDemo';
+import SignupDemo from '@site/src/components/SignupDemo';
 
 ## Pixel-sampled source
 
@@ -44,11 +30,19 @@ This is why "Pixel-sampled source" sits first in the Scrollytelling group, ahead
 --muted-color: #8e8e93;
 ```
 
+<TokenSwatchRow>
+  <TokenSwatch color="#050507" label="--bg-color" />
+  <TokenSwatch color="#ff3344" label="--accent-red" />
+  <TokenSwatch color="#f39c12" label="--accent-orange" />
+  <TokenSwatch color="#f5f5f7" label="--text-color" />
+  <TokenSwatch color="#8e8e93" label="--muted-color" />
+</TokenSwatchRow>
+
 ## Scrollytelling hero
 
-Floating mark, gradient headline, outline CTA, reads calm and warm in Day mode instead of cinematic.
+Floating mark, gradient headline, outline CTA, reads calm and warm in Day mode instead of cinematic. This one stays fixed to the Scrollytelling palette regardless of the global theme toggle — it's illustrating the pixel-sampled source itself, not a themeable component:
 
-**Preview**
+<ScrollyHeroDemo />
 
 ```css
 .demo-scrolly-hero h1 { background: linear-gradient(135deg, var(--text) 30%, var(--accent-1) 70%, var(--accent-2) 100%); -webkit-background-clip: text; }
@@ -56,9 +50,9 @@ Floating mark, gradient headline, outline CTA, reads calm and warm in Day mode i
 
 ## Scroll story card
 
-The floating narrative card from the scroll-scrubbed dancer stage, with a scroll-progress dot rail.
+The floating narrative card from the scroll-scrubbed dancer stage, with a scroll-progress dot rail — real, clickable dots, not a static illustration:
 
-**Preview**
+<StoryCardDemo />
 
 ```css
 .demo-dot.active { background: var(--accent-2); box-shadow: 0 0 6px var(--accent-2); }
@@ -66,9 +60,9 @@ The floating narrative card from the scroll-scrubbed dancer stage, with a scroll
 
 ## Manifesto quote
 
-Large pull-quote with two emphasised words carrying the emotional thesis.
+Large pull-quote with two emphasised words carrying the emotional thesis:
 
-**Preview**
+<ManifestoDemo />
 
 ```html
 <span>entertain</span> /* color: var(--accent-2); font-weight: 800 */
@@ -76,9 +70,9 @@ Large pull-quote with two emphasised words carrying the emotional thesis.
 
 ## Launch signup
 
-Single email field, single CTA, no competing choices at the point of highest visitor intent.
+Single email field, single CTA, no competing choices at the point of highest visitor intent. Real Bootstrap `input-group`:
 
-**Preview**
+<SignupDemo />
 
 ```css
 .demo-signup-box { background: var(--bg-panel); border: 1px solid var(--border); }
