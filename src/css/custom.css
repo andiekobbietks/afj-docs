@@ -148,6 +148,21 @@ html[data-afj-theme] .form-control {
   --bs-body-bg: var(--bg-offset);
   border-color: var(--border);
 }
+
+/* Direct, unambiguous fix for the actual measured bug: Infima's
+   .navbar--dark locally redefines --ifm-menu-color to a hardcoded
+   gray (#dadde1) that was winning over the html[data-afj-theme]
+   cascade above through a path not worth further tracing — a real
+   contrast audit measured this exact color on real sidebar links.
+   Targeting the actual elements directly removes the ambiguity. */
+html[data-afj-theme] .menu__link,
+html[data-afj-theme] .navbar__link {
+  color: var(--site-text-secondary) !important;
+}
+html[data-afj-theme] .menu__link--active,
+html[data-afj-theme] .navbar__link--active {
+  color: var(--accent-1) !important;
+}
 html[data-afj-theme] .form-control:focus {
   border-color: var(--accent-1);
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-1) 25%, transparent);
