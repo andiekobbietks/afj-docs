@@ -19,7 +19,39 @@
     "_docs_foundations_wine.png",
     "_docs_foundations_scrolly.png",
     "_docs_foundations_day.png",
-    "_docs_foundations_scrollyday.png"
+    "_docs_foundations_scrollyday.png",
+    "_docs_icon-library_wine.png",
+    "_docs_icon-library_scrolly.png",
+    "_docs_icon-library_day.png",
+    "_docs_icon-library_scrollyday.png",
+    "_docs_history_wine.png",
+    "_docs_history_scrolly.png",
+    "_docs_history_day.png",
+    "_docs_history_scrollyday.png",
+    "_docs_brand-source_wine.png",
+    "_docs_brand-source_scrolly.png",
+    "_docs_brand-source_day.png",
+    "_docs_brand-source_scrollyday.png",
+    "_docs_scrollytelling_wine.png",
+    "_docs_scrollytelling_scrolly.png",
+    "_docs_scrollytelling_day.png",
+    "_docs_scrollytelling_scrollyday.png",
+    "_docs_more-ui-kit_wine.png",
+    "_docs_more-ui-kit_scrolly.png",
+    "_docs_more-ui-kit_day.png",
+    "_docs_more-ui-kit_scrollyday.png",
+    "_docs_assembly-compare_wine.png",
+    "_docs_assembly-compare_scrolly.png",
+    "_docs_assembly-compare_day.png",
+    "_docs_assembly-compare_scrollyday.png",
+    "_docs_process-adrs_wine.png",
+    "_docs_process-adrs_scrolly.png",
+    "_docs_process-adrs_day.png",
+    "_docs_process-adrs_scrollyday.png",
+    "_docs_commerce_wine.png",
+    "_docs_commerce_scrolly.png",
+    "_docs_commerce_day.png",
+    "_docs_commerce_scrollyday.png"
   ],
   "contrastFailures": [
     {
@@ -714,6 +746,4454 @@
         {
           "tag": "A",
           "text": "Design tokens",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/icon-library",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Icon Library",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "CODE",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Close",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "x.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Dismisses a modal, drawer, or overlay",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Expand",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "chevron-down.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Marks an expandable section (accent tint",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Wishlist",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "heart.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Saves an item; tinted --a2 once saved",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Checkout",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "credit-card.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Enters the payment step",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Order status",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "package.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Post-purchase tracking",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Discount code",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "percent.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Voucher field at checkout",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Class time",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "clock.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Start time and duration",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Class size",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "users.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Capacity or spaces remaining",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "My bookings",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "ticket.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "A member's booked classes",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Settings",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "settings.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Account preferences",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Log out",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "log-out.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Ends the member session",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Sort",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "arrow-up-narrow-wide.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Reorders a listing",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "List view",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "list.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "List layout toggle",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Testimonial",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "quote.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Pull-quote styling",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Reviews",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "message-circle.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Links to reviews carousel",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Scroll cue",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "arrow-down.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Prompts the visitor to keep scrolling",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Newsletter",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "mail.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Launch signup capture",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "E-signature",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "pen-line.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Document sent for signing (DocuSign)",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Risk or blocker",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "alert-triangle.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Flags a risk or dependency (accent tint)",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Highlight report",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "clipboard-list.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Monthly wins/challenges/dependencies sum",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "IP and licensing",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "badge-check.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "IP/licensing status on archived media",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Impact and BI",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "bar-chart-3.svg",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        },
+        {
+          "tag": "TD",
+          "text": "Business-intelligence view behind an imp",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.00"
+        }
+      ]
+    },
+    {
+      "page": "/docs/icon-library",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Icon Library",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "CODE",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Close",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "x.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Dismisses a modal, drawer, or overlay",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Expand",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "chevron-down.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Marks an expandable section (accent tint",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Wishlist",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "heart.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Saves an item; tinted --a2 once saved",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Checkout",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "credit-card.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Enters the payment step",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Order status",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "package.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Post-purchase tracking",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Discount code",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "percent.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Voucher field at checkout",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Class time",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "clock.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Start time and duration",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Class size",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "users.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Capacity or spaces remaining",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "My bookings",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "ticket.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "A member's booked classes",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Settings",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "settings.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Account preferences",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Log out",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "log-out.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Ends the member session",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Sort",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "arrow-up-narrow-wide.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Reorders a listing",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "List view",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "list.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "List layout toggle",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Testimonial",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "quote.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Pull-quote styling",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Reviews",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "message-circle.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Links to reviews carousel",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Scroll cue",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "arrow-down.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Prompts the visitor to keep scrolling",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Newsletter",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "mail.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Launch signup capture",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Icon",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Lucide file",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TH",
+          "text": "Explainer",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "E-signature",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "pen-line.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Document sent for signing (DocuSign)",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Risk or blocker",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "alert-triangle.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Flags a risk or dependency (accent tint)",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Highlight report",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "clipboard-list.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Monthly wins/challenges/dependencies sum",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "IP and licensing",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "badge-check.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "IP/licensing status on archived media",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Impact and BI",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "bar-chart-3.svg",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "TD",
+          "text": "Business-intelligence view behind an imp",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.07)",
+          "ratio": "1.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/icon-library",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Icon Library",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "Lucide",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "CODE",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        }
+      ]
+    },
+    {
+      "page": "/docs/icon-library",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Icon Library",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "Lucide",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "CODE",
+          "text": "/icon-library.html",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        }
+      ]
+    },
+    {
+      "page": "/docs/history",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "History",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "CODE",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        }
+      ]
+    },
+    {
+      "page": "/docs/history",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "History",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "CODE",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        }
+      ]
+    },
+    {
+      "page": "/docs/history",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "History",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "CODE",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "A",
+          "text": "real GitHub releases",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "The single canonical HTML file became a ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Surfaced the actual governance decision ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "The four favicon link tags converted to ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Fixed the fixed hamburger button collidi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "Changelog",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/history",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "History",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "CODE",
+          "text": "CHANGELOG.md",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgba(255, 255, 255, 0.1)",
+          "ratio": "4.23"
+        },
+        {
+          "tag": "A",
+          "text": "real GitHub releases",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "The single canonical HTML file became a ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Surfaced the actual governance decision ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "The four favicon link tags converted to ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Fixed the fixed hamburger button collidi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "Changelog",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/brand-source",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Brand Source",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        }
+      ]
+    },
+    {
+      "page": "/docs/brand-source",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Brand Source",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        }
+      ]
+    },
+    {
+      "page": "/docs/brand-source",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Brand Source",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "For Graphic Designers",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "For Videographers",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "Real logo imagery",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/brand-source",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Brand Source",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "For Graphic Designers",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "For Videographers",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "Real logo imagery",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/scrollytelling",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Scrollytelling Experience",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "P",
+          "text": "Step 01",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "3.26"
+        },
+        {
+          "tag": "P",
+          "text": "The signal",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "1.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/scrollytelling",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Scrollytelling Experience",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "P",
+          "text": "Step 01",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "3.26"
+        },
+        {
+          "tag": "P",
+          "text": "The signal",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "1.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/scrollytelling",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Scrollytelling Experience",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "H1",
+          "text": "Impact through dance",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(5, 5, 7)",
+          "ratio": "1.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Step 01",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "3.26"
+        },
+        {
+          "tag": "P",
+          "text": "The signal",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "Pixel-sampled source",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/scrollytelling",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Scrollytelling Experience",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "H1",
+          "text": "Impact through dance",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(5, 5, 7)",
+          "ratio": "1.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Step 01",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "3.26"
+        },
+        {
+          "tag": "P",
+          "text": "The signal",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "Pixel-sampled source",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/more-ui-kit",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "More UI Kit",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        }
+      ]
+    },
+    {
+      "page": "/docs/more-ui-kit",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "More UI Kit",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        }
+      ]
+    },
+    {
+      "page": "/docs/more-ui-kit",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "More UI Kit",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "\"Best classes in Cardiff.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "\"Changed how I move.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "\"Community, not just fitness.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "3. Gallery grid",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/more-ui-kit",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "More UI Kit",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "\"Best classes in Cardiff.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "\"Changed how I move.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "\"Community, not just fitness.\"",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "3. Gallery grid",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/assembly-compare",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Assembly & Compare",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        }
+      ]
+    },
+    {
+      "page": "/docs/assembly-compare",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Assembly & Compare",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        }
+      ]
+    },
+    {
+      "page": "/docs/assembly-compare",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Assembly & Compare",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Red hoodie",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "Parts → commerce assembly",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/assembly-compare",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Assembly & Compare",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Red hoodie",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "Parts → commerce assembly",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/process-adrs",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Process & ADRs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        }
+      ]
+    },
+    {
+      "page": "/docs/process-adrs",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Process & ADRs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        }
+      ]
+    },
+    {
+      "page": "/docs/process-adrs",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Process & ADRs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "AFJ Cardiff's original site used hand-wr",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Keep hand-rolled CSS , full control, ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Bootstrap's grid and utility c",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Bootstrap's own dark-mode and utility sy",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Once a second visual system (Scrollytell",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Four separate static files , simplest",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Every component reads var(--bg",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "A reviewer can confirm a component works",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "The original booking flow used a calenda",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Keep the calendar , familiar pattern,",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 2. Each class card expands on tap",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Removing a whole interaction step reduce",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Documentation written collaboratively wi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Manual proofreading on a case-by-case",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The actual audit run against t",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "An external, published standard means th",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "This page's 220px fixed sidebar plus a w",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Stack the sidebar above the content o",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The mobile nav behaviour is de",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Since the eventual destination is a real",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "The first version of search filtered bot",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Let search override category when act",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. A single currentCategory varia",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Two features that each silently undo the",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "A favicon and font set were needed now, ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Describe the required assets in prose",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Favicon set generated from the",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Matching the destination folder conventi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Every image asset generated so far was P",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. PNG only , safest compatibility, but ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3, for images. For video, keep th",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Measured, not assumed: converting the ac",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "External feedback from a business mentor",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "1. Ship a fast landing page now , closes",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The real build continues; the ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(164, 62, 83)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.48"
+        },
+        {
+          "tag": "P",
+          "text": "Preserves brand quality control at the c",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "What is an ADR",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/process-adrs",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Process & ADRs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "AFJ Cardiff's original site used hand-wr",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Keep hand-rolled CSS , full control, ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Bootstrap's grid and utility c",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Bootstrap's own dark-mode and utility sy",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Once a second visual system (Scrollytell",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Four separate static files , simplest",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Every component reads var(--bg",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "A reviewer can confirm a component works",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "The original booking flow used a calenda",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Keep the calendar , familiar pattern,",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 2. Each class card expands on tap",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Removing a whole interaction step reduce",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Documentation written collaboratively wi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Manual proofreading on a case-by-case",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The actual audit run against t",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "An external, published standard means th",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "This page's 220px fixed sidebar plus a w",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Stack the sidebar above the content o",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The mobile nav behaviour is de",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Since the eventual destination is a real",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "The first version of search filtered bot",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Let search override category when act",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. A single currentCategory varia",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Two features that each silently undo the",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "A favicon and font set were needed now, ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Describe the required assets in prose",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. Favicon set generated from the",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Matching the destination folder conventi",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Every image asset generated so far was P",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. PNG only , safest compatibility, but ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3, for images. For video, keep th",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Measured, not assumed: converting the ac",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Context",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "External feedback from a business mentor",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Options considered",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "1. Ship a fast landing page now , closes",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Decision",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Option 3. The real build continues; the ",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "P",
+          "text": "Reasoning",
+          "color": "rgb(255, 51, 68)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "4.25"
+        },
+        {
+          "tag": "P",
+          "text": "Preserves brand quality control at the c",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "What is an ADR",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "1.83"
+        }
+      ]
+    },
+    {
+      "page": "/docs/commerce",
+      "theme": "wine",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Commerce",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        }
+      ]
+    },
+    {
+      "page": "/docs/commerce",
+      "theme": "scrolly",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Commerce",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "LI",
+          "text": "Red hoodieSize M · £42",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "P",
+          "text": "Red hoodie",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "P",
+          "text": "Size M · £42",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "3.26"
+        },
+        {
+          "tag": "LI",
+          "text": "AFJ capSize - · £18",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "P",
+          "text": "AFJ cap",
+          "color": "rgb(245, 245, 247)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "1.09"
+        },
+        {
+          "tag": "P",
+          "text": "Size - · £18",
+          "color": "rgb(142, 142, 147)",
+          "bg": "rgba(255, 255, 255, 0.02)",
+          "ratio": "3.26"
+        }
+      ]
+    },
+    {
+      "page": "/docs/commerce",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "2.37"
+        },
+        {
+          "tag": "A",
+          "text": "Commerce",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.66"
+        },
+        {
+          "tag": "A",
+          "text": "Customer Journeys",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "3.32"
+        },
+        {
+          "tag": "P",
+          "text": "Azonto Intermediate",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "Wednesdays, 7pm · Intermediate",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "Cart drawer",
+          "color": "rgb(201, 149, 82)",
+          "bg": "rgb(233, 228, 213)",
+          "ratio": "2.09"
+        }
+      ]
+    },
+    {
+      "page": "/docs/commerce",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(245, 242, 234, 0.92)",
+          "ratio": "1.96"
+        },
+        {
+          "tag": "A",
+          "text": "Commerce",
+          "color": "rgb(243, 156, 18)",
+          "bg": "rgba(255, 255, 255, 0.05)",
+          "ratio": "2.19"
+        },
+        {
+          "tag": "A",
+          "text": "Customer Journeys",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "A",
+          "text": "​",
+          "color": "rgb(53, 120, 229)",
+          "bg": "rgb(239, 234, 221)",
+          "ratio": "3.52"
+        },
+        {
+          "tag": "P",
+          "text": "Azonto Intermediate",
+          "color": "rgb(26, 23, 18)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "1.16"
+        },
+        {
+          "tag": "P",
+          "text": "Wednesdays, 7pm · Intermediate",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "Cart drawer",
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
           "ratio": "1.83"
