@@ -33,10 +33,19 @@ export function SiteThemeProvider({ children }) {
     setHydrated(true);
   }, []);
 
-  const setTheme = useCallback((theme) => {
+  const THEME_IMPLIED_MODE = { wine: 'dark', scrolly: 'dark', day: 'day', scrollyday: 'day' };
+
+const setTheme = useCallback((theme) => {
     if (!THEMES.includes(theme)) return;
     setState((prev) => {
-      const next = { ...prev, theme };
+      // Site chrome (sidebar/navbar) has its own independent day/night
+      // toggle by design — but leaving it un-synced meant picking the
+      // "Day" THEME left the sidebar showing dark-mode text on a now-light
+      // page, an unreadable combination a real contrast audit caught
+      // (1.07:1 ratio). Defaulting the mode to match the theme fixes the
+      // common case; the separate toggle can still override it afterward
+      // if a deliberately mismatched combination is ever wanted.
+      const next = { ...prev, theme, mode: THEME_IMPLIED_MODE[theme] };
       applyState(next);
       try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch {}
       return next;
