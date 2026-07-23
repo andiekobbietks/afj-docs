@@ -7,29 +7,27 @@ description: Changelog, roadmap, and the downloadable real assets.
 
 Changelog, roadmap, and the downloadable real assets.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-changelog');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="History live preview"
-          style={{ width: '100%', height: '700px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
+import ChangelogEntry from '@site/src/components/ChangelogEntry';
 
 ## Changelog
 
-No dates, this tracks the actual sequence of decisions and builds that arrived at the library the way it stands today, reconstructed from the real conversation history, not reconstructed from memory. Versions before v1.0 predate the library existing as a single doc; that's the point where "a pile of widgets" became "one canonical site."
+No dates, this tracks the actual sequence of decisions and builds that arrived at the library the way it stands today, reconstructed from the real conversation history, not reconstructed from memory. Versions before v1.0 predate the library existing as a single doc; that's the point where "a pile of widgets" became "one canonical site." Full history in [`CHANGELOG.md`](https://github.com/andiekobbietks/afj-docs/blob/main/CHANGELOG.md) and as [real GitHub releases](https://github.com/andiekobbietks/afj-docs/releases) — a few recent entries as real components below, not the full 25:
+
+<ChangelogEntry title="v2.0.0 — Migrated to a real Docusaurus deployment">
+The single canonical HTML file became a full, deployed, multi-page site. Scaffolded the actual buildable Docusaurus project, added local search, ported the accessibility menu, built a 152-scenario Gherkin suite that caught three genuine site bugs in the process (not just test bugs) — including every embedded preview iframe 404ing once actually deployed, caught by a user screenshot before the test suite itself got there.
+</ChangelogEntry>
+
+<ChangelogEntry title="v1.25 — Connected to the real production build's status">
+Surfaced the actual governance decision on the live AFJ Cardiff site's sequencing — continue the proper build, bridge with an interim presence rather than a rushed placeholder — as "How this fits the live site" and ADR-010.
+</ChangelogEntry>
+
+<ChangelogEntry title="v1.24 — Favicon embedded as data URI; WebP/WebM documented">
+The four favicon link tags converted to base64 data URIs. Real WebP versions generated and measured (76–86% smaller than the PNGs), documented alongside the existing WebM pattern and a new ADR on format strategy.
+</ChangelogEntry>
+
+<ChangelogEntry title="v1.23 — Mobile overlap audit; a real transition bug traced and fixed">
+Fixed the fixed hamburger button colliding with the sidebar's logo mark, three content blocks silently skipping mobile rules, and a genuine regression where a blanket punctuation fix had fused "background .25s" into "background.25s" in 30 places. All 30 restored.
+</ChangelogEntry>
 
 ## Roadmap
 
