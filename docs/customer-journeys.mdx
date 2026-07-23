@@ -7,6 +7,8 @@ description: The full end-to-end mockup files — six complete interactive flows
 
 The full end-to-end mockup files — six complete interactive flows.
 
+**On the three Scrollytelling variants:** the original static file has six separate iframes — Wine/Gold and Scrollytelling versions of each journey — because each iframe is its own standalone document, hardcoded to one theme. The three React ports below don't have that constraint: every color and radius comes from a CSS variable (`var(--gradient)`, `var(--btn-radius)`, etc.) that the global theme toggle already controls site-wide. Switch the navbar theme to Scrollytelling and these same three components re-theme correctly — gradient shifts to orange/red, buttons go full-pill — with no separate Scrollytelling component needed. Try it: flip the theme toggle above, then scroll back down.
+
 ## Real React port: Class Booking journey
 
 import ClassBookingFlow from '@site/src/components/ClassBookingFlow';

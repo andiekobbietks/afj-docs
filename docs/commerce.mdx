@@ -5,45 +5,46 @@ description: Cart drawer and class booking card.
 
 # Commerce
 
-Cart drawer and class booking card.
+Cart drawer and class booking card. For the full working shop and booking flows, see [Customer Journeys](./customer-journeys) — this page shows just these two pieces in isolation.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-drawer');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="Commerce live preview"
-          style={{ width: '100%', height: '600px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
+import CartDrawerDemo from '@site/src/components/CartDrawerDemo';
+import ClassCardDemo from '@site/src/components/ClassCardDemo';
 
 ## Cart drawer
 
-Static snapshot, see the full interactive slide-in version in the commerce mockup files.
+Real Bootstrap Offcanvas markup, not a custom slide-in panel:
 
-**Preview**
+<CartDrawerDemo />
 
-```css
-.cart-drawer { transform: translateX(100%); }
-.cart-drawer.active { transform: translateX(0); }
+```html
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Your basket</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">...</div>
+</div>
+```
+
+```js
+// Vanilla JS: Bootstrap's own API, no custom transform/transition CSS needed
+new bootstrap.Offcanvas('#cartDrawer').show();
 ```
 
 ## Class booking card
 
-Level tag always reads on --accent-1 .
+Level tag always reads on `--accent-1`, real Bootstrap `.card` + `.badge`:
 
-**Preview**
+<ClassCardDemo />
 
-```css
-.demo-level-tag { background: var(--accent-1); color: var(--bg-base); }
+```html
+<div class="card">
+  <div class="card-body d-flex align-items-center gap-2">
+    <div class="thumb"></div>
+    <div>
+      <p class="card-text">Azonto Intermediate</p>
+      <span class="badge">Intermediate</span>
+    </div>
+  </div>
+</div>
 ```
