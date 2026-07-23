@@ -6,22 +6,7 @@ Failed scenarios:
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  2) Body text meets WCAG AA in every theme # features/site_wide_contrast.feature:16
-       Then the computed body text contrast ratio should be at least 4.5 to 1 # features/step_definitions/site_wide_contrast_steps.js:22
-           Error: function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)
-  3) Body text meets WCAG AA in every theme # features/site_wide_contrast.feature:17
-       Then the computed body text contrast ratio should be at least 4.5 to 1 # features/step_definitions/site_wide_contrast_steps.js:22
-           Error: function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)
-  4) Body text meets WCAG AA in every theme # features/site_wide_contrast.feature:18
-       Then the computed body text contrast ratio should be at least 4.5 to 1 # features/step_definitions/site_wide_contrast_steps.js:22
-           Error: function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)
-  5) Body text meets WCAG AA in every theme # features/site_wide_contrast.feature:19
-       Then the computed body text contrast ratio should be at least 4.5 to 1 # features/step_definitions/site_wide_contrast_steps.js:22
-           Error: function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)
-  6) Sidebar nav links meet WCAG AA against the Day theme background # features/site_wide_contrast.feature:32
-       Then the computed sidebar link contrast ratio should be at least 4.5 to 1 # features/step_definitions/site_wide_contrast_steps.js:38
-           Error: function has 1 arguments, should have 2 (if synchronous or returning a promise) or 3 (if accepting a callback)
-  7) Switching theme keeps the page scroll position # features/theme_system.feature:23
+  2) Switching theme keeps the page scroll position # features/theme_system.feature:23
        Then the page scroll position should not have changed # features/step_definitions/navigation_search_steps.js:94
            AssertionError [ERR_ASSERTION]
                + expected - actual
@@ -30,42 +15,14 @@ Failed scenarios:
                +true
            
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:101:10)
-  8) The sidebar lists every documentation page # features/ui_mockups_and_docs_site.feature:47
-       Then the sidebar should contain a link to each of the 17 documentation pages # features/step_definitions/docs_site_steps.js:32
-           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-           
-           18 !== 17
-           
-               + expected - actual
-           
-               -18
-               +17
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:34:10)
-  9) Every docs page's live iframe preview actually loads content # features/ui_mockups_and_docs_site.feature:51
-       When I switch to the embedded preview iframe # features/step_definitions/docs_site_steps.js:37
+  3) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:57
+       Then every fenced code block should have a visible copy button # features/step_definitions/docs_site_steps.js:50
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  10) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:56
-       Then the copied content should match the code block's text # features/step_definitions/docs_site_steps.js:63
-           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-           + actual - expected
-           
-             '<button type="button" class="btn btn-primary">Book a class</button>\n' +
-           -   '\n' +
-               '<button type="button" class="btn btn-outline-primary">View basket</button>'
-           
-               + expected - actual
-           
-                <button type="button" class="btn btn-primary">Book a class</button>
-               +
-                <button type="button" class="btn btn-outline-primary">View basket</button>
-           
-               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:65:10)
 
 2 hooks (2 passed)
-161 scenarios (151 passed, 10 failed)
-996 steps (983 passed, 3 skipped, 10 failed)
-2m 23.217s (2m 22.828s executing your code)
+162 scenarios (159 passed, 3 failed)
+1001 steps (994 passed, 4 skipped, 3 failed)
+2m 22.157s (2m 21.778s executing your code)
