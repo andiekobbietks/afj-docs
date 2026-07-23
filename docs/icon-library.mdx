@@ -7,7 +7,19 @@ description: Canonical AFJ Cardiff icon set — Lucide (ISC licensed), organised
 
 Icons are [Lucide](https://lucide.dev) (ISC licensed — free for commercial use, no attribution required) — the working icon-set decision made directly in the canonical component library doc, chosen for its consistent 24×24 grid and active maintenance rather than mixing icon sets ad hoc. Every icon is inline SVG with `stroke="currentColor"`, so it tints automatically per theme with no separate icon-colour token needed.
 
-A live, themeable preview (Wine/Gold, Scrollytelling, Day mode, Scrolly Day) lives at [`/icon-library.html`](/icon-library.html), embedded inline at the bottom of this page.
+import IconGrid from '@site/src/components/IconGrid';
+
+One from each category below, as real `lucide-react` components — genuine React, not an SVG file dump:
+
+<IconGrid />
+
+```jsx
+import { ShoppingBag } from 'lucide-react';
+
+<ShoppingBag size={18} color="var(--text)" />
+```
+
+A live, themeable preview of the **complete** set (Wine/Gold, Scrollytelling, Day mode, Scrolly Day) lives at [`/icon-library.html`](/icon-library.html), embedded inline at the bottom of this page — the full 40+ icons is more than makes sense to hand-import individually above, so the exhaustive version stays as the generated reference file.
 
 **Source:** `icon-library.html`, generated from the real `lucide-static` npm package (not hand-drawn approximations).
 

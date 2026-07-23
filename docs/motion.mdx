@@ -7,26 +7,6 @@ description: Where Lottie fits in the system.
 
 Where Lottie fits in the system.
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-export const EmbeddedPreview = () => {
-  const src = useBaseUrl('/component-library.html#sec-lottie');
-  return (
-    <BrowserOnly>
-      {() => (
-        <iframe
-          src={src}
-          title="Motion live preview"
-          style={{ width: '100%', height: '500px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', marginBottom: '24px' }}
-        />
-      )}
-    </BrowserOnly>
-  );
-};
-
-<EmbeddedPreview />
-
 ## Where Lottie fits
 
 None of the components built so far use motion beyond CSS transitions and scroll-scrubbing. Lottie (lightweight vector JSON animation, renders via a single `<lottie-player>` web component, no video weight) is worth reserving for the handful of moments below where a static icon or CSS transition genuinely undersells what's happening, not sprinkled everywhere.
