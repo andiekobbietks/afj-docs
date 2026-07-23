@@ -53,6 +53,8 @@ import TokenSwatch, { TokenSwatchRow } from '@site/src/components/TokenSwatch';
 }
 ```
 
+**What Bootstrap doesn't provide here, and how it's built anyway:** Bootstrap has no "color swatch" component — nothing in its component library is meant to display an arbitrary color value as a labeled block. The swatch grid above is still mostly real Bootstrap: `d-flex`, `flex-wrap`, and `gap-2` (all real utility classes) handle the layout entirely. The one thing Bootstrap genuinely can't do is the swatch's fill color itself, since that's dynamic per-token data, not a fixed set of Bootstrap's own theme colors — so that one property (`background`) stays inline. The rule of thumb used throughout this rebuild: reach for a real Bootstrap utility class first, and only fall back to inline styles or custom CSS for the specific property Bootstrap has no opinion on at all.
+
 ## Typography
 
 Wine/Gold and Day mode stay sentence case in Montserrat. Scrollytelling goes uppercase in Space Grotesk with a gradient clip.
@@ -65,6 +67,17 @@ import GradientHeading from '@site/src/components/GradientHeading';
 
 ```html
 <p class="demo-heading gradient">Impact through dance</p>
+```
+
+**What Bootstrap doesn't provide here, and how it's built anyway:** gradient-clipped text isn't a Bootstrap feature at all — no utility class, no component, no theming hook. Bootstrap's own `.text-primary` and similar classes only ever apply a flat `color`, never a `background` with `-webkit-background-clip: text`. This is genuinely outside what any component framework provides, Bootstrap or otherwise — it's a raw CSS technique (the same one works identically in a Tailwind or plain-CSS project), so the honest answer is: write the three lines of CSS that do it, once, and reuse the class everywhere the effect is needed, rather than pretend a utility class exists that doesn't:
+
+```css
+.gradient-heading {
+  background: linear-gradient(135deg, var(--text) 30%, var(--accent-1) 70%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 ```
 
 ## Iconography

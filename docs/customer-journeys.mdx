@@ -61,7 +61,7 @@ document.querySelectorAll('.accordion-button').forEach((btn) => {
 
 import ShopFlow from '@site/src/components/ShopFlow';
 
-The version below is a genuine React component — real `useState`, not vanilla JS reading/writing the DOM directly. It's the first of the six journeys ported; the other five (Class Booking, Course Subscription, and each theme's Scrollytelling variant) are next, using the same approach.
+The version below is a genuine React component — real `useState`, not vanilla JS reading/writing the DOM directly. Three of the six journeys are now ported this way (Class Booking and Course Subscription too, further down this page); the remaining three are each theme's Scrollytelling variant.
 
 <ShopFlow />
 
@@ -131,8 +131,50 @@ function addToCart() {
 }
 ```
 
-## Real React port: Shop journey
+## Real React port: Course Subscription journey
 
+import CourseSubscriptionFlow from '@site/src/components/CourseSubscriptionFlow';
+
+<CourseSubscriptionFlow />
+
+The original validates email with a hand-written regex and manually toggles an error state:
+
+```js
+// original: manual validity flag, no native form feedback
+function submitEmail() {
+    const input = document.getElementById('emailInput');
+    const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+    if (!isValid) { showToast('Enter a valid email address'); return; }
+    showToast('Early access confirmed');
+    showView('plans');
+}
+```
+
+The React port keeps the exact same regex (there was nothing wrong with it — no reason to invent a new one) but wires the result into Bootstrap's own validation classes instead of a bespoke error state:
+
+```js
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const submitEmail = () => {
+  if (!EMAIL_RE.test(email.trim())) {
+    setEmailInvalid(true); // drives class="form-control is-invalid" below
+    showToast('Enter a valid email address');
+    return;
+  }
+  setView('plans');
+};
+```
+
+```html
+<!-- Bootstrap's real validation markup — is-invalid + .invalid-feedback,
+     not a custom red border hand-rolled in CSS -->
+<input type="email" class="form-control is-invalid" />
+<div class="invalid-feedback">Enter a valid email address.</div>
+```
+
+**Production note:** the vanilla-JS version is nearly identical — swap `setEmailInvalid(true)` for `input.classList.add('is-invalid')`, and the same Bootstrap CSS handles the rest (Bootstrap's `.is-invalid` styling and `.invalid-feedback` visibility are pure CSS, no JS required beyond adding the class).
+
+## Live preview of all six (original, not yet ported)
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
