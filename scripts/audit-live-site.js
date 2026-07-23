@@ -54,8 +54,13 @@ function contrastRatio(fg, bg) {
           return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
         }
         function parseRgb(str) {
-          const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-          return m ? [Number(m[1]), Number(m[2]), Number(m[3])] : null;
+          const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);
+          if (!m) return null;
+          return [Number(m[1]), Number(m[2]), Number(m[3])];
+        }
+        function bgAlpha(str) {
+          const m = str && str.match(/rgba\([\d\s,]+,\s*([\d.]+)\)/);
+          return m ? Number(m[1]) : 1; // rgb() with no alpha channel = fully opaque
         }
         const nodes = document.querySelectorAll('main p, main h1, main h2, main h3, main li, main a, main td, main th, main code, .navbar a, .menu__link');
         nodes.forEach((el) => {
@@ -66,7 +71,10 @@ function contrastRatio(fg, bg) {
           if (!fg) return;
           let bgEl = el;
           let bg = getComputedStyle(bgEl).backgroundColor;
-          while ((!bg || bg === 'rgba(0, 0, 0, 0)') && bgEl.parentElement) {
+          // Walk up past any background that's mostly transparent (< 50%
+          // opacity) — a faint highlight overlay isn't "the background"
+          // for contrast purposes, the real page color underneath is.
+          while ((!bg || bgAlpha(bg) < 0.5) && bgEl.parentElement) {
             bgEl = bgEl.parentElement;
             bg = getComputedStyle(bgEl).backgroundColor;
           }
