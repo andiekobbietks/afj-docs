@@ -33,8 +33,24 @@ Failed scenarios:
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
+  5) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:56
+       Then the copied content should match the code block's text # features/step_definitions/docs_site_steps.js:63
+           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+           + actual - expected
+           
+             '<button type="button" class="btn btn-primary">Book a class</button>\n' +
+           -   '\n' +
+               '<button type="button" class="btn btn-outline-primary">View basket</button>'
+           
+               + expected - actual
+           
+                <button type="button" class="btn btn-primary">Book a class</button>
+               +
+                <button type="button" class="btn btn-outline-primary">View basket</button>
+           
+               at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:65:10)
 
 2 hooks (2 passed)
-152 scenarios (148 passed, 4 failed)
-942 steps (935 passed, 3 skipped, 4 failed)
-2m 18.508s (2m 18.93s executing your code)
+152 scenarios (147 passed, 5 failed)
+942 steps (934 passed, 3 skipped, 5 failed)
+2m 23.948s (2m 23.683s executing your code)
