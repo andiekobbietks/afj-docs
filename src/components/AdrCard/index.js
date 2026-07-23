@@ -15,7 +15,7 @@ export default function AdrCard({ number, title, status = 'Accepted', context, o
           ['Reasoning', reasoning],
         ].map(([label, body]) => (
           <div className="mb-3" key={label}>
-            <p className="text-uppercase mb-1" style={{ fontSize: 9.5, letterSpacing: 1, color: 'var(--accent-2)', fontWeight: 600 }}>{label}</p>
+            <p className="text-uppercase mb-1" style={{ fontSize: 9.5, letterSpacing: 1, color: 'var(--link-color, var(--accent-2))', fontWeight: 600 }}>{label}</p>
             <p className="card-text mb-0" style={{ fontSize: 12.5, color: 'var(--text-muted)', lineHeight: 1.65 }}>{body}</p>
           </div>
         ))}

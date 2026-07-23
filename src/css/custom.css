@@ -84,7 +84,7 @@ html[data-afj-theme] {
   --ifm-background-surface-color: var(--bg-base, var(--site-sidebar-bg));
   --ifm-font-color-base: var(--text, var(--site-text-primary));
   --ifm-font-family-base: var(--heading-font, var(--afj-font-body));
-  --ifm-color-primary: var(--accent-2, #A43E53);
+  --ifm-color-primary: var(--link-color, var(--accent-2, #A43E53));
   --ifm-link-color: var(--link-color, var(--accent-1, #C99552));
   --ifm-link-hover-color: var(--accent-2, #A43E53);
   --ifm-navbar-background-color: var(--site-topbar-bg);
@@ -173,7 +173,7 @@ html[data-afj-theme] .navbar__link {
 }
 html[data-afj-theme] .menu__link--active,
 html[data-afj-theme] .navbar__link--active {
-  color: var(--accent-1) !important;
+  color: var(--link-color, var(--accent-1)) !important;
 }
 html[data-afj-theme] .navbar {
   background: var(--site-topbar-bg) !important;
