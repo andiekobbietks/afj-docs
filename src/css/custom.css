@@ -91,6 +91,13 @@ html {
   --ifm-toc-border-color: var(--border, var(--site-border));
   --ifm-hr-border-color: var(--border, var(--site-border));
   --ifm-heading-color: var(--text, var(--site-text-primary));
+  --ifm-table-border-color: var(--border, var(--site-border));
+  --ifm-table-stripe-background: var(--bg-offset, var(--site-nav-hover-bg));
+  --ifm-table-head-background: var(--bg-panel, var(--site-sidebar-bg));
+  --ifm-table-head-color: var(--text, var(--site-text-primary));
+  --ifm-table-cell-color: var(--text-muted, var(--site-text-secondary));
+  --ifm-code-background: var(--bg-offset, var(--site-nav-hover-bg));
+  --ifm-pre-background: var(--bg-offset, var(--site-nav-hover-bg));
 }
 /* ============ BOOTSTRAP 5.3 THEMING, PER ADR-001 ============ */
 /* Bootstrap 5.3 scopes its own CSS variables locally per component

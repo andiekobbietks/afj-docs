@@ -7,7 +7,9 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 
 const BASE = 'https://andiekobbietks.github.io/afj-docs';
-const PAGES = ['/', '/docs/live-site-status', '/docs/core-ui', '/docs/customer-journeys', '/docs/foundations'];
+const PAGES = ['/', '/docs/live-site-status', '/docs/core-ui', '/docs/customer-journeys', '/docs/foundations',
+  '/docs/icon-library', '/docs/history', '/docs/brand-source', '/docs/scrollytelling', '/docs/more-ui-kit',
+  '/docs/assembly-compare', '/docs/process-adrs', '/docs/commerce'];
 const THEMES = ['wine', 'scrolly', 'day', 'scrollyday'];
 
 function relativeLuminance(r, g, b) {
@@ -55,7 +57,7 @@ function contrastRatio(fg, bg) {
           const m = str && str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
           return m ? [Number(m[1]), Number(m[2]), Number(m[3])] : null;
         }
-        const nodes = document.querySelectorAll('main p, main h1, main h2, main h3, main li, main a, .navbar a, .menu__link');
+        const nodes = document.querySelectorAll('main p, main h1, main h2, main h3, main li, main a, main td, main th, main code, .navbar a, .menu__link');
         nodes.forEach((el) => {
           const text = el.textContent.trim();
           if (!text) return;
