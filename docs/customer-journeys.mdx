@@ -7,6 +7,56 @@ description: The full end-to-end mockup files — six complete interactive flows
 
 The full end-to-end mockup files — six complete interactive flows.
 
+## Real React port: Shop journey
+
+import ShopFlow from '@site/src/components/ShopFlow';
+
+The version below is a genuine React component — real `useState`, not vanilla JS reading/writing the DOM directly. It's the first of the six journeys ported; the other five (Class Booking, Course Subscription, and each theme's Scrollytelling variant) are next, using the same approach.
+
+<ShopFlow />
+
+### How it got here — static markup, then a working port
+
+The original is vanilla JS manipulating the DOM directly — global mutable variables, `classList.add`/`remove` to show/hide views, `innerHTML` string-building for the cart list:
+
+```js
+// original: static-file version, direct DOM manipulation
+let cart = [];
+let currentSize = 'M', currentQty = 1;
+
+function addToCart() {
+    cart.push({ name: activeProduct.name, price: activeProduct.price, size: currentSize, qty: currentQty });
+    updateCartUI();
+    showToast('Added to basket');
+    openCart(); // side effect: also opens the drawer
+}
+
+function updateCartUI() {
+    document.getElementById('cartCount').textContent = cart.length;
+    const itemsEl = document.getElementById('drawerItems');
+    itemsEl.innerHTML = cart.map(item => `<div class="cart-line">...</div>`).join('');
+}
+```
+
+The React port replaces every one of those patterns with the equivalent state-driven idiom — same behaviour, verified against the same 14 Gherkin scenarios that already test the original (quantity floor of 1 with no ceiling, size selection reflected via `aria-pressed`, adding an item auto-opens the cart, removing the only item empties it without erroring):
+
+```js
+// React port: state drives the render, not the other way round
+const [cart, setCart] = useState([]);
+const [size, setSize] = useState('M');
+const [qty, setQty] = useState(1);
+
+const addToCart = () => {
+  setCart((prev) => [...prev, { ...activeProduct, size, qty }]);
+  showToast('Added to basket');
+  setCartOpen(true); // same side effect, now just a state update
+};
+```
+
+The cart list itself goes from an `innerHTML` template-string loop to a real `.map()` returning JSX — no string concatenation, no risk of a stray unescaped character breaking the markup.
+
+## Live preview of all six (original, not yet ported)
+
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
