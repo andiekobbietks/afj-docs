@@ -81,6 +81,8 @@ html {
   --ifm-font-color-base: var(--text, var(--site-text-primary));
   --ifm-font-family-base: var(--heading-font, var(--afj-font-body));
   --ifm-color-primary: var(--accent-2, #A43E53);
+  --ifm-link-color: var(--accent-1, #C99552);
+  --ifm-link-hover-color: var(--accent-2, #A43E53);
   --ifm-navbar-background-color: var(--site-topbar-bg);
   --ifm-navbar-link-color: var(--site-text-primary);
   --ifm-menu-color: var(--site-text-secondary);
@@ -88,6 +90,7 @@ html {
   --ifm-menu-color-active: var(--accent-1, var(--site-text-primary));
   --ifm-toc-border-color: var(--border, var(--site-border));
   --ifm-hr-border-color: var(--border, var(--site-border));
+  --ifm-heading-color: var(--text, var(--site-text-primary));
 }
 /* ============ BOOTSTRAP 5.3 THEMING, PER ADR-001 ============ */
 /* Bootstrap 5.3 scopes its own CSS variables locally per component
@@ -125,9 +128,24 @@ html[data-afj-theme] .badge.text-bg-primary {
   background: var(--accent-1) !important;
   color: var(--bg-base) !important;
 }
+/* ============ THE ACTUAL BUG: Bootstrap's own body text color ============ */
+/* Bootstrap 5's base CSS sets body { color: var(--bs-body-color) },
+   completely separate from Infima's --ifm-font-color-base above. Never
+   overriding this meant Bootstrap's default #212529 (near-black, meant
+   for light backgrounds) silently won on every page — found via a real
+   contrast audit of the live site: 1.26:1 ratio, essentially invisible
+   text, on every page with real prose content. This is the fix. */
+html[data-afj-theme] {
+  --bs-body-color: var(--text);
+  --bs-body-bg: var(--bg-page);
+  --bs-emphasis-color: var(--text);
+  --bs-secondary-color: var(--text-muted);
+  --bs-link-color: var(--accent-1);
+  --bs-link-hover-color: var(--accent-2);
+  --bs-heading-color: var(--text);
+}
 html[data-afj-theme] .form-control {
   --bs-body-bg: var(--bg-offset);
-  --bs-body-color: var(--text);
   border-color: var(--border);
 }
 html[data-afj-theme] .form-control:focus {
