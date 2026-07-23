@@ -1,5 +1,9 @@
 {
   "screenshots": [
+    "__wine.png",
+    "__scrolly.png",
+    "__day.png",
+    "__scrollyday.png",
     "_docs_live-site-status_wine.png",
     "_docs_live-site-status_scrolly.png",
     "_docs_live-site-status_day.png",
@@ -18,6 +22,46 @@
     "_docs_foundations_scrollyday.png"
   ],
   "contrastFailures": [
+    {
+      "page": "/",
+      "theme": "day",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "theme": "scrollyday",
+      "failures": [
+        {
+          "tag": "A",
+          "text": "Docs",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        },
+        {
+          "tag": "A",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
+          "bg": "rgb(36, 37, 38)",
+          "ratio": "2.14"
+        }
+      ]
+    },
     {
       "page": "/docs/live-site-status",
       "theme": "wine",
@@ -953,6 +997,168 @@
           "ratio": "1.20"
         }
       ]
+    }
+  ],
+  "backgroundMismatches": [
+    {
+      "page": "/",
+      "theme": "day",
+      "sidebarBg": [
+        241,
+        239,
+        232
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.86",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/",
+      "theme": "scrollyday",
+      "sidebarBg": [
+        245,
+        242,
+        234
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.89",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/live-site-status",
+      "theme": "day",
+      "sidebarBg": [
+        241,
+        239,
+        232
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.86",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/live-site-status",
+      "theme": "scrollyday",
+      "sidebarBg": [
+        245,
+        242,
+        234
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.89",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/core-ui",
+      "theme": "day",
+      "sidebarBg": [
+        241,
+        239,
+        232
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.86",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/core-ui",
+      "theme": "scrollyday",
+      "sidebarBg": [
+        245,
+        242,
+        234
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.89",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/customer-journeys",
+      "theme": "day",
+      "sidebarBg": [
+        241,
+        239,
+        232
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.86",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/customer-journeys",
+      "theme": "scrollyday",
+      "sidebarBg": [
+        245,
+        242,
+        234
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.89",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/foundations",
+      "theme": "day",
+      "sidebarBg": [
+        241,
+        239,
+        232
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.86",
+      "mainLum": "0.00"
+    },
+    {
+      "page": "/docs/foundations",
+      "theme": "scrollyday",
+      "sidebarBg": [
+        245,
+        242,
+        234
+      ],
+      "mainBg": [
+        0,
+        0,
+        0
+      ],
+      "sidebarLum": "0.89",
+      "mainLum": "0.00"
     }
   ]
 }
