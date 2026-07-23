@@ -24,17 +24,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "How This Fits the Live Site",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.66"
         }
       ]
     },
@@ -44,17 +37,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "How This Fits the Live Site",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.19"
         }
       ]
     },
@@ -64,136 +50,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "How This Fits the Live Site",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.66"
         },
         {
           "tag": "A",
@@ -252,136 +119,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "How This Fits the Live Site",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.19"
         },
         {
           "tag": "A",
@@ -440,17 +188,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Core UI",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.66"
         }
       ]
     },
@@ -460,17 +201,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Core UI",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.19"
         }
       ]
     },
@@ -480,136 +214,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Core UI",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.66"
         },
         {
           "tag": "A",
@@ -668,136 +283,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Core UI",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.19"
         },
         {
           "tag": "A",
@@ -856,17 +352,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Customer Journeys",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.66"
         }
       ]
     },
@@ -876,17 +365,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Customer Journeys",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.19"
         },
         {
           "tag": "H2",
@@ -938,136 +420,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Customer Journeys",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.66"
         },
         {
           "tag": "A",
@@ -1238,136 +601,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Customer Journeys",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.19"
         },
         {
           "tag": "A",
@@ -1538,17 +782,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Foundations",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.66"
         }
       ]
     },
@@ -1558,17 +795,10 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
-          "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
           "text": "Foundations",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
+          "ratio": "2.19"
         }
       ]
     },
@@ -1578,136 +808,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Foundations",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(201, 149, 82)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "1.07"
+          "ratio": "2.66"
         },
         {
           "tag": "A",
@@ -1773,136 +884,17 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(53, 120, 229)",
+          "text": "GitHub",
+          "color": "rgb(92, 87, 76)",
           "bg": "rgb(36, 37, 38)",
-          "ratio": "3.63"
-        },
-        {
-          "tag": "A",
-          "text": "Orientation",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.14"
         },
         {
           "tag": "A",
           "text": "Foundations",
-          "color": "rgb(53, 120, 229)",
+          "color": "rgb(243, 156, 18)",
           "bg": "rgba(255, 255, 255, 0.05)",
-          "ratio": "4.23"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Graphic Designers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "For Videographers",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "UI Mockups",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Motion",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "Original Widget Gallery",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(218, 221, 225)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.13"
+          "ratio": "2.19"
         },
         {
           "tag": "A",
