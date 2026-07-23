@@ -18,6 +18,8 @@ Found and fixed two real bugs, both re-verified against the redeployed site with
 
 A third issue (Infima's `.navbar--dark` locally redefining `--ifm-menu-color`) fixed by targeting the actual link elements directly. Full writeup as a real ADR on Process & ADRs. Remaining smaller gaps (active breadcrumb pill contrast, one navbar background, a stray default-blue link) tracked as open, not silently left.
 
+**Second round, from user screenshots:** the same root-cause pattern kept surfacing in elements not yet reached — homepage text (`--ifm-color-emphasis-700`, tied to Docusaurus's permanently-dark color mode), the sidebar and navbar backgrounds (no explicit rule in Infima's own CSS, yet staying dark regardless — forced directly), the navbar brand text (exposed only once the navbar background was fixed), table-of-contents links, pagination links, and breadcrumb links. Also fixed a real bug in the audit script itself — a background-consistency check that ignored the alpha channel and misread a transparent `<main>` as opaque black. Measured contrast failures dropped from 86+ instances to a smaller, now-isolated remainder; homepage failures dropped to zero; background mismatches confirmed at zero across two independent audit runs.
+
 ## v2.0.0 — Migrated to a real Docusaurus deployment
 
 The single canonical HTML file is now a full, deployed, multi-page site rather than something read in isolation. Everything below happened in service of getting `static/component-library.html` onto GitHub Pages as a real, working, tested site — not just a bigger version of the same document.

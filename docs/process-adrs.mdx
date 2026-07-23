@@ -153,7 +153,18 @@ ADR-002 above records the formal decision. This is the plainer version, for anyo
 - Bootstrap 5's `body { color: var(--bs-body-color) }` was never themed globally (only inside `.form-control`), so Bootstrap's hardcoded light-mode default (`#212529`) silently won everywhere — measured at 1.26:1 against the dark page background, affecting every heading and paragraph on every page.
 - The Day/Scrolly Day themes correctly lightened page content, but the sidebar/navbar chrome is governed by a *separate* `data-afj-mode` attribute that only the independent day/night switch touches — nothing set it when picking a theme via the four-theme buttons, so the sidebar stayed dark-styled against a now-light page. Measured at 1.07:1 on real sidebar links.
 
-Both fixed and re-verified with the same audit script against the redeployed site — not assumed fixed from reading the diff. A third, smaller issue (Infima's `.navbar--dark` locally redefining `--ifm-menu-color` through a cascade path not fully traced) was fixed by targeting the actual `.menu__link`/`.navbar__link` elements directly rather than continuing to chase the variable cascade. Remaining smaller contrast gaps (the active breadcrumb pill, one un-migrated navbar background, a stray Infima-blue link) are tracked as open, not silently left for someone to rediscover.
+Both fixed and re-verified with the same audit script against the redeployed site — not assumed fixed from reading the diff. A third, smaller issue (Infima's `.navbar--dark` locally redefining `--ifm-menu-color`) was fixed by targeting the actual `.menu__link`/`.navbar__link` elements directly rather than continuing to chase the variable cascade.
+
+**A second round, from user screenshots showing the sidebar staying dark and homepage text nearly invisible in Day/Scrolly Day.** Same root cause pattern, different elements:
+- The homepage's `.heroSub`/`.card p` used raw `var(--ifm-color-emphasis-700)` — governed by Docusaurus's own `data-theme` attribute, permanently stuck on `dark` (`disableSwitch: true`), never migrated to the AFJ token system. Fixed to `--text-muted`.
+- The sidebar and navbar had no explicit background in Infima's own compiled CSS (confirmed by reading it) yet stayed dark regardless — forced directly via attribute-contains selectors (not exact hashed class names, which shift between builds).
+- Fixing the navbar background then exposed a previously-hidden bug: the brand text was near-white, invisible-but-unnoticed against the old dark navbar, now genuinely invisible against the corrected light one. Same `.navbar--dark` local-override pattern as the sidebar-link fix, on `.navbar__brand` specifically.
+- Table-of-contents links, pagination nav links, and breadcrumb links were all still using raw un-migrated Infima variables — fixed the same way.
+- Along the way, found and fixed a real bug in the audit script itself: a new sidebar-vs-content background check ignored the alpha channel, misreading a fully transparent `<main>` background as opaque black and producing a false-positive "mismatch" on pages that were actually fine.
+
+Total measured contrast failures dropped from 86+ individual instances to a smaller, now-isolated remainder (mostly the Customer Journeys page's embedded interactive demo content, and one still-open item — see below). Homepage: zero failures. Background mismatches: zero, confirmed stable across two audit runs.
+
+**Still open, not silently left:** a handful of contrast failures remain concentrated in the Customer Journeys page's interactive demo components (ShopFlow/ClassBookingFlow/CourseSubscriptionFlow inline styles, not yet audited with the same rigor as the rest of the site), plus the pre-existing smaller items (active breadcrumb pill contrast at 2.66:1, one stray default-Infima-blue link). Each is a real, scoped, findable item for the next pass — not a mystery.
 
 ## Future: Tailwind
 
