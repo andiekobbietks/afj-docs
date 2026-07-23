@@ -179,6 +179,34 @@ html[data-afj-theme] [class*="sidebar_"] {
 html[data-afj-theme] .navbar {
   background: var(--site-topbar-bg) !important;
 }
+html[data-afj-theme] .navbar__brand,
+html[data-afj-theme] .navbar__title {
+  color: var(--site-text-primary) !important;
+}
+html[data-afj-theme] .table-of-contents__link {
+  color: var(--text-muted) !important;
+}
+html[data-afj-theme] .table-of-contents__link:hover,
+html[data-afj-theme] .table-of-contents__link--active {
+  color: var(--accent-1) !important;
+}
+html[data-afj-theme] .pagination-nav__link {
+  border-color: var(--border) !important;
+}
+html[data-afj-theme] .pagination-nav__link,
+html[data-afj-theme] .pagination-nav__label {
+  color: var(--text) !important;
+}
+html[data-afj-theme] .pagination-nav__sublabel {
+  color: var(--text-muted) !important;
+}
+html[data-afj-theme] .breadcrumbs__link {
+  color: var(--text) !important;
+  background: transparent !important;
+}
+html[data-afj-theme] .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--accent-1) !important;
+}
 html[data-afj-theme] .form-control:focus {
   border-color: var(--accent-1);
   box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-1) 25%, transparent);
