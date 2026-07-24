@@ -138,7 +138,7 @@ html[data-afj-theme] .card-footer {
 }
 html[data-afj-theme] .badge.text-bg-primary {
   background: var(--accent-1) !important;
-  color: var(--bg-base) !important;
+  color: #1a1712 !important; /* always dark — gold bg needs dark text regardless of theme; --bg-base flips light/dark by theme and broke this on day/scrollyday (2.31:1) */
 }
 /* ============ THE ACTUAL BUG: Bootstrap's own body text color ============ */
 /* Bootstrap 5's base CSS sets body { color: var(--bs-body-color) },
@@ -203,7 +203,7 @@ html[data-afj-theme] .table-of-contents__link {
 }
 html[data-afj-theme] .table-of-contents__link:hover,
 html[data-afj-theme] .table-of-contents__link--active {
-  color: var(--accent-1) !important;
+  color: var(--link-color, var(--accent-1)) !important;
 }
 html[data-afj-theme] .pagination-nav__link {
   border-color: var(--border) !important;
@@ -220,7 +220,7 @@ html[data-afj-theme] .breadcrumbs__link {
   background: transparent !important;
 }
 html[data-afj-theme] .breadcrumbs__item--active .breadcrumbs__link {
-  color: var(--accent-1) !important;
+  color: var(--link-color, var(--accent-1)) !important;
 }
 
 /* Direct table/code overrides — the CSS-variable versions of these
