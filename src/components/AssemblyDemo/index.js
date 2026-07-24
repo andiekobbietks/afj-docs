@@ -13,7 +13,7 @@ export default function AssemblyDemo() {
       <div className="card" style={{ width: 140 }}>
         <div className="card-body p-2">
           <p className="card-text mb-0" style={{ fontSize: 11 }}>Red hoodie</p>
-          <p className="card-text mb-0" style={{ fontSize: 10, color: 'var(--accent-1)' }}>£42.00</p>
+          <p className="card-text mb-0" style={{ fontSize: 10, color: 'var(--link-color, var(--accent-1))' }}>£42.00</p>
         </div>
       </div>
       <div className="input-group" style={{ maxWidth: 260 }}>
