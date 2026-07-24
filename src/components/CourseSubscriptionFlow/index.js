@@ -41,7 +41,7 @@ export default function CourseSubscriptionFlow() {
 
       {view === 'teaser' && (
         <div>
-          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--accent-1)' }}>Step 1 of 2</p>
+          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--link-color, var(--accent-1))' }}>Step 1 of 2</p>
           <h3 style={{ fontSize: 20, color: 'var(--text)' }}>Unlock the full course library</h3>
           <p className="mb-4" style={{ fontSize: 13, color: 'var(--text-muted)' }}>Azonto, Hip-life, and performance technique — self-paced, cancel any time.</p>
           <button type="button" className="btn btn-primary w-100" onClick={() => setView('gate')}>Get early access</button>
@@ -50,7 +50,7 @@ export default function CourseSubscriptionFlow() {
 
       {view === 'gate' && (
         <div>
-          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--accent-1)' }}>Step 1 of 2</p>
+          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--link-color, var(--accent-1))' }}>Step 1 of 2</p>
           <h3 className="mb-3" style={{ fontSize: 18, color: 'var(--text)' }}>What's your email?</h3>
           <div className="mb-3 text-start">
             <input
@@ -68,7 +68,7 @@ export default function CourseSubscriptionFlow() {
 
       {view === 'plans' && (
         <div>
-          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--accent-1)' }}>Step 2 of 2</p>
+          <p className="text-uppercase mb-2" style={{ fontSize: 10, letterSpacing: 1, color: 'var(--link-color, var(--accent-1))' }}>Step 2 of 2</p>
           <h3 className="mb-3" style={{ fontSize: 18, color: 'var(--text)' }}>Choose your plan</h3>
           <div className="d-flex flex-column gap-2 mb-3">
             {[
@@ -90,7 +90,7 @@ export default function CourseSubscriptionFlow() {
                     <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text)' }}>
                       {p.name}{p.badge && <span className="badge text-bg-primary ms-2" style={{ fontSize: 9 }}>{p.badge}</span>}
                     </span>
-                    <span style={{ fontSize: 13, color: 'var(--accent-1)' }}>{p.price}</span>
+                    <span style={{ fontSize: 13, color: 'var(--link-color, var(--accent-1))' }}>{p.price}</span>
                   </div>
                   <p className="mb-0 mt-1" style={{ fontSize: 11, color: 'var(--text-muted)' }}>{p.desc}</p>
                 </div>

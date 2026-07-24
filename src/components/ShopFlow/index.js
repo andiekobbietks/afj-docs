@@ -77,7 +77,7 @@ export default function ShopFlow() {
           </button>
           <div className="rounded-3 mb-3" style={{ aspectRatio: '16/10', background: 'linear-gradient(135deg, var(--bg-panel), var(--bg-offset))' }} />
           <h3 style={{ fontSize: 16, color: 'var(--text)' }}>{activeProduct.name}</h3>
-          <p style={{ fontSize: 14, color: 'var(--accent-1)' }}>£{activeProduct.price.toFixed(2)}</p>
+          <p style={{ fontSize: 14, color: 'var(--link-color, var(--accent-1))' }}>£{activeProduct.price.toFixed(2)}</p>
 
           <div className="btn-group mb-3" role="group" aria-label="Select size">
             {SIZES.map((s) => (
@@ -110,7 +110,7 @@ export default function ShopFlow() {
             &larr; Back to basket
           </button>
           <h3 style={{ fontSize: 16, color: 'var(--text)' }}>Checkout</h3>
-          <p style={{ fontSize: 14, color: 'var(--accent-1)' }}>Total: £{subtotal.toFixed(2)}</p>
+          <p style={{ fontSize: 14, color: 'var(--link-color, var(--accent-1))' }}>Total: £{subtotal.toFixed(2)}</p>
           <button type="button" className="btn btn-primary w-100" onClick={() => { setView('confirm'); setCart([]); showToast('Order placed'); }}>
             Place order
           </button>

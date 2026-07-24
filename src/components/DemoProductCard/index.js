@@ -9,7 +9,7 @@ export default function DemoProductCard() {
         </div>
         <div className="card-body p-2">
           <p className="card-text mb-0" style={{ fontSize: '12px' }}>Red hoodie</p>
-          <p className="card-text mb-0" style={{ fontSize: '11px', color: 'var(--accent-1)' }}>£42.00</p>
+          <p className="card-text mb-0" style={{ fontSize: '11px', color: 'var(--link-color, var(--accent-1))' }}>£42.00</p>
         </div>
       </div>
     </div>
