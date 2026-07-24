@@ -55,58 +55,6 @@
   ],
   "contrastFailures": [
     {
-      "page": "/docs/core-ui",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "P",
-          "text": "£42.00",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "2.66"
-        }
-      ]
-    },
-    {
-      "page": "/docs/core-ui",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "P",
-          "text": "£42.00",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "2.19"
-        }
-      ]
-    },
-    {
-      "page": "/docs/customer-journeys",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "P",
-          "text": "Step 1 of 2",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(241, 239, 232)",
-          "ratio": "2.31"
-        }
-      ]
-    },
-    {
-      "page": "/docs/customer-journeys",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "P",
-          "text": "Step 1 of 2",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(245, 242, 234)",
-          "ratio": "1.96"
-        }
-      ]
-    },
-    {
       "page": "/docs/scrollytelling",
       "theme": "day",
       "failures": [
