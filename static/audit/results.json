@@ -60,20 +60,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
-        {
-          "tag": "A",
           "text": "Current status",
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
@@ -87,20 +73,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "How This Fits the Live Site",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
-          "tag": "A",
           "text": "Current status",
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
@@ -112,20 +84,6 @@
       "page": "/docs/core-ui",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "P",
           "text": "£42.00",
@@ -147,20 +105,6 @@
       "theme": "scrollyday",
       "failures": [
         {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Core UI",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
           "tag": "P",
           "text": "£42.00",
           "color": "rgb(243, 156, 18)",
@@ -181,20 +125,6 @@
       "theme": "day",
       "failures": [
         {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
-        {
           "tag": "P",
           "text": "Step 1 of 2",
           "color": "rgb(201, 149, 82)",
@@ -214,20 +144,6 @@
       "page": "/docs/customer-journeys",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Customer Journeys",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
         {
           "tag": "P",
           "text": "Step 1 of 2",
@@ -250,20 +166,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
-        {
-          "tag": "A",
           "text": "Design tokens",
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
@@ -277,20 +179,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Foundations",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
-          "tag": "A",
           "text": "Design tokens",
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
@@ -299,63 +187,9 @@
       ]
     },
     {
-      "page": "/docs/icon-library",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        }
-      ]
-    },
-    {
-      "page": "/docs/icon-library",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Icon Library",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        }
-      ]
-    },
-    {
       "page": "/docs/history",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "A",
           "text": "Changelog",
@@ -371,20 +205,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "History",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
-          "tag": "A",
           "text": "Changelog",
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(239, 234, 221)",
@@ -396,20 +216,6 @@
       "page": "/docs/brand-source",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "A",
           "text": "Real logo imagery",
@@ -423,20 +229,6 @@
       "page": "/docs/brand-source",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Brand Source",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
         {
           "tag": "A",
           "text": "Real logo imagery",
@@ -450,20 +242,6 @@
       "page": "/docs/scrollytelling",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "H1",
           "text": "Impact through dance",
@@ -484,20 +262,6 @@
       "page": "/docs/scrollytelling",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Scrollytelling Experience",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
         {
           "tag": "H1",
           "text": "Impact through dance",
@@ -518,20 +282,6 @@
       "page": "/docs/more-ui-kit",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "A",
           "text": "3. Gallery grid",
@@ -545,20 +295,6 @@
       "page": "/docs/more-ui-kit",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "More UI Kit",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
         {
           "tag": "A",
           "text": "3. Gallery grid",
@@ -572,20 +308,6 @@
       "page": "/docs/assembly-compare",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "P",
           "text": "£42.00",
@@ -607,20 +329,6 @@
       "theme": "scrollyday",
       "failures": [
         {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Assembly & Compare",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
           "tag": "P",
           "text": "£42.00",
           "color": "rgb(243, 156, 18)",
@@ -638,280 +346,8 @@
     },
     {
       "page": "/docs/process-adrs",
-      "theme": "wine",
-      "failures": [
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(164, 62, 83)",
-          "bg": "rgb(20, 17, 22)",
-          "ratio": "3.02"
-        }
-      ]
-    },
-    {
-      "page": "/docs/process-adrs",
       "theme": "day",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
         {
           "tag": "A",
           "text": "What is an ADR",
@@ -925,272 +361,6 @@
       "page": "/docs/process-adrs",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Process & ADRs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Context",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Options considered",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Decision",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
-        {
-          "tag": "P",
-          "text": "Reasoning",
-          "color": "rgb(255, 51, 68)",
-          "bg": "rgb(255, 255, 255)",
-          "ratio": "3.62"
-        },
         {
           "tag": "A",
           "text": "What is an ADR",
@@ -1206,20 +376,6 @@
       "failures": [
         {
           "tag": "A",
-          "text": "Docs",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "2.37"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "2.15"
-        },
-        {
-          "tag": "A",
           "text": "Cart drawer",
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(233, 228, 213)",
@@ -1231,20 +387,6 @@
       "page": "/docs/commerce",
       "theme": "scrollyday",
       "failures": [
-        {
-          "tag": "A",
-          "text": "Docs",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgba(245, 242, 234, 0.92)",
-          "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Commerce",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(236, 231, 216)",
-          "ratio": "1.77"
-        },
         {
           "tag": "A",
           "text": "Cart drawer",
