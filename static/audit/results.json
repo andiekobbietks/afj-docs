@@ -55,32 +55,6 @@
   ],
   "contrastFailures": [
     {
-      "page": "/docs/live-site-status",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Current status",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/live-site-status",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Current status",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
       "page": "/docs/core-ui",
       "theme": "day",
       "failures": [
@@ -90,13 +64,6 @@
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(255, 255, 255)",
           "ratio": "2.66"
-        },
-        {
-          "tag": "A",
-          "text": "1. Button component",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
         }
       ]
     },
@@ -110,13 +77,6 @@
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(255, 255, 255)",
           "ratio": "2.19"
-        },
-        {
-          "tag": "A",
-          "text": "1. Button component",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
         }
       ]
     },
@@ -130,13 +90,6 @@
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(241, 239, 232)",
           "ratio": "2.31"
-        },
-        {
-          "tag": "A",
-          "text": "Live preview of all six (original, not y",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
         }
       ]
     },
@@ -150,91 +103,6 @@
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(245, 242, 234)",
           "ratio": "1.96"
-        },
-        {
-          "tag": "A",
-          "text": "Live preview of all six (original, not y",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/foundations",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Design tokens",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/foundations",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Design tokens",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/history",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Changelog",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/history",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Changelog",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/brand-source",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Real logo imagery",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/brand-source",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Real logo imagery",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
         }
       ]
     },
@@ -248,13 +116,6 @@
           "color": "rgb(26, 23, 18)",
           "bg": "rgb(5, 5, 7)",
           "ratio": "1.14"
-        },
-        {
-          "tag": "A",
-          "text": "Pixel-sampled source",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
         }
       ]
     },
@@ -268,39 +129,6 @@
           "color": "rgb(26, 23, 18)",
           "bg": "rgb(5, 5, 7)",
           "ratio": "1.14"
-        },
-        {
-          "tag": "A",
-          "text": "Pixel-sampled source",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/more-ui-kit",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "3. Gallery grid",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/more-ui-kit",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "3. Gallery grid",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
         }
       ]
     },
@@ -314,13 +142,6 @@
           "color": "rgb(201, 149, 82)",
           "bg": "rgb(255, 255, 255)",
           "ratio": "2.66"
-        },
-        {
-          "tag": "A",
-          "text": "Parts → commerce assembly",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
         }
       ]
     },
@@ -334,65 +155,6 @@
           "color": "rgb(243, 156, 18)",
           "bg": "rgb(255, 255, 255)",
           "ratio": "2.19"
-        },
-        {
-          "tag": "A",
-          "text": "Parts → commerce assembly",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/process-adrs",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "What is an ADR",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/process-adrs",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "What is an ADR",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
-        }
-      ]
-    },
-    {
-      "page": "/docs/commerce",
-      "theme": "day",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Cart drawer",
-          "color": "rgb(201, 149, 82)",
-          "bg": "rgb(233, 228, 213)",
-          "ratio": "2.09"
-        }
-      ]
-    },
-    {
-      "page": "/docs/commerce",
-      "theme": "scrollyday",
-      "failures": [
-        {
-          "tag": "A",
-          "text": "Cart drawer",
-          "color": "rgb(243, 156, 18)",
-          "bg": "rgb(239, 234, 221)",
-          "ratio": "1.83"
         }
       ]
     }
