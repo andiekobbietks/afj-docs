@@ -1,12 +1,18 @@
 
 Failed scenarios:
-  1) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
+  1) Buttons renders visible content in every theme # features/component_widgets_render.feature:17
+       Given I open the component library page # features/step_definitions/common_steps.js:4
+           Error: function timed out, ensure the promise resolves within 5000 milliseconds
+               at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
+               at listOnTimeout (node:internal/timers:585:17)
+               at process.processTimers (node:internal/timers:521:7)
+  2) Removing the only item in the cart empties it, not errors # features/interactive_shop_demo.feature:52
        When I remove that item # features/step_definitions/shop_demo_steps.js:144
            Error: function timed out, ensure the promise resolves within 5000 milliseconds
                at Timeout.<anonymous> (/home/runner/work/afj-docs/afj-docs/node_modules/@cucumber/cucumber/lib/time.js:31:20)
                at listOnTimeout (node:internal/timers:585:17)
                at process.processTimers (node:internal/timers:521:7)
-  2) Switching theme keeps the page scroll position # features/theme_system.feature:23
+  3) Switching theme keeps the page scroll position # features/theme_system.feature:23
        Then the page scroll position should not have changed # features/step_definitions/navigation_search_steps.js:94
            AssertionError [ERR_ASSERTION]
                + expected - actual
@@ -15,7 +21,7 @@ Failed scenarios:
                +true
            
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/navigation_search_steps.js:101:10)
-  3) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:57
+  4) Every code sample on a docs page has a working native copy button # features/ui_mockups_and_docs_site.feature:57
        Then every fenced code block should have a visible copy button # features/step_definitions/docs_site_steps.js:50
            locator.waitFor: Timeout 10000ms exceeded.
            Call log:
@@ -24,6 +30,6 @@ Failed scenarios:
                at AfjWorld.<anonymous> (/home/runner/work/afj-docs/afj-docs/features/step_definitions/docs_site_steps.js:52:25)
 
 2 hooks (2 passed)
-162 scenarios (159 passed, 3 failed)
-1001 steps (994 passed, 4 skipped, 3 failed)
-2m 43.438s (2m 43.87s executing your code)
+162 scenarios (158 passed, 4 failed)
+1001 steps (989 passed, 8 skipped, 4 failed)
+2m 35.595s (2m 35.231s executing your code)
